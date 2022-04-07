@@ -1,0 +1,2355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- DATATABLES -->
+    <!--  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"> -->
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+    <style>
+        th,td {
+            padding: 0.4rem !important;
+        }
+        body>div {
+            box-shadow: 10px 10px 8px #888888;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+    </style>
+    <title>FILTER</title>
+</head>
+<body>
+
+
+
+    <div class="container" style="margin-top: 10px;padding: 5px">
+    <table id="tablax" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            
+            <th>Codigo</th>
+            <th>Pais</th>
+           
+            
+        </thead>
+        <tbody>
+<tr><td>AAE</td><td> – Annaba, Algeria – Les Salines</td></tr>
+<tr><td>AAL</td><td> – Aalborg, Denmark – Aalborg</td></tr>
+<tr><td>AAR</td><td> – Aarhus, Denmark – Tirstrup</td></tr>
+<tr><td>ABE</td><td> – Allentown, PA, USA – Allentown-Bethlehem-Easton Airport</td></tr>
+<tr><td>ABI</td><td> – Abilene, TX, USA – Municipal</td></tr>
+<tr><td>ABJ</td><td> – Abidjan, Cote D’ivoire – Port Bouet</td></tr>
+<tr><td>ABL</td><td> – Ambler, AK, USA</td></tr>
+<tr><td>ABM</td><td> – Bamaga, Queensland, Australia</td></tr>
+<tr><td>ABQ</td><td> – Albuquerque, NM, USA – Albuquerque International Airport</td></tr>
+<tr><td>ABR</td><td> – Aberdeen, SD, USA – Aberdeen Regional Airport</td></tr>
+<tr><td>ABS</td><td> – Abu Simbel, Egypt – Abu Simbel</td></tr>
+<tr><td>ABX</td><td> – Albury, New South Wales, Australia – Albury</td></tr>
+<tr><td>ABY</td><td> – Albany, GA, USA – Dougherty County</td></tr>
+<tr><td>ABZ</td><td> – Aberdeen, Scotland, United Kingdom – Dyce</td></tr>
+<tr><td>ACA</td><td> – Acapulco, Guerrero, Mexico – Alvarez International</td></tr>
+<tr><td>ACC</td><td> – Accra, Ghana – Kotoka</td></tr>
+<tr><td>ACE</td><td> – Lanzarote, Canary Islands, Spain – Lanzarote</td></tr>
+<tr><td>ACI</td><td> – Alderney, Channel Islands, United Kingdom – The Blaye</td></tr>
+<tr><td>ACK</td><td> – Nantucket, MA, USA</td></tr>
+<tr><td>ACT</td><td> – Waco, TX, USA – Madison Cooper</td></tr>
+<tr><td>ACV</td><td> – Arcata, CA, USA – Arcata/Eureka Airport</td></tr>
+<tr><td>ACY</td><td> – Atlantic City /Atlantic Cty, NJ, USA – Atlantic City International</td></tr>
+<tr><td>ADA</td><td> – Adana, Turkey – Adana</td></tr>
+<tr><td>ADB</td><td> – Izmir, Turkey – Adnam Menderes</td></tr>
+<tr><td>ADD</td><td> – Addis Ababa, Ethiopia – Bole</td></tr>
+<tr><td>ADJ</td><td> – Amman, Jordan – Civil</td></tr>
+<tr><td>ADL</td><td> – Adelaide, South Australia, Australia – Adelaide</td></tr>
+<tr><td>ADQ</td><td> – Kodiak, AK, USA</td></tr>
+<tr><td>ADZ</td><td> – San Andres Island, Colombia</td></tr>
+<tr><td>AEP</td><td> – Buenos Aires, Buenos Aires, Argentina – Jorge Newbery</td></tr>
+<tr><td>AES</td><td> – Aalesund, Norway – Vigra</td></tr>
+<tr><td>AET</td><td> – Allakaket, AK, USA</td></tr>
+<tr><td>AEX</td><td> – Alexandria, LA, USA – Alexandria Intl Airport</td></tr>
+<tr><td>AEY</td><td> – Akureyri, Iceland – Akureyri</td></tr>
+<tr><td>AGA</td><td> – Agadir, Morocco – Inezgane</td></tr>
+<tr><td>AGB</td><td> – Augsburg, Germany – Muehlhausen</td></tr>
+<tr><td>AGF</td><td> – Agen, France – La Garenne</td></tr>
+<tr><td>AGH</td><td> – Helsingborg, Sweden – Angelholm/Helsingborg</td></tr>
+<tr><td>AGP</td><td> – Malaga, Spain – Malaga</td></tr>
+<tr><td>AGR</td><td> – Agra, India – Kheria</td></tr>
+<tr><td>AGS</td><td> – Augusta, GA, USA – Bush Field</td></tr>
+<tr><td>AGU</td><td> – Aguascalientes, Aguascalientes, Mexico</td></tr>
+<tr><td>AHN</td><td> – Athens, GA, USA</td></tr>
+<tr><td>AHO</td><td> – Alghero, Sardinia, Italy – Fertilia</td></tr>
+<tr><td>AIA</td><td> – Alliance, NE, USA</td></tr>
+<tr><td>AIN</td><td> – Wainwright, AK, USA</td></tr>
+<tr><td>AJN</td><td> – Anjouan,Comoros</td></tr>
+<tr><td>AJA</td><td> – Ajaccio, Corsica, France – Campo Dell Oro</td></tr>
+<tr><td>AJU</td><td> – Aracaju, Sergipe, Brazil</td></tr>
+<tr><td>AKJ</td><td> – Asahikawa, Japan – Asahikawa</td></tr>
+<tr><td>AKL</td><td> – Auckland, New Zealand – Auckland International Airport</td></tr>
+<tr><td>ALA</td><td> – Almaty, Kazakhstan – Almaty</td></tr>
+<tr><td>ALB</td><td> – Albany, NY, USA – Albany County Airport</td></tr>
+<tr><td>ALC</td><td> – Alicante, Spain – Alicante</td></tr>
+<tr><td>ALE</td><td> – Alpine, TX, USA – Alpine Texas</td></tr>
+<tr><td>ALF</td><td> – Alta, Norway – Elvebakken</td></tr>
+<tr><td>ALG</td><td> – Algiers, Algeria – Houari Boumedienne</td></tr>
+<tr><td>ALM</td><td> – Alamogordo, NM, USA</td></tr>
+<tr><td>ALO</td><td> – Waterloo, IA, USA – Waterloo Municipal Airport</td></tr>
+<tr><td>ALP</td><td> – Aleppo, Syria – Nejrab</td></tr>
+<tr><td>ALS</td><td> – Alamosa, CO, USA – Bergman Field</td></tr>
+<tr><td>ALW</td><td> – Walla Walla, WA, USA</td></tr>
+<tr><td>ALY</td><td> – Alexandria, Egypt – Alexandria</td></tr>
+<tr><td>AMA</td><td> – Amarillo, TX, USA – Amarillo International Airport</td></tr>
+<tr><td>AMD</td><td> – Ahmedabad, India – Ahmedabad</td></tr>
+<tr><td>AMI</td><td> – Mataram, Indonesia – Selaparang</td></tr>
+<tr><td>AMM</td><td> – Amman, Jordan – Queen Alia International</td></tr>
+<tr><td>AMQ</td><td> – Ambon, Indonesia – Pattimura</td></tr>
+<tr><td>AMS</td><td> – Amsterdam, Netherlands – Schiphol</td></tr>
+<tr><td>ANB</td><td> – Anniston, AL, USA – Municipal</td></tr>
+<tr><td>ANC</td><td> – Anchorage, AK, USA – Anchorage International</td></tr>
+<tr><td>ANF</td><td> – Antofagasta, Chile – Cerro Moreno</td></tr>
+<tr><td>ANG</td><td> – Angouleme, France – Gel-Air</td></tr>
+<tr><td>ANI</td><td> – Aniak, AK, USA</td></tr>
+<tr><td>ANR</td><td> – Antwerp, Belgium – Deurne</td></tr>
+<tr><td>ANU</td><td> – Saint Johns / Antigua, Antigua And Barbuda – Vc Bird International</td></tr>
+<tr><td>ANV</td><td> – Anvik, AK, USA</td></tr>
+<tr><td>AOI</td><td> – Ancona, Italy – Falconara</td></tr>
+<tr><td>AOJ</td><td> – Aomori, Japan</td></tr>
+<tr><td>AOK</td><td> – Karpathos, Greece – Karpathos</td></tr>
+<tr><td>AOO</td><td> – Altoona / Martinsburg, PA, USA – Blair County</td></tr>
+<tr><td>AOR</td><td> – Alor Setar, Malaysia – Sultan Abdul Halim</td></tr>
+<tr><td>APF</td><td> – Naples, FL, USA</td></tr>
+<tr><td>APL</td><td> – NampulaMozambique</td></tr>
+<tr><td>APN</td><td> – Alpena, MI, USA – Alpena Regional Airport</td></tr>
+<tr><td>APW</td><td> – Apia, Samoa – Faleolo</td></tr>
+<tr><td>AQJ</td><td> – Aqaba, Jordan – Aqaba</td></tr>
+<tr><td>AQP</td><td> – Arequipa, Peru – Rodriguez Ballon</td></tr>
+<tr><td>ARH</td><td> – Arkhangelsk, Russia – Arkhangelsk</td></tr>
+<tr><td>ARI</td><td> – Arica, Chile – Chacalluta</td></tr>
+<tr><td>ARM</td><td> – Armidale, New South Wales, Australia – Armidale</td></tr>
+<tr><td>ARN</td><td> – Stockholm, Sweden – Arlanda International</td></tr>
+<tr><td>ART</td><td> – Watertown, NY, USA – Watertown</td></tr>
+<tr><td>ASD</td><td> – Andros Town, Bahamas</td></tr>
+<tr><td>ASE</td><td> – Aspen, CO, USA – Pitkin County Airport Sardy Field</td></tr>
+<tr><td>ASM</td><td> – Asmara, Eritrea – Asmara Intl/Yohannes Iv</td></tr>
+<tr><td>ASP</td><td> – Alice Springs, Northern Territory, Australia – Alice Springs</td></tr>
+<tr><td>ASU</td><td> – Asuncion, Paraguay – Silvio Pettirossi</td></tr>
+<tr><td>ASW</td><td> – Aswan, Egypt – Daraw</td></tr>
+<tr><td>ATC</td><td> – Arthurs Town, Bahamas</td></tr>
+<tr><td>ATH</td><td> – Athens, Greece – Hellinikon</td></tr>
+<tr><td>ATL</td><td> – Atlanta, GA, USA – Hartsfield International</td></tr>
+<tr><td>ATW</td><td> – Appleton, WI, USA – Outagamie County Airport</td></tr>
+<tr><td>ATY</td><td> – Watertown, SD, USA</td></tr>
+<tr><td>AUA</td><td> – Aruba, Aruba – Reina Beatrix</td></tr> 
+<tr><td>AUC</td><td> – Arauca, Colombia</td></tr>
+<tr><td>AUG</td><td> – Augusta, ME, USA – Maine State</td></tr>
+<tr><td>AUH</td><td> – Abu Dhabi, United Arab Emirates – Abu Dhabi International</td></tr>
+<tr><td>AUS</td><td> – Austin, TX, USA – Robert Mueller Municipal Airport</td></tr>
+<tr><td>AVL</td><td> – Asheville / Hendersonville, NC, USA – Asheville Regional Airport</td></tr>
+<tr><td>AVN</td><td> – Avignon, France – Caumont</td></tr>
+<tr><td>AVP</td><td> – Wilkes Barre/Scranton, PA, USA – Wilkes-Barre/Scranton Intl</td></tr>
+<tr><td>AXA</td><td> – Anguilla, Anguilla</td></tr>
+<tr><td>AXD</td><td> – Alexandroupolis, Greece – Alexandroupolis</td></tr>
+<tr><td>AYQ</td><td> – Ayers Rock, Northern Territory, Australia – Connellan</td></tr>
+<tr><td>AYT</td><td> – Antalya, Turkey – Antalya</td></tr>
+<tr><td>AZO</td><td> – Kalamazoo, MI, USA – Kalamazoo/Battle Creek Intl</td></tr>
+<tr><td>BAH</td><td> – Bahrain, Bahrain – Bahrain International Bahrain</td></tr>
+<tr><td>BAK</td><td> – Baku, Azerbaijan – Baku</td></tr>
+<tr><td>BAL</td><td> – Batman, Turkey – Nearest Air Service Through Diyarbakir</td></tr>
+<tr><td>BAQ</td><td> – Barranquilla, Colombia – E Cortissoz</td></tr>
+<tr><td>BAX</td><td> – Barnaul, Russia – Barnaul Airport</td></tr>
+<tr><td>BBI</td><td> – Bhubaneswar, India – Bhubaneswar</td></tr>
+<tr><td>BBK</td><td> – Kasane, Botswana – Kasane</td></tr>
+<tr><td>BBU</td><td> – Bucharest, Romania – Baneasa</td></tr>
+<tr><td>BCD</td><td> – Bacolod, Philippines – Bacolod</td></tr>
+<tr><td>BCN</td><td> – Barcelona, Spain – Barcelona</td></tr>
+<tr><td>BDA</td><td> – Bermuda/Hamilton, Bermuda – Kindley Airfield/Civil Air Terminal</td></tr>
+<tr><td>BDJ</td><td> – Banjarmasin, Indonesia – Syamsudin Noor</td></tr>
+<tr><td>BDL</td><td> – Hartford, CT, USA – Bradley International Airport</td></tr>
+<tr><td>BDO</td><td> – Bandung, Indonesia – Husein Sastranegara</td></tr>
+<tr><td>BDQ</td><td> – Vadodara, India – Vadodara</td></tr>
+<tr><td>BDR</td><td> – Bridgeport, CT, USA – Sikorsky Memorial</td></tr>
+<tr><td>BED</td><td> – Bedford, MA, USA – Bedford</td></tr>
+<tr><td>BEG</td><td> – Belgrade, Yugoslavia – Belgrade-Beograd</td></tr>
+<tr><td>BEH</td><td> – Benton Harbor, MI, USA – Ross Field</td></tr>
+<tr><td>BEI</td><td> – Beica, Ethiopia – Beica</td></tr>
+<tr><td>BEL</td><td> – Belem, Para, Brazil – Val De Cans</td></tr>
+<tr><td>BEO</td><td> – Newcastle, New South Wales, Australia – Belmont</td></tr>
+<tr><td>BER</td><td> – Berlin, Germany – Schoenefeld</td></tr>
+<tr><td>BES</td><td> – Brest, France – Guipavas</td></tr>
+<tr><td>BET</td><td> – Bethel, AK, USA – Bethel</td></tr>
+<tr><td>BEW</td><td> – Beira, Mozambique – Beira</td></tr>
+<tr><td>BEY</td><td> – Beirut, Lebanon – International</td></tr>
+<tr><td>BFD</td><td> – Bradford, PA, USA – Bradford Regional</td></tr>
+<tr><td>BFF</td><td> – Scottsbluff, NE, USA – William B Heiling Field</td></tr>
+<tr><td>BFL</td><td> – Bakersfield, CA, USA – Meadows Field</td></tr>
+<tr><td>BFN</td><td> – Bloemfontein, South Africa – Jbm Hertzog</td></tr>
+<tr><td>BFS</td><td> – Belfast, Northern Ireland, United Kingdom – Belfast International</td></tr>
+<tr><td>BGA</td><td> – Bucaramanga, Colombia – Palo Negro</td></tr>
+<tr><td>BGF</td><td> – Bangui, Central African Republic – Bangui</td></tr>
+<tr><td>BGI</td><td> – Bridgetown, Barbados – Grantley Adams International</td></tr>
+<tr><td>BGK</td><td> – Big Creek, Belize – Big Creek</td></tr>
+<tr><td>BGM</td><td> – Binghamton/Endicott/Johnson City, NY, USA – Edwin Alink Field</td></tr>
+<tr><td>BGO</td><td> – Bergen, Norway – Flesland</td></tr>
+<tr><td>BGR</td><td> – Bangor, ME, USA – Bangor International Airport</td></tr>
+<tr><td>BGY</td><td> – Milan, Italy – Orio Al Serio</td></tr>
+<tr><td>BHB</td><td> – Bar Harbor, ME, USA</td></tr>
+<tr><td>BHD</td><td> – Belfast, Northern Ireland, United Kingdom – Belfast Harbor</td></tr>
+<tr><td>BHI</td><td> – Bahia Blanca, Buenos Aires, Argentina – Commandante</td></tr>
+<tr><td>BHK</td><td> – Bukhara, Uzbekistan</td></tr>
+<tr><td>BHM</td><td> – Birmingham, AL, USA – Seibels/Bryan Airport</td></tr>
+<tr><td>BHQ</td><td> – Broken Hill, New South Wales, Australia – Broken Hill</td></tr>
+<tr><td>BHS</td><td> – Bathurst, New South Wales, Australia – Raglan</td></tr>
+<tr><td>BHX</td><td> – Birmingham, England, United Kingdom – International</td></tr>
+<tr><td>BIA</td><td> – Bastia, Corsica, France – Poretta</td></tr>
+<tr><td>BIK</td><td> – Biak, Indonesia – Mokmer</td></tr>
+<tr><td>BIL</td><td> – Billings, MT, USA – Billings Logan Intnl Airport</td></tr>
+<tr><td>BIM</td><td> – Bimini, Bahamas – Bimini Island International</td></tr>
+<tr><td>BIO</td><td> – Bilbao, Spain – Sondica</td></tr>
+<tr><td>BIQ</td><td> – Biarritz, France – Parme</td></tr>
+<tr><td>BIS</td><td> – Bismarck, ND, USA – Bismarck Mannan Municipal</td></tr>
+<tr><td>BJI</td><td> – Bemidji, MN, USA – Bemidji Municipal Airport</td></tr>
+<tr><td>BJL</td><td> – Banjul, Gambia – Yundum International</td></tr>
+<tr><td>BJX</td><td> – Leon/Guanajuato, Guanajuato, Mexico – Del Bajio</td></tr>
+<tr><td>BKI</td><td> – Kota Kinabalu, Sabah, Malaysia – Kota Kinabalu</td></tr>
+<tr><td>BKK</td><td> – Bangkok, Thailand – Bangkok International Airport</td></tr>
+<tr><td>BKO</td><td> – Bamako, Mali – Senou</td></tr>
+<tr><td>BKW</td><td> – Beckley, WV, USA</td></tr>
+<tr><td>BKX</td><td> – Brookings, SD, USA – Brookings Municipal Airport</td></tr>
+<tr><td>BLA</td><td> – Barcelona, Venezuela – Gral Jose Antonio Anzoategui</td></tr>
+<tr><td>BLF</td><td> – Bluefield, WV, USA</td></tr>
+<tr><td>BLI</td><td> – Bellingham, WA, USA – Bellingham International</td></tr>
+<tr><td>BLK</td><td> – Blackpool, England, United Kingdom – Blackpool</td></tr>
+<tr><td>BLL</td><td> – Billund, Denmark – Billund</td></tr>
+<tr><td>BLQ</td><td> – Bologna, Italy – Guglielmo Marconi</td></tr>
+<tr><td>BLR</td><td> – Bangalore, India – Hindustan</td></tr>
+<tr><td>BLZ</td><td> – Blantyre, Malawi – Chileka</td></tr>
+<tr><td>BMA</td><td> – Stockholm, Sweden – Bromma Arpt</td></tr>
+<tr><td>BMG</td><td> – Bloomington, IN, USA – Monroe County Airport</td></tr>
+<tr><td>BMI</td><td> – Bloomington, IL, USA – Normal</td></tr>
+<tr><td>BNA</td><td> – Nashville, TN, USA – Nashville Metropolitan Airport</td></tr>
+<tr><td>BNE</td><td> – Brisbane, Queensland, Australia – Brisbane International Airport</td></tr>
+<tr><td>BNJ</td><td> – Bonn, Germany – Train Main Railroad Station</td></tr>
+<tr><td>BNN</td><td> – Bronnoysund, Norway – Bronnoy</td></tr>
+<tr><td>BNS</td><td> – Barinas, Venezuela – Barinas</td></tr>
+<tr><td>BOD</td><td> – Bordeaux, France – Merignac</td></tr>
+<tr><td>BOG</td><td> – Bogota, Colombia – Eldorado</td></tr>
+<tr><td>BOI</td><td> – Boise, ID, USA – Boise Municipal Arpt (Gowen Field)</td></tr>
+<tr><td>BOM</td><td> – Bombay, India – Bombay</td></tr>
+<tr><td>BON</td><td> – Bonaire, Netherlands Antilles – Flamingo Field</td></tr>
+<tr><td>BOO</td><td> – Bodo, Norway – Bodo</td></tr>
+<tr><td>BOS</td><td> – Boston, MA, USA – Logan International Airport</td></tr>
+<tr><td>BPS</td><td> – Porto Seguro, Bahia, Brazil – Porto Seguro</td></tr>
+<tr><td>BPT</td><td> – Beaumont, TX, USA – Jefferson County</td></tr>
+<tr><td>BQK</td><td> – Brunswick, GA, USA – Glynco Jetport</td></tr>
+<tr><td>BQN</td><td> – Aguadilla, PR, USA</td></tr>
+<tr><td>BRC</td><td> – San Carlos De Bariloche, Rio Negro, Argentina – International</td></tr>
+<tr><td>BRD</td><td> – Brainerd, MN, USA</td></tr>
+<tr><td>BRE</td><td> – Bremen, Germany – Bremen</td></tr>
+<tr><td>BRI</td><td> – Bari, Italy</td></tr>
+<tr><td>BRL</td><td> – Burlington, IA, USA – Burlington Municipal Airport</td></tr>
+<tr><td>BRM</td><td> – Barquisimeto, Venezuela – Barquisimeto</td></tr>
+<tr><td>BRN</td><td> – Berne, Switzerland – Belp</td></tr>
+<tr><td>BRO</td><td> – Brownsville, TX, USA – South Padre Island Intl</td></tr>
+<tr><td>BRQ</td><td> – Brno, Czech Republic – Turany</td></tr>
+<tr><td>BRR</td><td> – Barra / Hebrides Islands, Scotland, United Kingdom – North Bay</td></tr>
+<tr><td>BRS</td><td> – Bristol, England, United Kingdom – Bristol</td></tr>
+<tr><td>BRT</td><td> – Bathurst Island, Northern Territory, Australia</td></tr>
+<tr><td>BRU</td><td> – Brussels, Belgium – National</td></tr>
+<tr><td>BRW</td><td> – Barrow, AK, USA – Barrow</td></tr>
+<tr><td>BSB</td><td> – Brasilia, Distrito Federal, Brazil – International</td></tr>
+<tr><td>BSK</td><td> – Biskra, Algeria – Biskra</td></tr>
+<tr><td>BSL</td><td> – Basel, Switzerland – Basel</td></tr>
+<tr><td>BTM</td><td> – Butte, MT, USA</td></tr>
+<tr><td>BTS</td><td> – Bratislava, Slovakia – Ivanka</td></tr>
+<tr><td>BTU</td><td> – Bintulu, Sarawak, Malaysia – Bintulu</td></tr>
+<tr><td>BTV</td><td> – Burlington, VT, USA – Burlington International Airport</td></tr>
+<tr><td>BUD</td><td> – Budapest, Hungary – Ferihegy</td></tr>
+<tr><td>BUF</td><td> – Buffalo, NY, USA – Greater Buffalo Intl Airport</td></tr>
+<tr><td>BUQ</td><td> – Bulawayo, Zimbabwe – Bulawayo</td></tr>
+<tr><td>BUR</td><td> – Burbank, CA, USA – Burbank Glendale Pasadena Airport</td></tr>
+<tr><td>BUZ</td><td> – Bushehr, Iran – Bushehr</td></tr>
+<tr><td>BVB</td><td> – Boa Vista, Roraima, Brazil</td></tr>
+<tr><td>BVE</td><td> – Brive-La-Gaillarde, France – Laroche</td></tr>
+<tr><td>BVI</td><td> – Birdsville, Queensland, Australia – Birdsville</td></tr>
+<tr><td>BWA</td><td> – Bhairawa, Nepal – Bhairawa</td></tr>
+<tr><td>BWI</td><td> – Baltimore, MD, USA – Baltimore-Washington International</td></tr>
+<tr><td>BWN</td><td> – Bandar Seri Begawan, Brunei Darussalam – Brunei International</td></tr>
+<tr><td>BXN</td><td> – Bodrum, Turkey – Imsik Airport</td></tr>
+<tr><td>BXU</td><td> – Butuan, Philippines – Butuan</td></tr>
+<tr><td>BYU</td><td> – Bayreuth, Germany – Bindlacher Berg</td></tr>
+<tr><td>BZE</td><td> – Belize City, Belize – Belize International</td></tr>
+<tr><td>BZN</td><td> – Bozeman, MT, USA – Gallatin Field</td></tr>
+<tr><td>BZR</td><td> – Beziers, France – Beziers-Vias</td></tr>
+<tr><td>CAE</td><td> – Columbia, SC, USA – Columbia Sc Airport Metropolitan</td></tr>
+<tr><td>CAG</td><td> – Cagliari, Sardinia, Italy – Elmas</td></tr>
+<tr><td>CAI</td><td> – Cairo, Egypt – International</td></tr>
+<tr><td>CAJ</td><td> – Canaima, Venezuela</td></tr>
+<tr><td>CAK</td><td> – Akron/Canton, OH, USA – Akron-Canton Regional Airport</td></tr>
+<tr><td>CAN</td><td> – Guangzhou, China – Baiyun</td></tr>
+<tr><td>CAS</td><td> – Casablanca, Morocco – Anfa</td></tr>
+<tr><td>CAY</td><td> – Cayenne, French Guiana – Rochambeau</td></tr>
+<tr><td>CBB</td><td> – Cochabamba, Bolivia – San Jose De La Banda</td></tr>
+<tr><td>CBE</td><td> – Cumberland, MD, USA – Municipal</td></tr>
+<tr><td>CBG</td><td> – Cambridge, England, United Kingdom – Cambridge</td></tr>
+<tr><td>CBL</td><td> – Ciudad Bolivar, Venezuela</td></tr>
+<tr><td>CBR</td><td> – Canberra, Australian Capital Territory, Australia – Canberra</td></tr>
+<tr><td>CCF</td><td> – Carcassonne, France – Salvaza Airport</td></tr>
+<tr><td>CCJ</td><td> – Calicut, India</td></tr>
+<tr><td>CCP</td><td> – Concepcion, Chile – Carriel Sur</td></tr>
+<tr><td>CCS</td><td> – Caracas, Venezuela – Simon Bolivar International</td></tr>
+<tr><td>CCU</td><td> – Calcutta, India – Calcutta</td></tr>
+<tr><td>CDC</td><td> – Cedar City, UT, USA</td></tr>
+<tr><td>CDG</td><td> – Paris, France – Charles De Gaulle</td></tr>
+<tr><td>CDH</td><td> – Camden, AR, USA</td></tr>
+<tr><td>CDR</td><td> – Chadron, NE, USA</td></tr>
+<tr><td>CDV</td><td> – Cordova, AK, USA</td></tr>
+<tr><td>CEB</td><td> – Cebu, Philippines – International</td></tr>
+<tr><td>CEC</td><td> – Crescent City, CA, USA – Crescent City Municipal Airport</td></tr>
+<tr><td>CEI</td><td> – Chiang Rai, Thailand – Chiang Rai</td></tr>
+<tr><td>CEN</td><td> – Ciudad Obregon, Sonora, Mexico</td></tr>
+<tr><td>CER</td><td> – Cherbourg, France – Maupertus</td></tr>
+<tr><td>CEZ</td><td> – Cortez, CO, USA – Montezuma County</td></tr>
+<tr><td>CFR</td><td> – Caen, France – Carpiquet</td></tr>
+<tr><td>CFU</td><td> – Kerkyra, Greece – Kerkyra</td></tr>
+<tr><td>CGA</td><td> – Craig, AK, USA</td></tr>
+<tr><td>CGB</td><td> – Cuiaba, Mato Grosso, Brazil</td></tr>
+<tr><td>CGH</td><td> – Sao Paulo, Sao Paulo, Brazil – Congonhas</td></tr>
+<tr><td>CGI</td><td> – Cape Girardeau, MO, USA – Municipal Airport</td></tr>
+<tr><td>CGK</td><td> – Jakarta, Indonesia – Soekarno Hatta International</td></tr>
+<tr><td>CGN</td><td> – Cologne/Bonn, Germany – Koeln/Bonn</td></tr>
+<tr><td>CGO</td><td> – Zhengzhou, China</td></tr>
+<tr><td>CGP</td><td> – Chittagong, Bangladesh – Patenga</td></tr>
+<tr><td>CGQ</td><td> – Changchun, China</td></tr>
+<tr><td>CGR</td><td> – Campo Grande, Mato Grosso Do Sul, Brazil</td></tr>
+<tr><td>CGX</td><td> – Chicago, IL, USA – Meigs Field</td></tr>
+<tr><td>CGX</td><td> – Chicago, IL, USA – Midway / Ohare / Meigs</td></tr>
+<tr><td>CHA</td><td> – Chattanooga, TN, USA – Cha Lovell Field</td></tr>
+<tr><td>CHC</td><td> – Christchurch, New Zealand – International</td></tr>
+<tr><td>CHO</td><td> – Charlottesville, VA, USA – Charlottesville/Albemarle</td></tr>
+<tr><td>CHQ</td><td> – Chania, Crete Island, Greece – Souda</td></tr>
+<tr><td>CHS</td><td> – Charleston, SC, USA – Charleston International Airport</td></tr>
+<tr><td>CIA</td><td> – Rome, Italy – Ciampino</td></tr>
+<tr><td>CIC</td><td> – Chico, CA, USA – Chico Municipal Air Terminal</td></tr>
+<tr><td>CID</td><td> – Cedar Rapids, IA, USA – Municipal</td></tr>
+<tr><td>CIU</td><td> – Sault Ste Marie, MI, USA – Chippewa County Intl Airport</td></tr>
+<tr><td>CIX</td><td> – Chiclayo, Peru – Cornel Ruiz</td></tr>
+<tr><td>CJB</td><td> – Coimbatore, India – Peelamedu</td></tr>
+<tr><td>CJS</td><td> – Ciudad Juarez, Chihuahua, Mexico – International Abraham Gonzalez</td></tr>
+<tr><td>CJU</td><td> – Cheju, South Korea – Cheju</td></tr>
+<tr><td>CKB</td><td> – Clarksburg, WV, USA – Clarksburg-Benedum Airport</td></tr>
+<tr><td>CKS</td><td> – Carajas, Para, Brazil – International / Brasilia Brazil</td></tr>
+<tr><td>CKY</td><td> – Conakry, Guinea – Conakry</td></tr>
+<tr><td>CLD</td><td> – Carlsbad, CA, USA – Carlsbad/Palomar Airport</td></tr>
+<tr><td>CLE</td><td> – Cleveland, OH, USA – Hopkins International Airport</td></tr>
+<tr><td>CLJ</td><td> – Cluj, Romania – Cluj</td></tr>
+<tr><td>CLL</td><td> – College Station, TX, USA</td></tr>
+<tr><td>CLM</td><td> – Port Angeles, WA, USA – Wm Fairchild Intl Airport</td></tr>
+<tr><td>CLO</td><td> – Cali, Colombia – Alfonso Bonilla Aragon</td></tr>
+<tr><td>CLQ</td><td> – Colima, Colima, Mexico</td></tr>
+<tr><td>CLT</td><td> – Charlotte, NC, USA – Charlotte/Douglas Intl Airport</td></tr>
+<tr><td>CLY</td><td> – Calvi, Corsica, France – Ste Catherine</td></tr>
+<tr><td>CMB</td><td> – Colombo, Sri Lanka – Katunayake International</td></tr>
+<tr><td>CME</td><td> – Ciudad Del Carmen, Campeche, Mexico</td></tr>
+<tr><td>CMF</td><td> – Chambery, France – Chambery Aix-Les-Bains</td></tr>
+<tr><td>CMG</td><td> – Corumba, Mato Grosso Do Sul, Brazil – Corumba</td></tr>
+<tr><td>CMH</td><td> – Columbus, OH, USA – Port Columbus Intl Airport</td></tr>
+<tr><td>CMI</td><td> – Champaign, IL, USA – Univ Of Illinois-Willard Airport</td></tr>
+<tr><td>CMN</td><td> – Casablanca, Morocco – Mohamed V</td></tr>
+<tr><td>CMX</td><td> – Hancock, MI, USA – Houghton County / Memorial</td></tr>
+<tr><td>CND</td><td> – Constanta, Romania – Kogalniceanu</td></tr>
+<tr><td>CNF</td><td> – Belo Horizonte /Belo Horizon, Minas Gerais, Brazil – Aeropuerto Internacional Tancredo Neves</td></tr>
+<tr><td>CNM</td><td> – Carlsbad, NM, USA</td></tr>
+<tr><td>CNS</td><td> – Cairns, Queensland, Australia – Cairns</td></tr>
+<tr><td>CNX</td><td> – Chiang Mai, Thailand – International</td></tr>
+<tr><td>CNY</td><td> – Moab, UT, USA</td></tr>
+<tr><td>COK</td><td> – Cochin, India – Naval Air Station</td></tr>
+<tr><td>COO</td><td> – Cotonou, Benin – Cotonou</td></tr>
+<tr><td>COR</td><td> – Cordoba, Cordoba, Argentina – Pajas Blancas</td></tr>
+<tr><td>COS</td><td> – Colorado Springs, CO, USA – Colorado Springs Municipal</td></tr>
+<tr><td>COU</td><td> – Columbia, MO, USA – Columbia Regional</td></tr>
+<tr><td>CPC</td><td> – San Martin De Los Andes, Neuquen, Argentina</td></tr>
+<tr><td>CPH</td><td> – Copenhagen, Denmark – Copenhagen</td></tr>
+<tr><td>CPQ</td><td> – Campinas, Sao Paulo, Brazil – Campinas International</td></tr>
+<tr><td>CPR</td><td> – Casper, WY, USA – Natrona County Intl Airport</td></tr>
+<tr><td>CPT</td><td> – Cape Town, South Africa – D F Malan</td></tr>
+<tr><td>CRD</td><td> – Comodoro Rivadavia, Chubut, Argentina – Comodoro Rivadavia</td></tr>
+<tr><td>CRI</td><td> – Crooked Island, Bahamas</td></tr>
+<tr><td>CRP</td><td> – Corpus Christi, TX, USA – Corpus Christi International Airport</td></tr>
+<tr><td>CRU</td><td> – Carriacou Island, Grenada</td></tr>
+<tr><td>CRW</td><td> – Charleston, WV, USA – Yeager Airport</td></tr>
+<tr><td>CSG</td><td> – Columbus, GA, USA – Columbus Metropolitan / Fort Benning</td></tr>
+<tr><td>CSX</td><td> – Changsha, China</td></tr>
+<tr><td>CTA</td><td> – Catania, Sicily, Italy – Fontanarossa</td></tr>
+<tr><td>CTG</td><td> – Cartagena, Colombia – Rafael Nunez</td></tr>
+<tr><td>CTL</td><td> – Charleville, Queensland, Australia – Charleville</td></tr>
+<tr><td>CTS</td><td> – Sapporo, Japan – Chitose</td></tr>
+<tr><td>CTU</td><td> – Chengdu, China</td></tr>
+<tr><td>CUC</td><td> – Cucuta, Colombia – Camilo Daza</td></tr>
+<tr><td>CUE</td><td> – Cuenca, Ecuador – Mariscal La Mar</td></tr>
+<tr><td>CUL</td><td> – Culiacan, Sinaloa, Mexico</td></tr>
+<tr><td>CUM</td><td> – Cumana, Venezuela</td></tr>
+<tr><td>CUN</td><td> – Cancun, Mexico</td></tr>
+<tr><td>CUP</td><td> – Carupano, Venezuela – Carupano</td></tr>
+<tr><td>CUR</td><td> – Willemstad / Curacao Island, Netherlands Antilles – Areopuerto Hato</td></tr>
+<tr><td>CUU</td><td> – Chihuahua, Chihuahua, Mexico – Genvillalobos</td></tr>
+<tr><td>CUZ</td><td> – Cuzco, Peru – Tte Velazco Astete</td></tr>
+<tr><td>CVG</td><td> – Cincinnati, OH, USA – Greater Cincinnati Intl Airport</td></tr>
+<tr><td>CVN</td><td> – Clovis, NM, USA</td></tr>
+<tr><td>CWA</td><td> – Wausau, WI, USA – Central Wisconsin Airport</td></tr>
+<tr><td>CWB</td><td> – Curitiba, Parana, Brazil – Afonso Pena</td></tr>
+<tr><td>CWL</td><td> – Cardiff, Wales, United Kingdom – Cardiff-Wales</td></tr>
+<tr><td>CWT</td><td> – Cowra, New South Wales, Australia – Cowra</td></tr>
+<tr><td>CXH</td><td> – Vancouver, British Columbia, Canada – Vancouver Harbour Airport</td></tr>
+<tr><td>CYB</td><td> – Cayman Brac Island, Cayman Islands</td></tr>
+<tr><td>CYR</td><td> – Colonia, Uruguay</td></tr>
+<tr><td>CYS</td><td> – Cheyenne, WY, USA – Cheyenne Municipal Airport</td></tr>
+<tr><td>CZM</td><td> – Cozumel, Quintana Roo, Mexico – Aeropuerto Intl De Cozumel</td></tr>
+<tr><td>DAB</td><td> – Daytona Beach, FL, USA – Daytona Beach International Airport</td></tr>
+<tr><td>DAC</td><td> – Dhaka, Bangladesh – Zia International Airport</td></tr>
+<tr><td>DAD</td><td> – Da Nang, Vietnam – Da Nang</td></tr>
+<tr><td>DAL</td><td> – Dallas, TX, USA – Love Field</td></tr>
+<tr><td>DAM</td><td> – Damascus, Syria – Damascus Intl</td></tr>
+<tr><td>DAN</td><td> – Danville, VA, USA</td></tr>
+<tr><td>DAR</td><td> – Dar Es Salaam, Tanzania – International</td></tr>
+<tr><td>DAY</td><td> – Dayton, OH, USA – James M Cox Dayton International</td></tr>
+<tr><td>DBO</td><td> – Dubbo, New South Wales, Australia – Dubbo</td></tr>
+<tr><td>DBQ</td><td> – Dubuque, IA, USA – Dubuque Municipal Airport
+<tr><td>DCA</td><td> – Washington, DC, USA – Washington National Airport</td></tr>
+<tr><td>DCF</td><td> – Dominica, Dominica – Cane Field</td></tr>
+<tr><td>DDC</td><td> – Dodge City, KS, USA – Dodge City Municipal</td></tr>
+<tr><td>DEC</td><td> – Decatur, IL, USA – Decatur Municiple Airport</td></tr>
+<tr><td>DEL</td><td> – Delhi, India – Delhi International Airport</td></tr>
+<tr><td>DEM</td><td> – Dembidollo, Ethiopia – Dembidollo</td></tr>
+<tr><td>DEN</td><td> – Denver, CO, USA – Denver International</td></tr>
+<tr><td>DFW</td><td> – Dallas/Ft Worth, TX, USA – Dallas Ft Worth International</td></tr>
+<tr><td>DGA</td><td> – Dangriga, Belize – Dangriga</td></tr>
+<tr><td>DGO</td><td> – Durango, Durango, Mexico – Gen Guadalupe Victoria</td></tr>
+<tr><td>DHA</td><td> – Dhahran, Saudi Arabia – Dhahran Intl</td></tr>
+<tr><td>DHN</td><td> – Dothan, AL, USA – Municipal</td></tr>
+<tr><td>DIB</td><td> – Dibrugarh, India – Chabua</td></tr>
+<tr><td>DIJ</td><td> – Dijon, France – Longvic</td></tr>
+<tr><td>DIL</td><td> – Dili, Indonesia – Comoro</td></tr>
+<tr><td>DIY</td><td> – Diyarbakir, Turkey – Diyarbakia</td></tr>
+<tr><td>DKR</td><td> – Dakar, Senegal – Yoff</td></tr>
+<tr><td>DLA</td><td> – Douala, Cameroon – Douala</td></tr>
+<tr><td>DLC</td><td> – Dalian, China</td></tr>
+<tr><td>DLH</td><td> – Duluth, MN, USA – Duluth International Airport</td></tr>
+<tr><td>DLM</td><td> – Dalaman, Turkey – Dalaman</td></tr>
+<tr><td>DME</td><td> – Moscow, Russia – Domodedovo</td></tr>
+<tr><td>DND</td><td> – Dundee, Scotland, United Kingdom – Dundee</td></tr>
+<tr><td>DNM</td><td> – Denham, Western Australia, Australia</td></tr>
+<tr><td>DNV</td><td> – Danville, IL, USA – Vermilion County Airport</td></tr>
+<tr><td>DOH</td><td> – Doha, Qatar – Doha</td></tr>
+<tr><td>DOK</td><td> – Donetsk, Ukraine – Donetsk</td></tr>
+<tr><td>DOL</td><td> – Deauville, France – Saint Gatien</td></tr>
+<tr><td>DOM</td><td> – Dominica, Dominica – Melville Hal-Dom</td></tr>
+<tr><td>DPL</td><td> – Dipolog, Philippines – Dipolog</td></tr>
+<tr><td>DPO</td><td> – Devonport, Tasmania, Australia – Devonport</td></tr>
+<tr><td>DPS</td><td> – Denpasar Bali, Indonesia – Ngurah Rai</td></tr>
+<tr><td>DRO</td><td> – Durango, CO, USA – Durango La Plata County Airport</td></tr>
+<tr><td>DRS</td><td> – Dresden, Germany – Dresden</td></tr>
+<tr><td>DRT</td><td> – Del Rio, TX, USA</td></tr>
+<tr><td>DRW</td><td> – Darwin, Northern Territory, Australia</td></tr>
+<tr><td>DSI</td><td> – Destin, FL, USA</td></tr>
+<tr><td>DSM</td><td> – Des Moines, IA, USA</td></tr>
+<tr><td>DTM</td><td> – Dortmund, Germany – Wickede</td></tr>
+<tr><td>DTW</td><td> – Detroit, MI, USA – Detroit Metropolitan Airport</td></tr>
+<tr><td>DUB</td><td> – Dublin, Ireland – Dublin</td></tr>
+<tr><td>DUD</td><td> – Dunedin, New Zealand – Momona</td></tr>
+<tr><td>DUJ</td><td> – Du Bois, PA, USA – Jefferson County</td></tr>
+<tr><td>DUQ</td><td> – Duncan / Quam, British Columbia, Canada – Quamichan Lake</td></tr>
+<tr><td>DUR</td><td> – Durban, South Africa – Louis Botha</td></tr>
+<tr><td>DUS</td><td> – Dusseldorf, Germany – Dusseldorf</td></tr>
+<tr><td>DUT</td><td> – Dutch Harbor, AK, USA – Dutch Harbor</td></tr>
+<tr><td>DVO</td><td> – Davao, Philippines – Mati</td></tr>
+<tr><td>DXB</td><td> – Dubai, United Arab Emirates – Dubai International Airport</td></tr>
+<tr><td>EAP</td><td> – , Switzerland</td></tr>
+<tr><td>EAR</td><td> – Kearney, NE, USA – Kearney Municipal Airport</td></tr>
+<tr><td>EAS</td><td> – San Sebastian, Spain – Fuenterrabia</td></tr>
+<tr><td>EAT</td><td> – Wenatchee, WA, USA – Pangborn Memorial Field</td></tr>
+<tr><td>EAU</td><td> – Eau Claire, WI, USA – Eau Claire Municipal</td></tr>
+<tr><td>EBA</td><td> – Elba Island, Italy – Marina Di Campo</td></tr>
+<tr><td>EBB</td><td> – Entebbe/Kampala, Uganda – Entebbe</td></tr>
+<tr><td>EBJ</td><td> – Esbjerg, Denmark – Esbjerg</td></tr>
+<tr><td>EDI</td><td> – Edinburgh, Scotland, United Kingdom – Turnhouse</td></tr>
+<tr><td>EDR</td><td> – Edward River, Queensland, Australia – Edward River</td></tr>
+<tr><td>EEN</td><td> – Keene / Brattleboro, NH, USA – Dillant Hopkins</td></tr>
+<tr><td>EFD</td><td> – Houston, TX, USA – Ellington Field</td></tr>
+<tr><td>EGE</td><td> – Vail/Eagle, CO, USA – Eagle County Regional</td></tr>
+<tr><td>EIN</td><td> – Eindhoven, Netherlands – Welschap</td></tr>
+<tr><td>EIS</td><td> – Tortola/Beef Island, Virgin Islands (British) – Beef Island</td></tr>
+<tr><td>EJA</td><td> – Barrancabermeja, Colombia – Variguies</td></tr>
+<tr><td>EKO</td><td> – Elko, NV, USA – J C Harris Field</td></tr>
+<tr><td>ELD</td><td> – El Dorado, AR, USA</td></tr>
+<tr><td>ELH</td><td> – North Eleuthera, Bahamas</td></tr>
+<tr><td>ELM</td><td> – Elmira / Corning, NY, USA – Elmira Corning Regional Arpt</td></tr>
+<tr><td>ELP</td><td> – El Paso, TX, USA – El Paso International Airport</td></tr>
+<tr><td>ELS</td><td> – East London, South Africa – Ben Shoeman</td></tr>
+<tr><td>ELY</td><td> – Ely, NV, USA – Yelland Field</td></tr>
+<tr><td>EMA</td><td> – East Midlands, England, United Kigndom – East Midlands</td></tr>
+<tr><td>EMD</td><td> – Emerald, Queensland, Australia – Emerald</td></tr>
+<tr><td>ENA</td><td> – Kenai, AK, USA – Kenai Municipal Airport</td></tr>
+<tr><td>ENS</td><td> – Enschede, Netherlands – Twente</td></tr>
+<tr><td>EOH</td><td> – Medellin, Colombia – Enrique Olaya Herrara</td></tr>
+<tr><td>EPR</td><td> – Esperance, Western Australia, Australia – Esperance</td></tr>
+<tr><td>ERF</td><td> – Erfurt, Germany – Erfurt</td></tr>
+<tr><td>ERI</td><td> – Erie, PA, USA – Erie International</td></tr>
+<tr><td>ERS</td><td> – Windhoek, Namibia – Eros</td></tr>
+<tr><td>ERZ</td><td> – Erzurum, Turkey – Erzurum</td></tr>
+<tr><td>ESB</td><td> – Ankara, Turkey – Esenboga</td></tr>
+<tr><td>ESC</td><td> – Escanaba, MI, USA – Delta County Airport</td></tr>
+<tr><td>ESD</td><td> – Eastsound, WA, USA – Eastsound/Orcas Island Airport</td></tr>
+<tr><td>ESR</td><td> – El Salvador, Chile</td></tr>
+<tr><td>ETH</td><td> – Elat, Israel – Elat</td></tr>
+<tr><td>ETZ</td><td> – Metz/Nancy, France – Frescaty</td></tr>
+<tr><td>EUG</td><td> – Eugene, OR, USA – Eugene Airport</td></tr>
+<tr><td>EUN</td><td> – Laayoune, Morocco – Laayoune-Hassan I Morocco</td></tr>
+<tr><td>EVE</td><td> – Evenes, Norway – Evenes</td></tr>
+<tr><td>EVN</td><td> – Yerevan, Armenia</td></tr>
+<tr><td>EVV</td><td> – Evansville, IN, USA – Evansville Regional Airport</td></tr>
+<tr><td>EWB</td><td> – New Bedford/Fall River, MA, USA – New Bedford Municipal</td></tr>
+<tr><td>EWN</td><td> – New Bern, NC, USA – Simmons-Nott Airport</td></tr>
+<tr><td>EWR</td><td> – Newark, NJ, USA – Newark International Airport</td></tr>
+<tr><td>EXT</td><td> – Exeter, England, United Kingdom – Exeter</td></tr>
+<tr><td>EYW</td><td> – Key West, FL, USA</td></tr>
+<tr><td>EZE</td><td> – Buenos Aires, Buenos Aires, Argentina – Eze – Ezeiza International Airport</td></tr>
+<tr><td>FAE</td><td> – Faroe Islands, Faroe Islands – Faeroe Islands</td></tr>
+<tr><td>FAI</td><td> – Fairbanks, AK, USA – Fairbanks International Airport</td></tr>
+<tr><td>FAO</td><td> – Faro, Portugal – Faro</td></tr>
+<tr><td>FAR</td><td> – Fargo, ND, USA – Hector Airport</td></tr>
+<tr><td>FAT</td><td> – Fresno, CA, USA – Fresno Air Terminal</td></tr>
+<tr><td>FAY</td><td> – Fayetteville, NC, USA – Fayetteville Municipal</td></tr>
+<tr><td>FBU</td><td> – Oslo, Norway – Fornebu</td></tr>
+<tr><td>FCA</td><td> – Kalispell, MT, USA – Glacier Park International</td></tr>
+<tr><td>FCO</td><td> – Rome, Italy – Leonardo Da Vinci/Fiumicino</td></tr>
+<tr><td>FDE</td><td> – Forde, Norway – Forde</td></tr>
+<tr><td>FDF</td><td> – Fort De France, Martinique – Fort De France</td></tr>
+<tr><td>FDH</td><td> – Friedrichshafen, Germany – Friedrichshafen – Lowenthal</td></tr>
+<tr><td>FEZ</td><td> – Fez, Morocco – Fez</td></tr>
+<tr><td>FFM</td><td> – Fergus Falls, MN, USA – Fergus Falls Municipal Airport</td></tr>
+<tr><td>FHU</td><td> – Fort Huachuca/Sierra Vista, AZ, USA</td></tr>
+<tr><td>FIH</td><td> – Kinshasa, Zaire – Kinshasa</td></tr>
+<tr><td>FKL</td><td> – Franklin, PA, USA – Chess Lamberton</td></tr>
+<tr><td>FLG</td><td> – Flagstaff, AZ, USA – Flagstaff</td></tr>
+<tr><td>FLL</td><td> – Ft Lauderdale, FL, USA – Ft Lauderdale/Hollywood Intl Apt</td></tr>
+<tr><td>FLN</td><td> – Florianopolis, Santa Catarina, Brazil – Florianopolis</td></tr>
+<tr><td>FLO</td><td> – Florence, SC, USA – Gilbert Field</td></tr>
+<tr><td>FLR</td><td> – Florence, Italy</td></tr>
+<tr><td>FMA</td><td> – Formosa, Formosa, Argentina – Formosa</td></tr>
+<tr><td>FMN</td><td> – Farmington, NM, USA – Four Corners Regional Airport</td></tr>
+<tr><td>FMO</td><td> – Muenster, Germany – Muenster</td></tr>
+<tr><td>FNC</td><td> – Funchal, Madeira Islands, Portugal – Funchal</td></tr>
+<tr><td>FNL</td><td> – Fort Collins/Loveland, CO, USA – Fort Collins / Loveland Airport</td></tr>
+<tr><td>FNT</td><td> – Flint, MI, USA – Bishop Int’l Airport</td></tr>
+<tr><td>FOD</td><td> – Fort Dodge, IA, USA – Fort Dodge Regional Airport</td></tr>
+<tr><td>FOE</td><td> – Topeka, KS, USA – Forbes Field</td></tr>
+<tr><td>FOR</td><td> – Fortaleza, Ceara, Brazil – Fortaleza</td></tr>
+<tr><td>FPO</td><td> – Freeport, Bahamas – Freeport Intl Airport</td></tr>
+<tr><td>FRA</td><td> – Frankfurt, Germany – Frankfurt International</td></tr>
+<tr><td>FRD</td><td> – Friday Harbor, WA, USA – Friday Harbor Airport</td></tr>
+<tr><td>FRM</td><td> – Fairmont, MN, USA – Fairmont Municipal</td></tr>
+<tr><td>FRO</td><td> – Floro, Norway – Floro</td></tr>
+<tr><td>FRS</td><td> – Flores, Guatemala – Flores</td></tr>
+<tr><td>FRU</td><td> – Bishkek, Kyrgyzstan – Bishkek Airport</td></tr>
+<tr><td>FSD</td><td> – Sioux Falls, SD, USA – Joe Foss Field</td></tr>
+<tr><td>FSM</td><td> – Fort Smith, AR, USA – Fort Smith Municipal</td></tr>
+<tr><td>FSP</td><td> – St Pierre, St. Pierre And Miquelon</td></tr>
+<tr><td>FUE</td><td> – Fuerteventura / Puerto Del Rosario, Canary Islands/Fuerteventura Island, Spain – Fuerteventura</td></tr>
+<tr><td>FUK</td><td> – Fukuoka, Japan – Itazuke</td></tr>
+<tr><td>FWA</td><td> – Fort Wayne, IN, USA – Baer Field</td></tr>
+<tr><td>FYV</td><td> – Fayetteville, AR, USA – Municipal</td></tr>
+<tr><td>GAJ</td><td> – Yamagata, Japan – Junmachi</td></tr>
+<tr><td>GAL</td><td> – Galena, AK, USA</td></tr>
+<tr><td>GAU</td><td> – Gauhati, India – Borjhar</td></tr>
+<tr><td>GBE</td><td> – Gaborone, Botswana – Gaborone</td></tr>
+<tr><td>GBG</td><td> – Galesburg, IL, USA – Galesburg Municiple Airport</td></tr>
+<tr><td>GCC</td><td> – Gillette, WY, USA – Campbell County Airport</td></tr>
+<tr><td>GCI</td><td> – Guernsey, Channel Islands, United Kingdom – Guernsey</td></tr>
+<tr><td>GCK</td><td> – Garden City, KS, USA – Garden City Municipal Airport</td></tr>
+<tr><td>GCM</td><td> – Grand Cayman Island, Cayman Islands – Owen Roberts Intl Airport</td></tr>
+<tr><td>GCN</td><td> – Grand Canyon, AZ, USA</td></tr>
+<tr><td>GDL</td><td> – Guadalajara, Jalisco, Mexico – Miguel Hidalgo Intl</td></tr>
+<tr><td>GDN</td><td> – Gdansk, Poland – Rebiechowo</td></tr>
+<tr><td>GDT</td><td> – Grand Turk Is, Turks And Caicos Islands</td></tr>
+<tr><td>GDV</td><td> – Glendive, MT, USA</td></tr>
+<tr><td>GDX</td><td> – Magadan, Russia – Magadan</td></tr>
+<tr><td>GEG</td><td> – Spokane, WA, USA – International/Geiger Field</td></tr>
+<tr><td>GEN</td><td> – Oslo, Norway – Garderm O E N</td></tr>
+<tr><td>GEO</td><td> – Georgetown, Guyana – Timehri</td></tr>
+<tr><td>GET</td><td> – Geraldton, Western Australia, Australia – Geraldton</td></tr>
+<tr><td>GFK</td><td> – Grand Forks, ND, USA – Grand Forks International Airport</td></tr>
+<tr><td>GGG</td><td> – Longview/Gladewater/Kilgore, TX, USA – Gregg County</td></tr>
+<tr><td>GGT</td><td> – George Town, Bahamas – Exuma International</td></tr>
+<tr><td>GGW</td><td> – Glasgow, MT, USA</td></tr>
+<tr><td>GHB</td><td> – Governors Harbour, Bahamas</td></tr>
+<tr><td>GIB</td><td> – Gibraltar, Gibraltar – Gibraltar</td></tr>
+<tr><td>GIG</td><td> – Rio De Janeiro, Rio De Janeiro, Brazil – International Airport</td></tr>
+<tr><td>GJT</td><td> – Grand Junction, CO, USA – Walker Field</td></tr>
+<tr><td>GKA</td><td> – Goroka, Papua New Guinea – Goroka</td></tr>
+<tr><td>GLA</td><td> – Glasgow, Scotland, United Kingdom – Glasgow Scotland</td></tr>
+<tr><td>GLD</td><td> – Goodland, KS, USA – Renner Field</td></tr>
+<tr><td>GLF</td><td> – Golfito, Costa Rica – Golfito</td></tr>
+<tr><td>GLS</td><td> – Galveston, TX, USA – Scholes Field</td></tr>
+<tr><td>GLV</td><td> – Golovin, AK, USA</td></tr>
+<tr><td>GNB</td><td> – Grenoble, France – St Geoirs</td></tr>
+<tr><td>GND</td><td> – St Georges/Grenada, Grenada – Pt Saline</td></tr>
+<tr><td>GNV</td><td> – Gainesville, FL, USA – Jr Alison Municipal</td></tr>
+<tr><td>GOA</td><td> – Genoa, Italy – Christoforo Colombo</td></tr>
+<tr><td>GOH</td><td> – Nuuk, Greenland</td></tr>
+<tr><td>GOI</td><td> – Goa, India – Dabolim</td></tr>
+<tr><td>GOJ</td><td> – Nizhniy Novgorod, Russia – Nizhniy</td></tr>
+<tr><td>GON</td><td> – Groton / New London, CT, USA – Groton-New London</td></tr>
+<tr><td>GOT</td><td> – Gothenburg, Sweden – Landvetter</td></tr>
+<tr><td>GOV</td><td> – Gove, Northern Territory, Australia – Nhulunbuy</td></tr>
+<tr><td>GPS</td><td> – Galapagos Islands, Ecuador – Baltra</td></tr>
+<tr><td>GPT</td><td> – Gulfport, MS, USA – Gulfport/Biloxi</td></tr>
+<tr><td>GRB</td><td> – Green Bay, WI, USA – Austin/Straybel Field</td></tr>
+<tr><td>GRI</td><td> – Grand Island, NE, USA – Central Nebraska Regional Airport</td></tr>
+<tr><td>GRJ</td><td> – George, South Africa – George</td></tr>
+<tr><td>GRO</td><td> – Gerona, Spain – Costa Brava</td></tr>
+<tr><td>GRQ</td><td> – Groningen, Netherlands – Eelde</td></tr>
+<tr><td>GRR</td><td> – Grand Rapids, MI, USA – Kent County International Airport</td></tr>
+<tr><td>GRU</td><td> – Sao Paulo, Sao Paulo, Brazil – Guarulhos</td></tr>
+<tr><td>GRU</td><td> – Sao Paulo, Sao Paulo, Brazil – Guarulhos International</td></tr>
+<tr><td>GRX</td><td> – Granada, Spain – Granada</td></tr>
+<tr><td>GRZ</td><td> – Graz, Austria – Thalerhof</td></tr>
+<tr><td>GSO</td><td> – Greensboro / High Point, NC, USA – Piedmont Triad Intl Airport</td></tr>
+<tr><td>GTF</td><td> – Great Falls, MT, USA – Great Falls International</td></tr>
+<tr><td>GTO</td><td> – Gorontalo, Indonesia – Tolotio</td></tr>
+<tr><td>GTR</td><td> – Columbus, MS, USA – Golden</td></tr>
+<tr><td>GUA</td><td> – Guatemala City, Guatemala – La Aurora Intl Airport</td></tr>
+<tr><td>GUB</td><td> – Guerrero Negro, Baja California Sur, Mexico – Guerrero Negro Airport</td></tr>
+<tr><td>GUC</td><td> – Gunnison, CO, USA – Gunnison County Airport</td></tr>
+<tr><td>GUM</td><td> – Guam, Guam – Ab Wonpat Intl Airport</td></tr>
+<tr><td>GUP</td><td> – Gallup, NM, USA – Gallup Municipal</td></tr>
+<tr><td>GUR</td><td> – Alotau, Papua New Guinea – Gurney</td></tr>
+<tr><td>GVA</td><td> – Geneva, Switzerland – Geneva</td></tr>
+<tr><td>GWD</td><td> – Gwadar, Pakistan</td></tr>
+<tr><td>GWT</td><td> – Westerland, Germany – Westerland</td></tr>
+<tr><td>GWY</td><td> – Galway, Ireland – Carnmore</td></tr>
+<tr><td>GXQ</td><td> – Coyhaique, Chile – Teniente Vidal</td></tr>
+<tr><td>GYE</td><td> – Guayaquil, Ecuador – Simon Bolivar</td></tr>
+<tr><td>GYM</td><td> – Guaymas, Sonora, Mexico</td></tr>
+<tr><td>GYY</td><td> – Gary, IN, USA</td></tr>
+<tr><td>HAD</td><td> – Halmstad, Sweden – Halmstad</td></tr>
+<tr><td>HAG</td><td> – The Hague, Netherlands</td></tr>
+<tr><td>HAH</td><td> – Moroni (Hahaya), Comoros</td></tr>
+<tr><td>HAJ</td><td> – Hanover, Germany – Langenhagen</td></tr>
+<tr><td>HAK</td><td> – Haikou, China – Haikou</td></tr>
+<tr><td>HAM</td><td> – Hamburg, Germany – Fuhlsbuttel</td></tr>
+<tr><td>HAN</td><td> – Hanoi, Vietnam – Noibai Airport</td></tr>
+<tr><td>HAU</td><td> – Haugesund, Norway – Karmoy</td></tr>
+<tr><td>HAV</td><td> – Havana, Cuba – Jose Marti</td></tr>
+<tr><td>HBA</td><td> – Hobart, Tasmania, Australia – Hobart</td></tr>
+<tr><td>HDB</td><td> – Heidelberg, Germany</td></tr>
+<tr><td>HDN</td><td> – Hayden, CO, USA – Yampa Valley Regional Airport</td></tr>
+<tr><td>HDY</td><td> – Hat Yai, Thailand</td></tr>
+<tr><td>HEL</td><td> – Helsinki, Finland – Helsinki</td></tr>
+<tr><td>HER</td><td> – Heraklion, Crete Island, Greece – Heraklion</td></tr>
+<tr><td>HET</td><td> – Hohhot, China</td></tr>
+<tr><td>HFT</td><td> – Hammerfest, Norway</td></tr>
+<tr><td>HGH</td><td> – Hangzhou, China</td></tr>
+<tr><td>HGN</td><td> – Mae Hong Son, Thailand – Mae Hong Son</td></tr>
+<tr><td>HGR</td><td> – Hagerstown, MD, USA – Washington County Regional Airport</td></tr>
+<tr><td>HHH</td><td> – Hilton Head, SC, USA – Municipal</td></tr>
+<tr><td>HIB</td><td> – Hibbing / Chisholm, MN, USA – Hibbing-Chisholm</td></tr>
+<tr><td>HIJ</td><td> – Hiroshima, Japan – Hiroshima</td></tr>
+<tr><td>HIR</td><td> – Honiara/Guadalcanal, Solomon Islands – Henderson International</td></tr>
+<tr><td>HIS</td><td> – Hayman Island, Queensland, Australia – Hayman Island Airport</td></tr>
+<tr><td>HKD</td><td> – Hakodate, Japan – Hakodate</td></tr>
+<tr><td>HKG</td><td> – Hong Kong, Hong Kong</td></tr>
+<tr><td>HKK</td><td> – Hokitika, New Zealand – Hokitika</td></tr>
+<tr><td>HKN</td><td> – Hoskins, Papua New Guinea – Hoskins</td></tr>
+<tr><td>HKT</td><td> – Phuket, Thailand – Phuket</td></tr>
+<tr><td>HKY</td><td> – Hickory, NC, USA</td></tr>
+<tr><td>HLN</td><td> – Helena, MT, USA</td></tr>
+<tr><td>HLP</td><td> – Jakarta, Indonesia – Halim Perdana Kusama</td></tr>
+<tr><td>HLZ</td><td> – Hamilton, New Zealand – Hamilton</td></tr>
+<tr><td>HMA</td><td> – Malmo, Sweden – Malmo Harbour</td></tr>
+<tr><td>HMO</td><td> – Hermosillo, Sonora, Mexico – General Ignacio Pesqueira Garcia</td></tr>
+<tr><td>HNA</td><td> – Morioka, Japan – Hanamaki</td></tr>
+<tr><td>HNH</td><td> – Hoonah, AK, USA</td></tr>
+<tr><td>HNL</td><td> – Honolulu, HI, USA – Honolulu International</td></tr>
+<tr><td>HNS</td><td> – Haines, AK, USA</td></tr>
+<tr><td>HOB</td><td> – Hobbs, NM, USA – Lea County</td></tr>
+<tr><td>HOM</td><td> – Homer, AK, USA – Homer Airport</td></tr>
+<tr><td>HON</td><td> – Huron, SD, USA – Huron Regional Airport</td></tr>
+<tr><td>HOT</td><td> – Hot Springs, AR, USA – Memorial Field</td></tr>
+<tr><td>HOU</td><td> – Houston, TX, USA – Houston Hobby Airport</td></tr>
+<tr><td>HOU</td><td> – Houston, TX, USA – Houston Hobby Airport</td></tr>
+<tr><td>HPB</td><td> – Hooper Bay, AK, USA</td></tr>
+<tr><td>HPN</td><td> – Westchester County, NY, USA – Westchester County Airport</td></tr>
+<tr><td>HPV</td><td> – Kauai Island, HI, USA – Princeville</td></tr>
+<tr><td>HRB</td><td> – Harbin, China</td></tr>
+<tr><td>HRE</td><td> – Harare, Zimbabwe – Harare</td></tr>
+<tr><td>HRG</td><td> – Hurghada, Egypt</td></tr>
+<tr><td>HRK</td><td> – Kharkov, Ukraine – Kharkov</td></tr>
+<tr><td>HRL</td><td> – Harlingen, TX, USA</td></tr>
+<tr><td>HRO</td><td> – Harrison, AR, USA – Boone County</td></tr>
+<tr><td>HSI</td><td> – Hastings, NE, USA</td></tr>
+<tr><td>HSV</td><td> – Huntsville/Decatur, AL, USA – Huntsville-Madison County Jetplex</td></tr>
+<tr><td>HTI</td><td> – Hamilton Island, Queensland, Australia</td></tr>
+<tr><td>HTS</td><td> – Huntington / Ashland, WV, USA – Tri-State</td></tr>
+<tr><td>HUF</td><td> – Terre Haute, IN, USA – Hulman Field</td></tr>
+<tr><td>HUI</td><td> – Hue, Vietnam</td></tr>
+<tr><td>HUM</td><td> – Houma, LA, USA – Terrebonne</td></tr>
+<tr><td>HUN</td><td> – Hualien, Taiwan – Hualien</td></tr>
+<tr><td>HUX</td><td> – Huatulco, Oaxaca, Mexico</td></tr>
+<tr><td>HUY</td><td> – Humberside, England, United Kingdom – Humberside</td></tr>
+<tr><td>HVB</td><td> – Hervey Bay, Queensland, Australia</td></tr>
+<tr><td>HVN</td><td> – New Haven, CT, USA – Tweed New Haven</td></tr>
+<tr><td>HVR</td><td> – Havre, MT, USA – City County</td></tr>
+<tr><td>HWN</td><td> – Hwange National Park, Zimbabwe – Hwange National Park</td></tr>
+<tr><td>HYA</td><td> – Hyannis, MA, USA – Barnstable County</td></tr>
+<tr><td>HYD</td><td> – Hyderabad, India – Begumpet</td></tr>
+<tr><td>HYG</td><td> – Hydaburg, AK, USA</td></tr>
+<tr><td>HYS</td><td> – Hays, KS, USA – Hays Municipal Airport</td></tr>
+<tr><td>IAD</td><td> – Washington, DC, USA – Dulles</td></tr>
+<tr><td>IAD</td><td> – Washington, DC, USA – Washington-Dulles International</td></tr>
+<tr><td>IAH</td><td> – Houston, TX, USA</td></tr>
+<tr><td>IAH</td><td> – Houston, TX, USA – Houston Intercontinental</td></tr>
+<tr><td>IAS</td><td> – Iasi, Romania – Iasi</td></tr>
+<tr><td>IBZ</td><td> – Ibiza, Spain – Ibiza</td></tr>
+<tr><td>ICT</td><td> – Wichita, KS, USA – Mid-Continent Airport</td></tr>
+<tr><td>IDA</td><td> – Idaho Falls, ID, USA</td></tr>
+<tr><td>IEV</td><td> – Kiev, Ukraine – Zhulhany</td></tr>
+<tr><td>IFP</td><td> – Bullhead City, AZ, USA – Bullhead</td></tr>
+<tr><td>IGA</td><td> – Inagua, Bahamas</td></tr>
+<tr><td>IGM</td><td> – Kingman, AZ, USA – Mohave County</td></tr>
+<tr><td>IGR</td><td> – Iguazu, Misiones, Argentina – Iguazu International</td></tr>
+<tr><td>IGU</td><td> – Iguassu Falls, Parana, Brazil</td></tr>
+<tr><td>IJK</td><td> – Izhevsk, Russia</td></tr>
+<tr><td>IKT</td><td> – Irkutsk, Russia – Irkutsk</td></tr>
+<tr><td>ILE</td><td> – Killeen, TX, USA</td></tr>
+<tr><td>ILF</td><td> – Ilford, Manitoba,Canada </td></tr>
+<tr><td>ILI</td><td> – Iliamna, AK, USA</td></tr>
+<tr><td>ILM</td><td> – Wilmington, NC, USA – New Hanover County Airport</td></tr>
+<tr><td>ILO</td><td> – Iloilo, Philippines – Mandurriao</td></tr>
+<tr><td>ILQ</td><td> – Ilo, Moquegua, Peru – Ilo Airport</td></tr>
+<tr><td>ILY</td><td> – Islay, Scotland, United Kingdom – Glenegedale</td></tr>
+<tr><td>IMF</td><td> – Imphal, India – Municipal</td></tr>
+<tr><td>IMP</td><td> – Imperatriz, Maranhao, Brazil</td></tr>
+<tr><td>IMT</td><td> – Iron Mountain, MI, USA – Ford Airport</td></tr>
+<tr><td>IND</td><td> – Indianapolis, IN, USA – Indianapolis International Airport</td></tr>
+<tr><td>INL</td><td> – International Falls, MN, USA – Falls International</td></tr>
+<tr><td>INN</td><td> – Innsbruck, Austria – Kranebitten</td></tr>
+<tr><td>INT</td><td> – Winston-Salem, NC, USA – Smith Reynolds</td></tr>
+<tr><td>INU</td><td> – Nauru, Nauru</td></tr>
+<tr><td>INV</td><td> – Inverness, Scotland, United Kingdom – Inverness</td></tr>
+<tr><td>IOA</td><td> – Ioannina, Greece – Ioannina</td></tr>
+<tr><td>IOM</td><td> – Isle Of Man, Isle Of Man, United Kingdom – Ronaldsway</td></tr>
+<tr><td>IOS</td><td> – Ilheus, Bahia, Brazil – Eduardo Gomes</td></tr>
+<tr><td>IPC</td><td> – Easter Island, Chile – Mataveri</td></tr>
+<tr><td>IPH</td><td> – Ipoh, Malaysia – Ipoh</td></tr>
+<tr><td>IPI</td><td> – Ipiales, Colombia – San Luis</td></tr>
+<tr><td>IPT</td><td> – Williamsport, PA, USA – Williamsport Lycoming Municipal</td></tr>
+<tr><td>IQQ</td><td> – Iquique, Chile – Chucumata</td></tr>
+<tr><td>IQT</td><td> – Iquitos, Peru – Cf Secada</td></tr>
+<tr><td>ISB</td><td> – Islamabad, Pakistan – International</td></tr>
+<tr><td>ISC</td><td> – Isles Of Scilly, Isles Of Scilly, United Kingdom – Tresco</td></tr>
+<tr><td>ISN</td><td> – Williston, ND, USA – Sloulin Field International</td></tr>
+<tr><td>ISO</td><td> – Kinston, NC, USA</td></tr>
+<tr><td>ISP</td><td> – Islip, NY, USA – Long Island-Macarthur Airport</td></tr>
+<tr><td>IST</td><td> – Istanbul, Turkey – Ataturk</td></tr>
+<tr><td>ITH</td><td> – Ithaca, NY, USA – Tompkins County</td></tr>
+<tr><td>ITM</td><td> – Osaka, Japan – Itami International Was Osaka</td></tr>
+<tr><td>ITO</td><td> – Hilo, HI, USA – Hilo Hawaii:Hawaii-International Usa</td></tr>
+<tr><td>IWD</td><td> – Ironwood, MI, USA – Gogebic County Airport</td></tr>
+<tr><td>IXB</td><td> – Bagdogra, India – Bagdogra</td></tr>
+<tr><td>IXE</td><td> – Mangalore, India – Bajpe</td></tr>
+<tr><td>IXJ</td><td> – Jammu, India – Satwari</td></tr>
+<tr><td>IXM</td><td> – Madurai, India – Madurai</td></tr>
+<tr><td>IXU</td><td> – Aurangabad, India – Chikkalthana</td></tr>
+<tr><td>IXZ</td><td> – Port Blair, India – Port Blair</td></tr>
+<tr><td>IYK</td><td> – Inyokern, CA, USA – Inyokern Airport</td></tr>
+<tr><td>IZO</td><td> – Izumo, Japan</td></tr>
+<tr><td>JAC</td><td> – Jackson Hole, WY, USA – Jackson Hole Airport</td></tr>
+<tr><td>JAI</td><td> – Jaipur, India – Sanganeer</td></tr>
+<tr><td>JAN</td><td> – Jackson, MS, USA – Allen C Thompson Field</td></tr>
+<tr><td>JAT</td><td> – Jabat, Marshall Islands – Jabat Intl</td></tr>
+<tr><td>JAV</td><td> – Ilulissat, Greenland</td></tr>
+<tr><td>JAX</td><td> – Jacksonville, FL, USA – Jacksonville International Airport</td></tr>
+<tr><td>JBR</td><td> – Jonesboro, AR, USA – Municipal</td></tr>
+<tr><td>JCA</td><td> – Cannes, France – Mandelieu</td></tr>
+<tr><td>JDH</td><td> – Jodhpur, India</td></tr>
+<tr><td>JDP</td><td> – Paris, France – Issy Les Moulineaux</td></tr>
+<tr><td>JED</td><td> – Jeddah, Saudi Arabia – Jeddah International</td></tr>
+<tr><td>JER</td><td> – Jersey, Channel Islands, United Kingdom – States</td></tr>
+<tr><td>JFK</td><td> – New York, NY, USA – John F Kennedy Intl Airport</td></tr>
+<tr><td>JGA</td><td> – Jamnagar, India</td></tr>
+<tr><td>JHB</td><td> – Johor Bahru, Malaysia – Sultan Ismail International</td></tr>
+<tr><td>JHE</td><td> – Helsingborg, Sweden – Heliport</td></tr>
+<tr><td>JHM</td><td> – Kapalua, HI, USA – Kapalua</td></tr>
+<tr><td>JHW</td><td> – Jamestown, NY, USA – Chautauqua County Airport</td></tr>
+<tr><td>JIB</td><td> – Djibouti, Djibouti – Ambouli</td></tr>
+<tr><td>JKG</td><td> – Jonkoping, Sweden – Axamo</td></tr>
+<tr><td>JLN</td><td> – Joplin, MO, USA – Municipal Airport</td></tr>
+<tr><td>JMC</td><td> – Sausalito, CA, USA – Marin County</td></tr>
+<tr><td>JMK</td><td> – Mikonos, Greece – Mikonos</td></tr>
+<tr><td>JMM</td><td> – Malmo, Sweden – Malmo Harbour Heliport</td></tr>
+<tr><td>JMO</td><td> – Jomsom, Nepal</td></tr>
+<tr><td>JMS</td><td> – Jamestown, ND, USA – Jamestown Municipal Airport</td></tr>
+<tr><td>JNB</td><td> – Johannesburg, South Africa – Jan Smuts</td></tr>
+<tr><td>JNS</td><td> – Narssaq, Greenland</td></tr>
+<tr><td>JNU</td><td> – Juneau, AK, USA – Juneau</td></tr>
+<tr><td>JNX</td><td> – Naxos, Cyclades Islands, Greece – Naxos Airport</td></tr>
+<tr><td>JOG</td><td> – Yogyakarta, Indonesia</td></tr>
+<tr><td>JOI</td><td> – Joinville, Santa Catarina, Brazil – Federal</td></tr>
+<tr><td>JON</td><td> – Johnston Island, US, Outlying Islands</td></tr>
+<tr><td>JRA</td><td> – New York City, NY, USA</td></tr>
+<tr><td>JRO</td><td> – Kilimanjaro, Tanzania – Kilimanjaro</td></tr>
+<tr><td>JSI</td><td> – Skiathos, Greece – Skiathos</td></tr>
+<tr><td>JST</td><td> – Johnstown, PA, USA – Johnstown Cambria</td></tr>
+<tr><td>JTR</td><td> – Santorini/Thira Is, Greece – Santorini</td></tr>
+<tr><td>JUJ</td><td> – Jujuy, Provincia Jujuy, Argentina – El Cadillal</td></tr>
+<tr><td>JUL</td><td> – Juliaca, Peru – Juliaca</td></tr>
+<tr><td>KAB</td><td> – Kariba, Zimbabwe – Kariba</td></tr>
+<tr><td>KAE</td><td> – Kake, AK, USA</td></tr>
+<tr><td>KAL</td><td> – Kaltag, AK, USA</td></tr>
+<tr><td>KAN</td><td> – Kano, Nigeria – Aminu Kano International</td></tr>
+<tr><td>KAT</td><td> – Kaitaia, New Zealand – Kaitaia</td></tr>
+<tr><td>KBP</td><td> – Kiev, Ukraine – Borispol</td></tr>
+<tr><td>KBR</td><td> – Kota Bharu, Malaysia – Sultan Ismail Petra</td></tr>
+<tr><td>KCG</td><td> – Chignik, AK, USA – Fisheries</td></tr>
+<tr><td>KCH</td><td> – Kuching, Sarawak, Malaysia – Kuching</td></tr>
+<tr><td>KCL</td><td> – Chignik, AK, USA – Lagoon</td></tr>
+<tr><td>KEF</td><td> – Reykjavik, Iceland – Keflavik</td></tr>
+<tr><td>KEH</td><td> – Kenmore Air Harbor, WA, USA</td></tr>
+<tr><td>KEJ</td><td> – Kemerovo, Russia – Kemerovo</td></tr>
+<tr><td>KEL</td><td> – Kiel, Germany – Holtenau</td></tr>
+<tr><td>KEM</td><td> – Kemi/Tornio, Finland – Kemi</td></tr>
+<tr><td>KEP</td><td> – Nepalganj, Nepal – Nepalganj</td></tr>
+<tr><td>KER</td><td> – Kerman, Iran – Kerman</td></tr>
+<tr><td>KGC</td><td> – Kingscote, South Australia, Australia</td></tr>
+<tr><td>KGD</td><td> – Kaliningrad, Russia – Kaliningrad Airport</td></tr>
+<tr><td>KHH</td><td> – Kaohsiung, Taiwan</td></tr>
+<tr><td>KHI</td><td> – Karachi, Pakistan – Karachi</td></tr>
+<tr><td>KHV</td><td> – Khabarovsk, Russia – Novy</td></tr>
+<tr><td>KIN</td><td> – Kingston, Jamaica</td></tr>
+<tr><td>KIR</td><td> – Kerry County, Ireland – Kerry County</td></tr>
+<tr><td>KIV</td><td> – Kishinev, Moldova – Kishinev</td></tr>
+<tr><td>KIX</td><td> – Osaka, Japan – Kansai International</td></tr>
+<tr><td>KJA</td><td> – Krasnojarsk, Russia</td></tr>
+<tr><td>KKN</td><td> – Kirkenes, Norway – Hoeyburtmoen</td></tr>
+<tr><td>KLO</td><td> – Kalibo, Philippines – Kalibo</td></tr>
+<tr><td>KLR</td><td> – Kalmar, Sweden – Kalmar</td></tr>
+<tr><td>KLU</td><td> – Klagenfurt, Austria – Klagenfurt</td></tr>
+<tr><td>KLW</td><td> – Klawock, AK, USA</td></tr>
+<tr><td>KMG</td><td> – Kunming, China – Kunming</td></tr>
+<tr><td>KMI</td><td> – Miyazaki, Japan – Miyazaki</td></tr>
+<tr><td>KMJ</td><td> – Kumamoto, Japan – Kumamoto</td></tr>
+<tr><td>KNS</td><td> – King Island, Tasmania, Australia – King Island</td></tr>
+<tr><td>KOA</td><td> – Kona, HI, USA – Keahole</td></tr>
+<tr><td>KOI</td><td> – Kirkwall / Orkney Island, Scotland, United Kingdom – Kirkwall</td></tr>
+<tr><td>KOJ</td><td> – Kagoshima, Japan – Kagoshima
+<tr><td>KOK</td><td> – Kokkola/Pietarsaari, Finland – Kruunupyy</td></tr>
+<tr><td>KPN</td><td> – Kipnuk, AK, USA</td></tr>
+<tr><td>KPO</td><td> – Pohang, South Korea – Na</td></tr>
+<tr><td>KRF</td><td> – Kramfors, Sweden – Kramfors</td></tr>
+<tr><td>KRK</td><td> – Krakow, Poland – Balice</td></tr>
+<tr><td>KRN</td><td> – Kiruna, Sweden – Kiruna</td></tr>
+<tr><td>KRP</td><td> – Karup, Denmark – Karup</td></tr>
+<tr><td>KRR</td><td> – Krasnodar, Russia – Krasnodar</td></tr>
+<tr><td>KRS</td><td> – Kristiansand, Norway – Kjevik</td></tr>
+<tr><td>KRT</td><td> – Khartoum, Sudan – Civil</td></tr>
+<tr><td>KSA</td><td> – Kosrae, Caroline Islands, Micronesia</td></tr>
+<tr><td>KSC</td><td> – Kosice, Slovakia – Barca</td></tr>
+<tr><td>KSH</td><td> – Kermanshah, Iran – Bakhtaran Iran</td></tr>
+<tr><td>KSJ</td><td> – Kasos Island, Greece – Kasos Island</td></tr>
+<tr><td>KSU</td><td> – Kristiansund, Norway – Kvernberget</td></tr>
+<tr><td>KTM</td><td> – Kathmandu, Nepal – Tribhuvan</td></tr>
+<tr><td>KTN</td><td> – Ketchikan, AK, USA – Ketchikan International</td></tr>
+<tr><td>KTR</td><td> – Katherine, Northern Territory, Australia – Tindal</td></tr>
+<tr><td>KTW</td><td> – Katowice, Poland – Pyrzowice</td></tr>
+<tr><td>KUA</td><td> – Kuantan, Malaysia – Padang Geroda</td></tr>
+<tr><td>KUF</td><td> – Samara, Russia – Samara</td></tr>
+<tr><td>KUL</td><td> – Kuala Lumpur, Malaysia – Subang Kuala Lumpur International</td></tr>
+<tr><td>KUN</td><td> – Kaunas, Lithuania – Kaunas</td></tr>
+<tr><td>KUO</td><td> – Kuopio, Finland – Kuopio</td></tr>
+<tr><td>KUS</td><td> – Kulusuk, Greenland – Metropolitan Area</td></tr>
+<tr><td>KUV</td><td> – Kunsan, South Korea</td></tr>
+<tr><td>KVA</td><td> – Kavala, Greece – Kavala</td></tr>
+<tr><td>KWA</td><td> – Kwajalein, Marshall Islands</td></tr>
+<tr><td>KWI</td><td> – Kuwait, Kuwait – International</td></tr>
+<tr><td>KWL</td><td> – Guilin, China</td></tr>
+<tr><td>KZN</td><td> – Kazan, Russia – Kazan</td></tr>
+<tr><td>LAD</td><td> – Luanda, Angola – Fevereiro</td></tr>
+<tr><td>LAF</td><td> – Lafayette, IN, USA – Purdue University Airport</td></tr>
+<tr><td>LAN</td><td> – Lansing, MI, USA – Capital City Airport</td></tr>
+<tr><td>LAP</td><td> – La Paz, Baja California Sur, Mexico – Aeropuerto General Marquez De Leon</td></tr>
+<tr><td>LAR</td><td> – Laramie, WY, USA – General Brees Field</td></tr>
+<tr><td>LAS</td><td> – Las Vegas, NV, USA – Mccarran International Airport</td></tr>
+<tr><td>LAW</td><td> – Lawton, OK, USA – Municipal</td></tr>
+<tr><td>LAX</td><td> – Los Angeles, CA, USA – Los Angeles Intl Airport</td></tr>
+<tr><td>LAX</td><td> – Los Angeles, CA, USA – Los Angeles Intl Airport</td></tr>
+<tr><td>LBA</td><td> – Leeds/Bradford, England, United Kingdom</td></tr>
+<tr><td>LBB</td><td> – Lubbock, TX, USA – Lubbock International Airport</td></tr>
+<tr><td>LBE</td><td> – Latrobe, PA, USA – Westmoreland County</td></tr>
+<tr><td>LBF</td><td> – North Platte, NE, USA – Lee Bird Field</td></tr>
+<tr><td>LBL</td><td> – Liberal, KS, USA – Glenn L Martin Terminal</td></tr>
+<tr><td>LBU</td><td> – Labuan, Sabah, Malaysia</td></tr>
+<tr><td>LBV</td><td> – Libreville, Gabon – Libreville</td></tr>
+<tr><td>LCA</td><td> – Larnaca, Cyprus – Intl</td></tr>
+<tr><td>LCE</td><td> – La Ceiba, Honduras – International</td></tr>
+<tr><td>LCG</td><td> – La Coruna, Spain – La Coruna</td></tr>
+<tr><td>LCH</td><td> – Lake Charles, LA, USA – Municipal</td></tr>
+<tr><td>LCY</td><td> – London, England, United Kingdom – London City</td></tr>
+<tr><td>LDB</td><td> – Londrina, Parana, Brazil – Londrina</td></tr>
+<tr><td>LDE</td><td> – Lourdes/Tarbes, France – Tarbes International</td></tr>
+<tr><td>LDU</td><td> – Lahad Datu, Sabah, Malaysia – Lahad Datu</td></tr>
+<tr><td>LEA</td><td> – Learmonth, Western Australia, Australia</td></tr>
+<tr><td>LEB</td><td> – Lebanon/Hanover/White River, NH, USA – Lebanon Regional</td></tr>
+<tr><td>LED</td><td> – St Petersburg, Russia – Pulkovo</td></tr>
+<tr><td>LEH</td><td> – Le Havre, France – Le Havre</td></tr>
+<tr><td>LEI</td><td> – Almeria, Spain – Almeria</td></tr>
+<tr><td>LEJ</td><td> – Leipzig, Germany – Leipzig</td></tr>
+<tr><td>LET</td><td> – Leticia, Colombia – Gen Av Cob0</td></tr>
+<tr><td>LEX</td><td> – Lexington, KY, USA – Blue Grass Field</td></tr>
+<tr><td>LFT</td><td> – Lafayette / New Iberia, LA, USA – Municipal</td></tr>
+<tr><td>LFW</td><td> – Lome, Togo – Lome</td></tr>
+<tr><td>LGA</td><td> – New York, NY, USA – Laguardia</td></tr>
+<tr><td>LGB</td><td> – Long Beach, CA, USA – Long Beach Municipal Airport</td></tr>
+<tr><td>LGG</td><td> – Liege, Belgium – Bierset</td></tr>
+<tr><td>LGI</td><td> – Deadmans Cay / Long Island, Bahamas – Deadmans Cay</td></tr>
+<tr><td>LGK</td><td> – Langkawi, Malaysia</td></tr>
+<tr><td>LGP</td><td> – Legaspi, Philippines – Legaspi</td></tr>
+<tr><td>LGW</td><td> – London, England, United Kingdom – Gatwick</td></tr>
+<tr><td>LHE</td><td> – Lahore, Pakistan – Lahore</td></tr>
+<tr><td>LHR</td><td> – London, England, United Kingdom – Heathrow</td></tr>
+<tr><td>LIG</td><td> – Limoges, France – Bellegarde</td></tr>
+<tr><td>LIH</td><td> – Kauai Island, HI, USA – Lihue Municipal Airport</td></tr>
+<tr><td>LIM</td><td> – Lima, Peru – Intl Jorge Chavez</td></tr>
+<tr><td>LIN</td><td> – Milan, Italy – Linate</td></tr>
+<tr><td>LIR</td><td> – Liberia, Costa Rica – Liberia</td></tr>
+<tr><td>LIS</td><td> – Lisbon, Portugal – Lisboa</td></tr>
+<tr><td>LIT</td><td> – Little Rock, AR, USA – Little Rock Regional Airport</td></tr>
+<tr><td>LJU</td><td> – Ljubljana, Slovenia – Brnik</td></tr>
+<tr><td>LKE</td><td> – Seattle, WA, USA – Lake Union Sea Plane Base</td></tr>
+<tr><td>LKL</td><td> – Lakselv-Banak</td></tr>
+<tr><td>LKN</td><td> – Leknes, Norway – Leknes</td></tr>
+<tr><td>LKO</td><td> – Lucknow, India</td></tr>
+<tr><td>LLA</td><td> – Lulea, Sweden – Kallax</td></tr>
+<tr><td>LLW</td><td> – Lilongwe, Malawi – Kamuzu Intl</td></tr>
+<tr><td>LLY</td><td> – Mount Holly, NJ, USA – Mt Holly</td></tr>
+<tr><td>LMM</td><td> – Los Mochis, Sinaloa, Mexico</td></tr>
+<tr><td>LMN</td><td> – Limbang, Sarawak, Malaysia – Limbang</td></tr>
+<tr><td>LMT</td><td> – Klamath Falls, OR, USA – Kingsley Field Airport</td></tr>
+<tr><td>LNK</td><td> – Lincoln, NE, USA – Municipal Airport</td></tr>
+<tr><td>LNS</td><td> – Lancaster, PA, USA – Lancaster</td></tr>
+<tr><td>LNV</td><td> – Londolovit, Papua New Guinea – Londolovit</td></tr>
+<tr><td>LNY</td><td> – Lanai City, HI, USA – Lanai</td></tr>
+<tr><td>LNZ</td><td> – Linz, Austria – Linz</td></tr>
+<tr><td>LOS</td><td> – Lagos, Nigeria – Murtala Muhammed</td></tr>
+<tr><td>LOV</td><td> – Monclova, Coahuila, Mexico – Monclova Airport</td></tr>
+<tr><td>LPA</td><td> – Gran Canaria, Canary Islands, Spain – Aeropuerto De Gran Canaria</td></tr>
+<tr><td>LPB</td><td> – La Paz, Bolivia – El Alto</td></tr>
+<tr><td>LPI</td><td> – Linkoping, Sweden – Saab</td></tr>
+<tr><td>LPL</td><td> – Liverpool, England, United Kingdom – Liverpool</td></tr>
+<tr><td>LRD</td><td> – Laredo, TX, USA – International</td></tr>
+<tr><td>LRH</td><td> – La Rochelle, France – Laleu</td></tr>
+<tr><td>LRM</td><td> – Casa De Campo, Dominican Republic</td></tr>
+<tr><td>LRS</td><td> – Leros, Greece – Leros</td></tr>
+<tr><td>LRT</td><td> – Lorient, France – Lann-Bihoue</td></tr>
+<tr><td>LRU</td><td> – Las Cruces, NM, USA</td></tr>
+<tr><td>LSC</td><td> – La Serena, Chile – La Florida</td></tr>
+<tr><td>LSE</td><td> – La Crosse, WI, USA – La Crosse Municipal</td></tr>
+<tr><td>LSI</td><td> – Shetland Islands /Shetland Isd, Scotland, United Kingdom – Shetland Islands</td></tr>
+<tr><td>LSP</td><td> – Las Piedras, Venezuela – Josefa Camejo</td></tr>
+<tr><td>LSQ</td><td> – Los Angeles, Chile – Maria Dolores</td></tr>
+<tr><td>LSS</td><td> – Terre-De-Haut, Guadeloupe</td></tr>
+<tr><td>LST</td><td> – Launceston, Tasmania, Australia – Launceston</td></tr>
+<tr><td>LSY</td><td> – Lismore, New South Wales, Australia – Lismore</td></tr>
+<tr><td>LTN</td><td> – London, England, United Kingdom – Luton International</td></tr>
+<tr><td>LTO</td><td> – Loreto, Baja California Sur, Mexico</td></tr>
+<tr><td>LUA</td><td> – Lukla, Nepal – Lukla</td></tr>
+<tr><td>LUD</td><td> – Luderitz, Namibia – Luderitz</td></tr>
+<tr><td>LUG</td><td> – Lugano, Switzerland – Agno</td></tr>
+<tr><td>LUN</td><td> – Lusaka, Zambia – Lusaka</td></tr>
+<tr><td>LUX</td><td> – Luxembourg, Luxembourg – Findel</td></tr>
+<tr><td>LVI</td><td> – Livingstone, Zambia – Livingstone</td></tr>
+<tr><td>LWB</td><td> – Greenbrier, WV, USA – Greenbrier Valley Airport</td></tr>
+<tr><td>LWK</td><td> – Shetland Islands /Shetland Isd, Scotland, United Kingdom – Tingwall</td></tr>
+<tr><td>LWO</td><td> – Lvov, Ukraine – Snilow</td></tr>
+<tr><td>LWS</td><td> – Lewiston, ID, USA – Lewiston-Nez Perce Airport</td></tr>
+<tr><td>LWT</td><td> – Lewistown, MT, USA – Municipal</td></tr>
+<tr><td>LWY</td><td> – Lawas, Sarawak, Malaysia – Lawas</td></tr>
+<tr><td>LXR</td><td> – Luxor, Egypt – Luxor</td></tr>
+<tr><td>LYH</td><td> – Lynchburg, VA, USA – Municipal Airport</td></tr>
+<tr><td>LYP</td><td> – Faisalabad, Pakistan – Lyallpur</td></tr>
+<tr><td>LYR</td><td> – Longyearbyen, Norway – Svalbard</td></tr>
+<tr><td>LYS</td><td> – Lyon, France – Satolas</td></tr>
+<tr><td>LZC</td><td> – Lazaro Cardenas, Michoacan, Mexico – Na</td></tr>
+<tr><td>MAA</td><td> – Madras, India – Meenambarkkam</td></tr>
+<tr><td>MAD</td><td> – Madrid, Spain – Barajas</td></tr>
+<tr><td>MAF</td><td> – Midland/Odessa, TX, USA – Midland Intl Airport</td></tr>
+<tr><td>MAG</td><td> – Madang, Papua New Guinea – Madang</td></tr>
+<tr><td>MAH</td><td> – Menorca, Spain – Aerop De Menorca</td></tr>
+<tr><td>MAJ</td><td> – Majuro, Marshall Islands – International</td></tr>
+<tr><td>MAM</td><td> – Matamoros, Tamaulipas, Mexico – Servando Canales</td></tr>
+<tr><td>MAN</td><td> – Manchester, England, United Kingdom – International</td></tr>
+<tr><td>MAO</td><td> – Manaus, Amazonas, Brazil – Eduardo Gomes</td></tr>
+<tr><td>MAR</td><td> – Maracaibo, Venezuela – La Chinita</td></tr>
+<tr><td>MAY</td><td> – Mangrove Cay, Bahamas</td></tr>
+<tr><td>MAZ</td><td> – Mayaguez, PR, USA – El Maui</td></tr>
+<tr><td>MBA</td><td> – Mombasa, Kenya – Moi International</td></tr>
+<tr><td>MBJ</td><td> – Montego Bay, Jamaica – Sangster</td></tr>
+<tr><td>MBL</td><td> – Manistee, MI, USA – Manistee Blacker Airport</td></tr>
+<tr><td>MBS</td><td> – Midland / Bay City / Saginaw, MI, USA – Tri-City Airport</td></tr>
+<tr><td>MCG</td><td> – Mc Grath, AK, USA – Mc Grath</td></tr>
+<tr><td>MCI</td><td> – Kansas City, MO, USA – Kansas City International Airport</td></tr>
+<tr><td>MCK</td><td> – Mc Cook, NE, USA – Municipal</td></tr>
+<tr><td>MCM</td><td> – Monte Carlo, Monaco – Hel De Monte Carlo</td></tr>
+<tr><td>MCN</td><td> – Macon, GA, USA – Lewis B Wilson</td></tr>
+<tr><td>MCO</td><td> – Orlando, FL, USA – Orlando International Airport</td></tr>
+<tr><td>MCP</td><td> – Macapa, Amapa, Brazil</td></tr>
+<tr><td>MCT</td><td> – Muscat, Oman – Seeb</td></tr>
+<tr><td>MCW</td><td> – Mason City, IA, USA – Mason City Municipal Airport</td></tr>
+<tr><td>MCY</td><td> – Sunshine Coast, Queensland, Australia – Maroochydore</td></tr>
+<tr><td>MDC</td><td> – Manado, Indonesia – Samratulang</td></tr>
+<tr><td>MDE</td><td> – Medellin, Colombia – La Playas</td></tr>
+<tr><td>MDH</td><td> – Carbondale, IL, USA – Southern Illinois Airport</td></tr>
+<tr><td>MDQ</td><td> – Mar Del Plata, Buenos Aires, Argentina</td></tr>
+<tr><td>MDT</td><td> – Harrisburg, PA, USA – Harrisburg International Airport</td></tr>
+<tr><td>MDW</td><td> – Chicago, IL, USA – Midway</td></tr>
+<tr><td>MDZ</td><td> – Mendoza, Mendoza, Argentina – El Plumerillo</td></tr>
+<tr><td>MED</td><td> – Medinah, Saudi Arabia – Madinah-Prince Mohammad Bin Abdulaziz</td></tr>
+<tr><td>MEI</td><td> – Meridian, MS, USA – Key Field</td></tr>
+<tr><td>MEL</td><td> – Melbourne, Victoria, Australia – Tullamarine</td></tr>
+<tr><td>MEM</td><td> – Memphis, TN, USA – Memphis International Airport</td></tr>
+<tr><td>MES</td><td> – Medan, Indonesia – Polonia</td></tr>
+<tr><td>MEX</td><td> – Mexico City, Distrito Federal, Mexico – Juarez Intl Airport</td></tr>
+<tr><td>MEY</td><td> – Meghauli, Nepal – Meghauli</td></tr>
+<tr><td>MFE</td><td> – Mc Allen/Mission, TX, USA</td></tr>
+<tr><td>MFN</td><td> – Milford Sound, New Zealand</td></tr>
+<tr><td>MFR</td><td> – Medford, OR, USA – Medford-Jackson County Airport</td></tr>
+<tr><td>MGA</td><td> – Managua, Nicaragua</td></tr>
+<tr><td>MGM</td><td> – Montgomery, AL, USA – Dannelly Field</td></tr>
+<tr><td>MGQ</td><td> – Mogadishu, Somalia</td></tr>
+<tr><td>MGW</td><td> – Morgantown, WV, USA – Morgantown Municipal Airport</td></tr>
+<tr><td>MHH</td><td> – Marsh Harbour, Bahamas</td></tr>
+<tr><td>MHK</td><td> – Manhattan, KS, USA – Manhattan Municipal</td></tr>
+<tr><td>MHQ</td><td> – Mariehamn, Aland Island, Finland</td></tr>
+<tr><td>MHT</td><td> – Manchester, NH, USA – Manchester</td></tr>
+<tr><td>MIA</td><td> – Miami, FL, USA – Miami International Airport</td></tr>
+<tr><td>MID</td><td> – Merida, Yucatan, Mexico – Merida Internationl</td></tr>
+<tr><td>MIE</td><td> – Muncie, IN, USA – Delaware County Airport</td></tr>
+<tr><td>MIR</td><td> – Monastir, Tunisia – Skanes</td></tr>
+<tr><td>MJT</td><td> – Mytilene, Greece – Mytilene</td></tr>
+<tr><td>MJV</td><td> – Murcia, Spain – San Javier</td></tr>
+<tr><td>MKC</td><td> – Kansas City, MO, USA – Downtown</td></tr>
+<tr><td>MKE</td><td> – Milwaukee, WI, USA – General Mitchell Field</td></tr>
+<tr><td>MKG</td><td> – Muskegon, MI, USA – Muskegon County Intl Airport</td></tr>
+<tr><td>MKK</td><td> – Hoolehua, HI, USA – Municipal</td></tr>
+<tr><td>MKL</td><td> – Jackson, TN, USA – Mc Kellar Field</td></tr>
+<tr><td>MKM</td><td> – Mukah, Sarawak, Malaysia</td></tr>
+<tr><td>MKW</td><td> – Manokwari, Indonesia – Ren</td></tr>
+<tr><td>MKY</td><td> – Mackay, Queensland, Australia – Mackay</td></tr></td></tr>
+<tr><td>MLA</td><td> – Malta, Malta – Luqa</td></tr>
+<tr><td>MLB</td><td> – Melbourne, FL, USA – Melbourne Regional Airport</td></tr>
+<tr><td>MLE</td><td> – Male, Maldives – Male International</td></tr>
+<tr><td>MLG</td><td> – Malang, Indonesia</td></tr>
+<tr><td>MLH</td><td> – Mulhouse, France – Mulhouse</td></tr>
+<tr><td>MLI</td><td> – Moline, IL, USA – Quad City Airport</td></tr>
+<tr><td>MLM</td><td> – Morelia, Michoacan, Mexico – Municipal</td></tr>
+<tr><td>MLO</td><td> – Milos, Greece – Milos</td></tr>
+<tr><td>MLS</td><td> – Miles City, MT, USA – Miles City</td></tr>
+<tr><td>MLU</td><td> – Monroe, LA, USA</td></tr>
+<tr><td>MMB</td><td> – Memanbetsu, Japan</td></tr>
+<tr><td>MME</td><td> – Teesside, England, United Kingdom – Tees-Side</td></tr>
+<tr><td>MMH</td><td> – Mammoth Lakes, CA, USA – Mammoth Lakes Airport</td></tr>
+<tr><td>MMK</td><td> – Murmansk, Russia – Murmansk</td></tr>
+<tr><td>MMU</td><td> – Morristown, NJ, USA – Morristown</td></tr>
+<tr><td>MMX</td><td> – Malmo, Sweden – Sturup</td></tr>
+<tr><td>MNI</td><td> – Montserrat, Montserrat – Blackburne</td></tr>
+<tr><td>MNL</td><td> – Manila, Philippines – Ninoy Aquino International</td></tr>
+<tr><td>MNM</td><td> – Menominee, MI, USA – Twin County Airport</td></tr>
+<tr><td>MOB</td><td> – Mobile, AL, USA – Mobile Municipal</td></tr>
+<tr><td>MOD</td><td> – Modesto, CA, USA – Harry Sham Feild</td></tr>
+<tr><td>MOL</td><td> – Molde, Norway – Aro</td></tr>
+<tr><td>MOT</td><td> – Minot, ND, USA – Minot International Airport</td></tr>
+<tr><td>MOW</td><td> – Moscow, Russia</td></tr>
+<tr><td>MPA</td><td> – Mpacha, Namibia</td></tr>
+<tr><td>MPB</td><td> – Miami, FL, USA – Miami Public Seaplane Base</td></tr>
+<tr><td>MPL</td><td> – Montpellier, France – Frejorgues</td></tr>
+<tr><td>MPM</td><td> – Maputo, Mozambique – Maputo International</td></tr>
+<tr><td>MQL</td><td> – Mildura, Victoria, Australia – Mildura</td></tr>
+<tr><td>MQN</td><td> – Mo I Rana, Norway – Rossvoll</td></tr>
+<tr><td>MQT</td><td> – Marquette, MI, USA – Marquette County Airport</td></tr>
+<tr><td>MRD</td><td> – Merida, Venezuela – Alberto Carnevalli</td></tr>
+<tr><td>MRK</td><td> – Marco Island, FL, USA</td></tr>
+<tr><td>MRS</td><td> – Marseille, France – Marseille-Provence</td></tr>
+<tr><td>MRU</td><td> – Mauritius, Mauritius – Plaisance</td></tr>
+<tr><td>MRY</td><td> – Monterey / Carmel, CA, USA – Monterey Peninsula Airport</td></tr>
+<tr><td>MSJ</td><td> – Misawa, Japan</td></tr>
+<tr><td>MSL</td><td> – Muscle Shoals / Florence / Sheffield, AL, USA – Muscle Shoals</td></tr>
+<tr><td>MSN</td><td> – Madison, WI, USA – Dane County Regional Airport</td></tr>
+<tr><td>MSO</td><td> – Missoula, MT, USA – Missoula International</td></tr>
+<tr><td>MSP</td><td> – Minneapolis, MN, USA – Minneapolis/St Paul Intl Airport</td></tr>
+<tr><td>MSQ</td><td> – Minsk, Belarus – Minsk</td></tr>
+<tr><td>MSS</td><td> – Massena, NY, USA</td></tr>
+<tr><td>MST</td><td> – Maastricht, Netherlands – Zuid-Limburg</td></tr>
+<tr><td>MSU</td><td> – Maseru, Lesotho – Maseru</td></tr>
+<tr><td>MSY</td><td> – New Orleans, LA, USA – Moisant International Airport</td></tr>
+<tr><td>MTH</td><td> – Marathon, FL, USA</td></tr>
+<tr><td>MTJ</td><td> – Montrose, CO, USA – Montrose County Airport</td></tr>
+<tr><td>MTY</td><td> – Monterrey, Nuevo Leon, Mexico – Escobedo</td></tr>
+<tr><td>MUB</td><td> – Maun, Botswana</td></tr>
+<tr><td>MUC</td><td> – Munich, Germany – Franz Josef Strauss</td></tr>
+<tr><td>MUN</td><td> – Maturin, Venezuela</td></tr>
+<tr><td>MVD</td><td> – Montevideo, Uruguay – Carrasco</td></tr>
+<tr><td>MVN</td><td> – Mount Vernon, IL, USA – Mount Vernon Outland Airport</td></tr>
+<tr><td>MVY</td><td> – Marthas Vineyard, MA, USA</td></tr>
+<tr><td>MWA</td><td> – Marion, IL, USA</td></tr>
+<tr><td>MXL</td><td> – Mexicali, Baja California, Mexico – Rodolfo Sanchez Taboada</td></tr>
+<tr><td>MXP</td><td> – Milan, Italy – Malpensa</td></tr>
+<tr><td>MYA</td><td> – Moruya, New South Wales, Australia – Moruya</td></tr>
+<tr><td>MYJ</td><td> – Matsuyama, Japan – Matsuyama</td></tr>
+<tr><td>MYR</td><td> – Myrtle Beach, SC, USA</td></tr>
+<tr><td>MYY</td><td> – Miri, Sarawak, Malaysia – Miri</td></tr>
+<tr><td>MZL</td><td> – Manizales, Colombia – Santaguida</td></tr>
+<tr><td>MZT</td><td> – Mazatlan, Sinaloa, Mexico – Buelna</td></tr>
+<tr><td>MZV</td><td> – Mulu, Malaysia – Mulu Airport</td></tr>
+<tr><td>NAG</td><td> – Nagpur, India – Sonegaon</td></tr>
+<tr><td>NAH</td><td> – Naha, Indonesia</td></tr>
+<tr><td>NAK</td><td> – Nakhon Ratchasima, Thailand – Nakhon Ratchasima</td></tr>
+<tr><td>NAN</td><td> – Nadi, Fiji – International</td></tr>
+<tr><td>NAP</td><td> – Naples, Italy – Capodichino</td></tr>
+<tr><td>NAS</td><td> – Nassau, Bahamas – Nassau International Airport</td></tr>
+<tr><td>NAT</td><td> – Natal, Rio Grande Do Norte, Brazil – Agusto Severo</td></tr>
+<tr><td>NAY</td><td> – Beijing, China</td></tr>
+<tr><td>NBO</td><td> – Nairobi, Kenya – Jomo Kenyatta Internatonal</td></tr>
+<tr><td>NCA</td><td> – North Caicos, Turks And Caicos Islands</td></tr>
+<tr><td>NCE</td><td> – Nice, France – Cote D’azur</td></tr>
+<tr><td>NCL</td><td> – Newcastle, England, United Kingdom – International</td></tr>
+<tr><td>NCY</td><td> – Annecy, France – Annecy-Meythe</td></tr>
+<tr><td>NDJ</td><td> – N Djamena, Chad – N’djamena</td></tr>
+<tr><td>NEC</td><td> – Necochea, Buenos Aires, Argentina – Necochea</td></tr>
+<tr><td>NEV</td><td> – Nevis, Leeward Islands, Saint Kitts And Nevis</td></tr>
+<tr><td>NGO</td><td> – Nagoya, Japan – Komaki</td></tr>
+<tr><td>NGS</td><td> – Nagasaki, Japan – Nagasaki</td></tr>
+<tr><td>NJC</td><td> – Nizhnevartovsk, Russia – Nizhnevartovsk</td></tr>
+<tr><td>NKC</td><td> – Nouakchott, Mauritania – Nouakchott</td></tr>
+<tr><td>NKG</td><td> – Nanjing, China</td></tr>
+<tr><td>NLA</td><td> – Ndola, Zambia – Ndola</td></tr>
+<tr><td>NLD</td><td> – Nuevo Laredo, Tamaulipas, Mexico</td></tr>
+<tr><td>NLP</td><td> – Nelspruit, South Africa</td></tr>
+<tr><td>NNG</td><td> – Nanning, China</td></tr>
+<tr><td>NOC</td><td> – Connaught, Ireland – Rep Of Ireland</td></tr>
+<tr><td>NOU</td><td> – Noumea, New Caledonia – Tontouta</td></tr>
+<tr><td>NPL</td><td> – New Plymouth, New Zealand – New Plymouth</td></tr>
+<tr><td>NQY</td><td> – Newquay, England, United Kingdom – Newquay Civil</td></tr>
+<tr><td>NRT</td><td> – Tokyo, Japan – Narita</td></tr>
+<tr><td>NRT</td><td> – Tokyo, Japan</td></tr>
+<tr><td>NSB</td><td> – Bimini, Bahamas – North Seaplane Base</td></tr>
+<tr><td>NSI</td><td> – Yaounde, Cameroon – Nsimalen</td></tr>
+<tr><td>NSN</td><td> – Nelson, New Zealand – Nelson</td></tr>
+<tr><td>NTE</td><td> – Nantes, France – Nantes-Chateau Bougon</td></tr>
+<tr><td>NTL</td><td> – Newcastle, New South Wales, Australia – Williamtown</td></tr>
+<tr><td>NUE</td><td> – Nuremberg, Germany – Nuremberg</td></tr>
+<tr><td>NVT</td><td> – Navegantes, Santa Catarina, Brazil</td></tr>
+<tr><td>NWA</td><td> – Moheli, Comoros</td></tr>
+<tr><td>NWI</td><td> – Norwich, England, United Kingdom – Norwich</td></tr>
+<tr><td>OAG</td><td> – Orange, New South Wales, Australia – Springhill</td></tr>
+<tr><td>OAJ</td><td> – Jacksonville, NC, USA</td></tr>
+<tr><td>OAK</td><td> – Oakland, CA, USA – Metropolitan Oakland Intl Apt</td></tr>
+<tr><td>OAX</td><td> – Oaxaca, Oaxaca, Mexico – Xoxocotlan</td></tr>
+<tr><td>OBO</td><td> – Obihiro, Japan – Obihiro</td></tr>
+<tr><td>ODE</td><td> – Odense, Denmark – Odense</td></tr>
+<tr><td>ODS</td><td> – Odessa, Ukraine – Central</td></tr>
+<tr><td>ODW</td><td> – Oak Harbor, WA, USA</td></tr>
+<tr><td>OFK</td><td> – Norfolk, NE, USA – Karl Stefan Memorial Airport</td></tr>
+<tr><td>OGG</td><td> – Kahului, HI, USA – Kahului Airport</td></tr>
+<tr><td>OGS</td><td> – Ogdensburg, NY, USA</td></tr>
+<tr><td>OHD</td><td> – Ohrid, Macedonia – Ohrid</td></tr>
+<tr><td>OIT</td><td> – Oita, Japan – Oita</td></tr>
+<tr><td>OKA</td><td> – Okinawa, Ryukyu Islands, Japan – Naha Field</td></tr>
+<tr><td>OKC</td><td> – Oklahoma City, OK, USA – Will Rogers World Airport</td></tr>
+<tr><td>OKJ</td><td> – Okayama, Japan – Okayama</td></tr>
+<tr><td>OLF</td><td> – Wolf Point, MT, USA</td></tr>
+<tr><td>OMA</td><td> – Omaha, NE, USA – Eppley Airfield</td></tr>
+<tr><td>OME</td><td> – Nome, AK, USA</td></tr>
+<tr><td>OMR</td><td> – Oradea, Romania – Oradea</td></tr>
+<tr><td>ONG</td><td> – Mornington, Queensland, Australia – Mornington Is</td></tr>
+<tr><td>ONT</td><td> – Ontario, CA, USA – Ontario International</td></tr>
+<tr><td>OOK</td><td> – Toksook Bay, AK, USA</td></tr>
+<tr><td>OOL</td><td> – Gold Coast, Queensland, Australia – Coolangatta</td></tr>
+<tr><td>OOM</td><td> – Cooma, New South Wales, Australia</td></tr>
+<tr><td>OPF</td><td> – Miami, FL, USA – Opa Locka</td></tr>
+<tr><td>OPO</td><td> – Porto, Portugal – Porto</td></tr>
+<tr><td>ORB</td><td> – Orebro, Sweden – Orebro</td></tr>
+<tr><td>ORD</td><td> – Chicago, IL, USA – O’hare International Airport</td></tr>
+<tr><td>ORF</td><td> – Norfolk, VA, USA – Norfolk International Airport</td></tr>
+<tr><td>ORH</td><td> – Worcester, MA, USA – Worcester James D O’brien Field</td></tr>
+<tr><td>ORK</td><td> – Cork, Ireland – Cork</td></tr>
+<tr><td>ORL</td><td> – Orlando, FL, USA – Herndon</td></tr>
+<tr><td>ORN</td><td> – Oran, Algeria – Es Senia</td></tr>
+<tr><td>ORY</td><td> – Paris, France – Orly</td></tr>
+<tr><td>OSA</td><td> – Osaka, Japan – Osaka International</td></tr>
+<tr><td>OSD</td><td> – Ostersund, Sweden – Froesoe</td></tr>
+<tr><td>OSH</td><td> – Oshkosh, WI, USA – Wittman Field</td></tr>
+<tr><td>OTH</td><td> – North Bend, OR, USA</td></tr>
+<tr><td>OTM</td><td> – Ottumwa, IA, USA – Ottumwa Industrial Airport</td></tr>
+<tr><td>OTP</td><td> – Bucharest, Romania – Otopeni</td></tr>
+<tr><td>OTZ</td><td> – Kotzebue, AK, USA</td></tr>
+<tr><td>OUA</td><td> – Ouagadougou, Burkina Faso – Ouagadougou</td></tr>
+<tr><td>OUL</td><td> – Oulu, Finland – Oulu</td></tr>
+<tr><td>OVB</td><td> – Novosibirsk, Russia – Tolmachevo</td></tr>
+<tr><td>OVD</td><td> – Asturias, Spain – Asturias</td></tr>
+<tr><td>OWB</td><td> – Owensboro, KY, USA</td></tr>
+<tr><td>OWD</td><td> – Norwood, MA, USA – Memorial Code: Owd</td></tr>
+<tr><td>OXB</td><td> – Bissau, Guinea-Bissau – Osvaldo Vieira</td></tr>
+<tr><td>OXR</td><td> – Oxnard / Ventura, CA, USA – Oxnard Airport</td></tr>
+<tr><td>OZZ</td><td> – Ouarzazate, Morocco – Ouarzazate</td></tr>
+<tr><td>PAD</td><td> – Paderborn, Germany – Paderborn</td></tr>
+<tr><td>PAH</td><td> – Paducah, KY, USA</td></tr>
+<tr><td>PAP</td><td> – Port Au Prince, Haiti – Mais Gate</td></tr>
+<tr><td>PAR</td><td> – Paris, France</td></tr>
+<tr><td>PAS</td><td> – Paros, Greece – Paros Community</td></tr>
+<tr><td>PAT</td><td> – Patna, India – Patna</td></tr>
+<tr><td>PAZ</td><td> – Poza Rica, Veracruz, Mexico</td></tr>
+<tr><td>PBC</td><td> – Puebla, Puebla, Mexico</td></tr>
+<tr><td>PBI</td><td> – West Palm Beach, FL, USA – Palm Beach International Airport</td></tr>
+<tr><td>PBM</td><td> – Paramaribo, Suriname – Zanderij Intl</td></tr>
+<tr><td>PBO</td><td> – Paraburdoo, Western Australia, Australia – Paraburdoo</td></tr>
+<tr><td>PCL</td><td> – Pucallpa, Peru – Captain Rolden</td></tr>
+<tr><td>PCT</td><td> – Princeton, NJ, USA – Princeton Municipal</td></tr>
+<tr><td>PDG</td><td> – Padang, Indonesia – Tabing</td></tr>
+<tr><td>PDL</td><td> – Ponta Delgada, Azores Islands, Portugal – Nordela</td></tr>
+<tr><td>PDT</td><td> – Pendleton, OR, USA</td></tr>
+<tr><td>PDX</td><td> – Portland, OR, USA – Portland International Airport</td></tr>
+<tr><td>PEE</td><td> – Perm, Russia – Perm</td></tr>
+<tr><td>PEG</td><td> – Perugia, Italy – Na</td></tr>
+<tr><td>PEI</td><td> – Pereira, Colombia – Matecana</td></tr>
+<tr><td>PEK</td><td> – Beijing, China – Peking Capital Airport</td></tr>
+<tr><td>PEN</td><td> – Penang, Malaysia – Penang International</td></tr>
+<tr><td>PER</td><td> – Perth, Western Australia, Australia – Perth</td></tr>
+<tr><td>PES</td><td> – Petrozavodsk, Russia – Petrozavodsk Airport</td></tr>
+<tr><td>PEW</td><td> – Peshawar, Pakistan – Peshawar</td></tr>
+<tr><td>PFN</td><td> – Panama City, FL, USA</td></tr>
+<tr><td>PFO</td><td> – Paphos, Cyprus – International</td></tr>
+<tr><td>PGA</td><td> – Page, AZ, USA</td></tr>
+<tr><td>PGF</td><td> – Perpignan, France – Llabanere</td></tr>
+<tr><td>PGV</td><td> – Greenville, NC, USA</td></tr>
+<tr><td>PGX</td><td> – Perigueux, France</td></tr>
+<tr><td>PHE</td><td> – Port Hedland, Western Australia, Australia – Port Hedlan</td></tr>
+<tr><td>PHF</td><td> – Newport News/Williamsburg/Hampton, VA, USA – Patrick Henry Intl</td></tr>
+<tr><td>PHL</td><td> – Philadelphia, PA, USA – Philadelphia International Airport</td></tr>
+<tr><td>PHO</td><td> – Point Hope, AK, USA – Point Hope</td></tr>
+<tr><td>PHS</td><td> – Phitsanulok, Thailand</td></tr>
+<tr><td>PHX</td><td> – Phoenix, AZ, USA – Sky Harbor International Airport</td></tr>
+<tr><td>PIA</td><td> – Peoria, IL, USA – Greater Peoria Airport</td></tr>
+<tr><td>PIB</td><td> – Laurel, MS, USA – Laurel Hattiesburg/Camp Shelby</td></tr>
+<tr><td>PID</td><td> – Nassau, Bahamas – Paradise Island</td></tr>
+<tr><td>PIE</td><td> – St Petersburg/Clearwater, FL, USA – St Petersburg/Clearwater Intl</td></tr>
+<tr><td>PIH</td><td> – Pocatello, ID, USA</td></tr>
+<tr><td>PIK</td><td> – Glasgow, Scotland, United Kingdom – Prestwick</td></tr>
+<tr><td>PIR</td><td> – Pierre, SD, USA – Pierre Municipal Airport</td></tr>
+<tr><td>PIT</td><td> – Pittsburgh, PA, USA – Greater Pit Intnl Airport</td></tr>
+<tr><td>PIW</td><td> – Pikwitonei, Manitoba, Canada</td></tr>
+<tr><td>PJG</td><td> – Panjgur, Pakistan</td></tr>
+<tr><td>PKB</td><td> – Parkersburg / Marietta, WV, USA – Wood County</td></tr>
+<tr><td>PKC</td><td> – Petropavlovsk-Kamchatsky, Russia – Petropavlovsk-Kamchatsky</td></tr>
+<tr><td>PKE</td><td> – Parkes, New South Wales, Australia – Parkes</td></tr>
+<tr><td>PKR</td><td> – Pokhara, Nepal – Pokhara</td></tr>
+<tr><td>PKU</td><td> – Pekanbaru, Indonesia – Simpang Tiga</td></tr>
+<tr><td>PLB</td><td> – Plattsburgh, NY, USA</td></tr>
+<tr><td>PLH</td><td> – Plymouth, England, United Kingdom – Plymouth Airport</td></tr>
+<tr><td>PLM</td><td> – Palembang, Indonesia – Sultan Mahmud Badaruddin Ii</td></tr>
+<tr><td>PLN</td><td> – Pellston, MI, USA – Pellston Regional Airport</td></tr>
+<tr><td>PLO</td><td> – Port Lincoln, South Australia, Australia – Port Lincoln</td></tr>
+<tr><td>PLQ</td><td> – Palanga, Lithuania – Palanga</td></tr>
+<tr><td>PLS</td><td> – Providenciales, Turks And Caicos Islands</td></tr>
+<tr><td>PLU</td><td> – Belo Horizonte /Belo Horizon, Minas Gerais, Brazil – Confins/Pampulha</td></tr>
+<tr><td>PLW</td><td> – Palu, Indonesia – Mutiara</td></tr>
+<tr><td>PLZ</td><td> – Port Elizabeth, South Africa – Hf Verwoerd</td></tr>
+<tr><td>PMC</td><td> – Puerto Montt, Chile – Tepual</td></tr>
+<tr><td>PMD</td><td> – Palmdale, CA, USA – Air Force 42</td></tr>
+<tr><td>PMI</td><td> – Palma Mallorca, Mallorca Island, Spain – Palma Mallorca</td></tr>
+<tr><td>PMO</td><td> – Palermo, Sicily, Italy – Punta Raisi</td></tr>
+<tr><td>PMR</td><td> – Palmerston North, New Zealand – Palmerstown North</td></tr>
+<tr><td>PMV</td><td> – Porlamar, Venezuela – Gral Santiago Marino</td></tr>
+<tr><td>PNA</td><td> – Pamplona, Spain – Pamplona – Noain</td></tr>
+<tr><td>PNC</td><td> – Ponca City, OK, USA</td></tr>
+<tr><td>PNH</td><td> – Phnom Penh, Cambodia – Pochentong</td></tr>
+<tr><td>PNI</td><td> – Pohnpei, Caroline Islands, Micronesia – Pohnpei International</td></tr>
+<tr><td>PNK</td><td> – Pontianak, Indonesia – Supadio</td></tr>
+<tr><td>PNL</td><td> – Pantelleria, Italy – Pantelleria</td></tr>
+<tr><td>PNQ</td><td> – Poona, India – Lohegaon Poona</td></tr>
+<tr><td>PNR</td><td> – Pointe Noire, Congo – Pointe Noire</td></tr>
+<tr><td>PNS</td><td> – Pensacola, FL, USA</td></tr>
+<tr><td>POA</td><td> – Porto Alegre, Rio Grande Do Sul, Brazil – Salgado Filho</td></tr>
+<tr><td>POG</td><td> – Port Gentil, Gabon – Port Gentil</td></tr>
+<tr><td>POM</td><td> – Port Moresby, Papua New Guinea – Jackson</td></tr>
+<tr><td>POP</td><td> – Puerto Plata, Dominican Republic – La Union</td></tr>
+<tr><td>POR</td><td> – Pori, Finland – Pori</td></tr>
+<tr><td>POS</td><td> – Port Of Spain, Trinidad, Trinidad And Tobago – Piarco International Airport</td></tr>
+<tr><td>POU</td><td> – Poughkeepsie, NY, USA – Dutchess County</td></tr>
+<tr><td>POZ</td><td> – Poznan, Poland – Lawica</td></tr>
+<tr><td>PPG</td><td> – Pago Pago, American Samoa – International</td></tr>
+<tr><td>PPS</td><td> – Puerto Princesa, Philippines – Puerto Princesa</td></tr>
+<tr><td>PPT</td><td> – Papeete, French Polynesia – Intl Tahiti-Faaa</td></tr>
+<tr><td>PQI</td><td> – Presque Isle, ME, USA</td></tr>
+<tr><td>PQQ</td><td> – Port Macquarie, New South Wales, Australia – Port Macquarie</td></tr>
+<tr><td>PRC</td><td> – Prescott, AZ, USA</td></tr>
+<tr><td>PRG</td><td> – Prague, Czech Republic – Ruzyne</td></tr>
+<tr><td>PRI</td><td> – Praslin Island, Seychelles</td></tr>
+<tr><td>PSA</td><td> – Pisa, Italy – G Galilei</td></tr>
+<tr><td>PSE</td><td> – Ponce, PR, USA – Mercedita</td></tr>
+<tr><td>PSG</td><td> – Petersburg, AK, USA – Municipal</td></tr>
+<tr><td>PSM</td><td> – Portsmouth, NH, USA – Pease Intl Tradeport</td></tr>
+<tr><td>PSO</td><td> – Pasto, Colombia – Cano</td></tr>
+<tr><td>PSP</td><td> – Palm Springs, CA, USA – Palm Springs Municipal</td></tr>
+<tr><td>PSR</td><td> – Pescara, Italy – Liberi</td></tr>
+<tr><td>PSZ</td><td> – Puerto Suarez, Bolivia</td></tr>
+<tr><td>PTF</td><td> – Malololailai, Fiji – Malololailai</td></tr>
+<tr><td>PTG</td><td> – Pietersburg, South Africa</td></tr>
+<tr><td>PTP</td><td> – Pointe A Pitre, Guadeloupe – Le Raizet</td></tr>
+<tr><td>PTY</td><td> – Panama City, Panama – Tocumen International Airport</td></tr>
+<tr><td>PUB</td><td> – Pueblo, CO, USA – Pueblo Memorial Airport</td></tr>
+<tr><td>PUJ</td><td> – Punta Cana, Dominican Republic</td></tr>
+<tr><td>PUQ</td><td> – Punta Arenas, Chile – Presidente Ibanez</td></tr>
+<tr><td>PUS</td><td> – Pusan, South Korea – Kimhae</td></tr>
+<tr><td>PUW</td><td> – Pullman, WA, USA – Pullman</td></tr>
+<tr><td>PUY</td><td> – Pula, Croatia (Hrvatska) – Pula</td></tr>
+<tr><td>PUZ</td><td> – Puerto Cabezas, Nicaragua – Puerto Cabezas</td></tr>
+<tr><td>PVC</td><td> – Provincetown, MA, USA – Provincetown Municipal Airport</td></tr>
+<tr><td>PVD</td><td> – Providence, RI, USA – Tf Green State Airport</td></tr>
+<tr><td>PVR</td><td> – Puerto Vallarta, Jalisco, Mexico – Gustavo Diaz Ordaz</td></tr>
+<tr><td>PVU</td><td> – Provo, UT, USA – Provo</td></tr>
+<tr><td>PWK</td><td> – Chicago, IL, USA – Pal-Waukee Airport</td></tr>
+<tr><td>PWM</td><td> – Portland, ME, USA – Portland International Jetport</td></tr>
+<tr><td>PWT</td><td> – Bremerton, WA, USA – Municipal</td></tr>
+<tr><td>PXM</td><td> – Puerto Escondido, Oaxaca, Mexico</td></tr>
+<tr><td>PXO</td><td> – Porto Santo, Madeira Islands, Portugal – Porto Santo</td></tr>
+<tr><td>PZE</td><td> – Penzance, England, United Kingdom – Penzance</td></tr>
+<tr><td>PZO</td><td> – Puerto Ordaz, Venezuela – Puerto Ordaz</td></tr>
+<tr><td>QBF</td><td> – Vail/Eagle, CO, USA</td></tr>
+<tr><td>QDU</td><td> – Duesseldorf, Germany – Main Train Station</td></tr>
+<tr><td>QKB</td><td> – Breckenridge, CO, USA</td></tr>
+<tr><td>QKL</td><td> – Cologne, Germany – Train Main Railroad Station</td></tr>
+<tr><td>QRO</td><td> – Queretaro, Queretaro, Mexico</td></tr>
+<tr><td>QSY</td><td> – Sydney, New South Wales, Australia</td></tr>
+<tr><td>RAB</td><td> – Rabaul, Papua New Guinea – Lakunai</td></tr>
+<tr><td>RAJ</td><td> – Rajkot, India – Rajkot</td></tr>
+<tr><td>RAK</td><td> – Marrakech, Morocco – Menara</td></tr>
+<tr><td>RAP</td><td> – Rapid City, SD, USA – Rapid City Regional Airport</td></tr>
+<tr><td>RAR</td><td> – Rarotonga, Cook Islands – Rarotonga</td></tr>
+<tr><td>RBA</td><td> – Rabat, Morocco – Sale</td></tr>
+<tr><td>RCB</td><td> – Richards Bay, South Africa – Richards Bay</td></tr>
+<tr><td>RCE</td><td> – Roche Harbor, WA, USA – Roche Harbor</td></tr>
+<tr><td>RDD</td><td> – Redding, CA, USA – Redding Municipal Airport</td></tr>
+<tr><td>RDG</td><td> – Reading, PA, USA – Municipal / Spaatz Field</td></tr>
+<tr><td>RDU</td><td> – Raleigh/Durham, NC, USA – Raleigh Durham International Arpt</td></tr>
+<tr><td>REC</td><td> – Recife, Pernambuco, Brazil – Guararapes International</td></tr>
+<tr><td>REG</td><td> – Reggio Calabria, Italy – Tito Menniti</td></tr>
+<tr><td>REL</td><td> – Trelew, Chubut, Argentina</td></tr>
+<tr><td>RES</td><td> – Resistencia, Chaco, Argentina</td></tr>
+<tr><td>REU</td><td> – Reus, Spain – Reus</td></tr>
+<tr><td>REX</td><td> – Reynosa, Tamaulipas, Mexico – General Lucio Blanco Airport</td></tr>
+<tr><td>RFD</td><td> – Rockford, IL, USA – Greater Rockford</td></tr>
+<tr><td>RGA</td><td> – Rio Grande, Tierra Del Fuego, Argentina</td></tr>
+<tr><td>RGL</td><td> – Rio Gallegos, Santa Cruz, Argentina – Rio Gallegos-Internacional</td></tr>
+<tr><td>RGN</td><td> – Yangon, Myanmar – Mingaladon</td></tr>
+<tr><td>RHI</td><td> – Rhinelander, WI, USA – Rhinelander Oneida County Airport</td></tr>
+<tr><td>RHO</td><td> – Rhodes, Greece – Paradisi</td></tr>
+<tr><td>RIC</td><td> – Richmond, VA, USA – Richmond International Airport</td></tr>
+<tr><td>RIO</td><td> – Rio De Janeiro, Rio De Janeiro, Brazil</td></tr>
+<tr><td>RIW</td><td> – Riverton, WY, USA – Riverton Regional Airport</td></tr>
+<tr><td>RIX</td><td> – Riga, Latvia – Riga</td></tr>
+<tr><td>RKD</td><td> – Rockland, ME, USA – Rockland</td></tr>
+<tr><td>RKS</td><td> – Rock Springs, WY, USA – Rock Springs Sweetwater Cty Arpt</td></tr>
+<tr><td>RKV</td><td> – Reykjavik, Iceland – Reykjavik Domestic Airport</td></tr>
+<tr><td>RMA</td><td> – Roma, Queensland, Australia – Roma</td></tr>
+<tr><td>RNB</td><td> – Ronneby, Sweden – Kallinge</td></tr>
+<tr><td>RNN</td><td> – Bornholm, Denmark – Arnager</td></tr>
+<tr><td>RNO</td><td> – Reno, NV, USA – Reno-Cannon International Apt</td></tr>
+<tr><td>RNS</td><td> – Rennes, France – St Jacques</td></tr>
+<tr><td>ROA</td><td> – Roanoke, VA, USA – Roanoke Regional Airport</td></tr>
+<tr><td>ROC</td><td> – Rochester, NY, USA – Monroe County Airport</td></tr>
+<tr><td>ROM</td><td> – Rome, Italy – Leonardo Da Vinci / Fiumicino</td></tr>
+<tr><td>ROP</td><td> – Rota, Northern Mariana Islands – Rota</td></tr>
+<tr><td>ROR</td><td> – Koror, Palau – Airai</td></tr>
+<tr><td>ROS</td><td> – Rosario, Santa Fe, Argentina – Fisherton</td></tr>
+<tr><td>ROV</td><td> – Rostov, Russia – Rostov</td></tr>
+<tr><td>ROW</td><td> – Roswell, NM, USA – Industrial Air Center</td></tr>
+<tr><td>RPR</td><td> – Raipur, India</td></tr>
+<tr><td>RRG</td><td> – Rodrigues Island, Mauritius – Rodrigues</td></tr>
+<tr><td>RSA</td><td> – Santa Rosa, La Pampa, Argentina</td></tr>
+<tr><td>RSD</td><td> – Rock Sound, Bahamas</td></tr>
+<tr><td>RST</td><td> – Rochester, MN, USA – Rochester Municipal</td></tr>
+<tr><td>RSU</td><td> – Yosu, South Korea – Yosu Airport</td></tr>
+<tr><td>RSW</td><td> – Fort Myers, FL, USA – Regional Southwest Airport</td></tr>
+<tr><td>RTB</td><td> – Roatan, Honduras – Roatan</td></tr>
+<tr><td>RTM</td><td> – Rotterdam, Netherlands – Rotterdam</td></tr>
+<tr><td>RUH</td><td> – Riyadh, Saudi Arabia – King Khaled Intl</td></tr>
+<tr><td>RUI</td><td> – Ruidoso, NM, USA</td></tr>
+<tr><td>RUN</td><td> – St-Denis De La Reunion, Reunion – Gillot</td></tr>
+<tr><td>RUT</td><td> – Rutland, VT, USA</td></tr>
+<tr><td>RWI</td><td> – Rocky Mount, NC, USA – Wilson</td></tr>
+<tr><td>SAB</td><td> – Saba Island, Netherlands Antilles</td></tr>
+<tr><td>SAF</td><td> – Santa Fe, NM, USA – Santa Fe Municipal Airport</td></tr>
+<tr><td>SAH</td><td> – Sanaa, Yemen – International</td></tr>
+<tr><td>SAL</td><td> – San Salvador, El Salvador – El Salvadore Intl Airport</td></tr>
+<tr><td>SAN</td><td> – San Diego, CA, USA – Lindbergh International Airport</td></tr>
+<tr><td>SAP</td><td> – San Pedro Sula, Honduras – La Mesa</td></tr>
+<tr><td>SAT</td><td> – San Antonio, TX, USA – San Antonio International</td></tr>
+<tr><td>SAV</td><td> – Savannah, GA, USA – Travis Field</td></tr>
+<tr><td>SBA</td><td> – Santa Barbara, CA, USA – Santa Barbara Airport</td></tr>
+<tr><td>SBH</td><td> – St Barthelemy, Guadeloupe</td></tr>
+<tr><td>SBN</td><td> – South Bend, IN, USA – Michiana Regional Airport</td></tr>
+<tr><td>SBP</td><td> – San Luis Obispo, CA, USA – San Luis Obispo County Airport</td></tr>
+<tr><td>SBW</td><td> – Sibu, Sarawak, Malaysia – Sibu</td></tr>
+<tr><td>SBY</td><td> – Salisbury, MD, USA – Salisbury-Wicomico County Arpt</td></tr>
+<tr><td>SCE</td><td> – State College, PA, USA – University Park Arpt</td></tr>
+<tr><td>SCL</td><td> – Santiago, Chile – Aeropuerto Comodoro Arturo Merino Benitez</td></tr>
+<tr><td>SCN</td><td> – Saarbruecken, Germany – Ensheim</td></tr>
+<tr><td>SCQ</td><td> – Santiago De Compostela, Spain – Santiago</td></tr>
+<tr><td>SCU</td><td> – Santiago, Cuba – Santiago-Antonio Maceo Cuba</td></tr>
+<tr><td>SDF</td><td> – Louisville, KY, USA – Standiford Field</td></tr>
+<tr><td>SDJ</td><td> – Sendai, Japan – Sendai</td></tr>
+<tr><td>SDK</td><td> – Sandakan, Sabah, Malaysia</td></tr>
+<tr><td>SDL</td><td> – Sundsvall, Sweden – Sundsvall</td></tr>
+<tr><td>SDN</td><td> – Sandane, Norway</td></tr>
+<tr><td>SDQ</td><td> – Santo Domingo, Dominican Republic – Las Americas</td></tr>
+<tr><td>SDR</td><td> – Santander, Spain – Santander</td></tr>
+<tr><td>SDU</td><td> – Rio De Janeiro, Rio De Janeiro, Brazil – Santos Dumont</td></tr>
+<tr><td>SDX</td><td> – Sedona, AZ, USA</td></tr>
+<tr><td>SDY</td><td> – Sidney, MT, USA</td></tr>
+<tr><td>SEA</td><td> – Seattle, WA, USA – Seattle Tacoma Intl Airport</td></tr>
+<tr><td>SEL</td><td> – Seoul, South Korea – Kimpo International</td></tr>
+<tr><td>SEZ</td><td> – Mahe Island, Seychelles – Mahe Island Seychelles Intl</td></tr>
+<tr><td>SFA</td><td> – Sfax, Tunisia – Sfax Airport</td></tr>
+<tr><td>SFG</td><td> – St Martin, Netherlands Antilles – Esperance</td></tr>
+<tr><td>SFJ</td><td> – Kangerlussuaq, Greenland – Sondre Stromfjord</td></tr>
+<tr><td>SFN</td><td> – Santa Fe, Santa Fe, Argentina</td></tr>
+<tr><td>SFO</td><td> – San Francisco, CA, USA – San Francisco Intl Airport</td></tr>
+<tr><td>SFT</td><td> – Skelleftea, Sweden – Skelleftea</td></tr>
+<tr><td>SGC</td><td> – Surgut, Russia</td></tr>
+<tr><td>SGD</td><td> – Sonderborg, Denmark – Sonderborg</td></tr>
+<tr><td>SGF</td><td> – Springfield, MO, USA – Springfield Regional Airport</td></tr>
+<tr><td>SGN</td><td> – Ho Chi Minh City, Vietnam – Tan Son Nhut</td></tr>
+<tr><td>SGO</td><td> – St George, Queensland, Australia – St George</td></tr>
+<tr><td>SGU</td><td> – Saint George, UT, USA – St George</td></tr>
+<tr><td>SGY</td><td> – Skagway, AK, USA</td></tr>
+<tr><td>SHA</td><td> – Shanghai, China – Shanghai Intl /Hongqiao/</td></tr>
+<tr><td>SHC</td><td> – Indaselassie, Ethiopia</td></tr>
+<tr><td>SHD</td><td> – Staunton, VA, USA – Shenandoah Valley Regional</td></tr>
+<tr><td>SHE</td><td> – Shenyang, China – Shenyang</td></tr>
+<tr><td>SHJ</td><td> – Sharjah, United Arab Emirates – Sharjah</td></tr>
+<tr><td>SHO</td><td> – Sokcho, South Korea</td></tr>
+<tr><td>SHR</td><td> – Sheridan, WY, USA – Sheridan County Airport</td></tr>
+<tr><td>SHV</td><td> – Shreveport, LA, USA – Regional Airport</td></tr>
+<tr><td>SID</td><td> – Sal, Cape Verde – Amilcar Cabral International</td></tr>
+<tr><td>SIN</td><td> – Singapore, Singapore – Changi International Airport</td></tr>
+<tr><td>SIP</td><td> – Simferopol, Ukraine – Simferopol</td></tr>
+<tr><td>SIT</td><td> – Sitka, AK, USA – Sitka</td></tr>
+<tr><td>SJC</td><td> – San Jose, CA, USA – San Jose International Airport</td></tr>
+<tr><td>SJD</td><td> – San Jose Del Cabo, Baja California Sur, Mexico – Los Cabos Intl Airport</td></tr>
+<tr><td>SJI</td><td> – San Jose, Philippines – Mcguire Field</td></tr>
+<tr><td>SJJ</td><td> – Sarajevo, Bosnia And Herzegowina – Butmir</td></tr>
+<tr><td>SJO</td><td> – San Jose, Costa Rica – Juan Santamaria International</td></tr>
+<tr><td>SJT</td><td> – San Angelo, TX, USA</td></tr>
+<tr><td>SJU</td><td> – San Juan, PR, USA – Luis Munoz Marin International</td></tr>
+<tr><td>SJW</td><td> – Shijiazhuang, China – Shijiazhuang</td></tr>
+<tr><td>SKB</td><td> – St Kitts, Saint Kitts And Nevis – Golden Rock</td></tr>
+<tr><td>SKD</td><td> – Samarkand, Uzbekistan</td></tr>
+<tr><td>SKG</td><td> – Thessaloniki, Greece – Thessaloniki</td></tr>
+<tr><td>SKP</td><td> – Skopje, Macedonia – Skopje</td></tr>
+<tr><td>SKS</td><td> – Vojens Lufthavn, Denmark – Jojens</td></tr>
+<tr><td>SLA</td><td> – Salta, Salta, Argentina – International</td></tr>
+<tr><td>SLC</td><td> – Salt Lake City, UT, USA – Salt Lake City International Arpt</td></tr>
+<tr><td>SLK</td><td> – Saranac Lake, NY, USA – Adirondack</td></tr>
+<tr><td>SLN</td><td> – Salina, KS, USA – Salina Municipal</td></tr>
+<tr><td>SLP</td><td> – San Luis Potosi, San Luis Potosi, Mexico</td></tr>
+<tr><td>SLU</td><td> – St Lucia, Saint Lucia – Vigie Field</td></tr>
+<tr><td>SLW</td><td> – Saltillo, Coahuila, Mexico – Saltillo</td></tr>
+<tr><td>SLZ</td><td> – Sao Luiz, Maranhao, Brazil – Tirirical</td></tr>
+<tr><td>SMF</td><td> – Sacramento, CA, USA – Sacramento Metropolitan</td></tr>
+<tr><td>SML</td><td> – Stella Maris, Bahamas</td></tr>
+<tr><td>SMM</td><td> – Semporna, Sabah, Malaysia – Semporna</td></tr>
+<tr><td>SMS</td><td> – St Marie, Madagascar</td></tr>
+<tr><td>SMX</td><td> – Santa Maria, CA, USA – Santa Maria Public Airport</td></tr>
+<tr><td>SNA</td><td> – Santa Ana, CA, USA – John Wayne Airport</td></tr>
+<tr><td>SNB</td><td> – Snake Bay, Northern Territory, Australia</td></tr>
+<tr><td>SNN</td><td> – Shannon, Ireland – Shannon</td></tr>
+<tr><td>SNO</td><td> – Sakon Nakhon, Thailand</td></tr>
+<tr><td>SOF</td><td> – Sofia, Bulgaria – Sofia Intl</td></tr>
+<tr><td>SOG</td><td> – Sogndal, Norway – Haukasen</td></tr>
+<tr><td>SOM</td><td> – San Tome, Venezuela</td></tr>
+<tr><td>SOP</td><td> – Southern Pines, NC, USA – Pinehurst</td></tr>
+<tr><td>SOU</td><td> – Southampton, England, United Kingdom – Eastleigh</td></tr>
+<tr><td>SOW</td><td> – Show Low, AZ, USA</td></tr>
+<tr><td>SPB</td><td> – St Thomas Island, VI, USA – Seaplane Base</td></tr>
+<tr><td>SPC</td><td> – Santa Cruz La Palma, Canary Islands, Spain – La Palma</td></tr>
+<tr><td>SPD</td><td> – Saidpur, Bangladesh</td></tr>
+<tr><td>SPI</td><td> – Springfield, IL, USA – Capital Airport</td></tr>
+<tr><td>SPN</td><td> – Saipan, Northern Mariana Islands – Saipan Intl Northrn Mariana Isles</td></tr>
+<tr><td>SPR</td><td> – San Pedro, Belize – San Pedro</td></tr>
+<tr><td>SPS</td><td> – Wichita Falls, TX, USA – Wichita Falls Municipal</td></tr>
+<tr><td>SPU</td><td> – Split, Croatia (Hrvatska) – Split</td></tr>
+<tr><td>SPW</td><td> – Spencer, IA, USA – Spencer Municipal Airport</td></tr>
+<tr><td>SRE</td><td> – Sucre, Bolivia – Sucre</td></tr>
+<tr><td>SRQ</td><td> – Sarasota/Bradenton, FL, USA – Sarasota-Bradenton</td></tr>
+<tr><td>SSA</td><td> – Salvador, Bahia, Brazil – Dois De Julho</td></tr>
+<tr><td>SSB</td><td> – St Croix Island, VI, USA – Sea Plane Base</td></tr>
+<tr><td>SSG</td><td> – Malabo, Equatorial Guinea – Santa Isabel</td></tr>
+<tr><td>SSH</td><td> – Sharm El Sheikh, Egypt – Ophira</td></tr>
+<tr><td>SSJ</td><td> – Sandnessjoen, Norway – Stokka</td></tr>
+<tr><td>SSQ</td><td> – La Sarre, Quebec, Canada</td></tr>
+<tr><td>STC</td><td> – Saint Cloud, MN, USA – Saint Cloud</td></tr>
+<tr><td>STD</td><td> – Santo Domingo, Venezuela – Mayor Humberto Vivas Guerrero</td></tr>
+<tr><td>STI</td><td> – Santiago, Dominican Republic – Municipal</td></tr>
+<tr><td>STL</td><td> – St Louis, MO, USA – Lambert-St Louis Internatl</td></tr>
+<tr><td>STM</td><td> – Santarem, Para, Brazil</td></tr>
+<tr><td>STN</td><td> – London, England, United Kingdom – Stansted</td></tr>
+<tr><td>STP</td><td> – St Paul, MN, USA – Downtown Airport</td></tr>
+<tr><td>STR</td><td> – Stuttgart, Germany – Echterdingen</td></tr>
+<tr><td>STS</td><td> – Santa Rosa, CA, USA – Sonoma County Airport</td></tr>
+<tr><td>STT</td><td> – St Thomas Island, VI, USA – Cyril E King Arpt</td></tr>
+<tr><td>STX</td><td> – St Croix Island, VI, USA</td></tr>
+<tr><td>SUB</td><td> – Surabaya, Indonesia – Juanda Airport</td></tr>
+<tr><td>SUE</td><td> – Sturgeon Bay, WI, USA</td></tr>
+<tr><td>SUN</td><td> – Sun Valley/Hailey, ID, USA</td></tr>
+<tr><td>SUV</td><td> – Suva, Fiji – Nausori</td></tr>
+<tr><td>SVD</td><td> – St Vincent, St. Vincent And The Grenadines</td></tr>
+<tr><td>SVG</td><td> – Stavanger, Norway – Sola</td></tr>
+<tr><td>SVL</td><td> – Savonlinna, Finland – Savonlinna</td></tr>
+<tr><td>SVO</td><td> – Moscow, Russia – Sheremetyevo</td></tr>
+<tr><td>SVQ</td><td> – Sevilla, Spain</td></tr>
+<tr><td>SVU</td><td> – Savusavu, Fiji – Savusavu</td></tr>
+<tr><td>SVX</td><td> – Ekaterinburg, Russia</td></tr>
+<tr><td>SVZ</td><td> – San Antonio, Venezuela</td></tr>
+<tr><td>SWA</td><td> – Shantou, China</td></tr>
+<tr><td>SWF</td><td> – Newburgh/Poughkeepsie, NY, USA – Stewart</td></tr>
+<tr><td>SWP</td><td> – Swakopmund, Namibia</td></tr>
+<tr><td>SWQ</td><td> – Sumbawa Island, Indonesia – Brang Bidji</td></tr>
+<tr><td>SXB</td><td> – Strasbourg, France – Entzheim</td></tr>
+<tr><td>SXF</td><td> – Berlin, Germany – Schoenefeld</td></tr>
+<tr><td>SXL</td><td> – Sligo, Ireland – Collooney</td></tr>
+<tr><td>SXM</td><td> – St Maarten, Netherlands Antilles – Juliana</td></tr>
+<tr><td>SXR</td><td> – Srinagar, India</td></tr>
+<tr><td>SYD</td><td> – Sydney, New South Wales, Australia – Sydney /Kingsford-Smith/ Airport</td></tr>
+<tr><td>SYO</td><td> – Shonai, Japan – Shonai</td></tr>
+<tr><td>SYR</td><td> – Syracuse, NY, USA – Hancock International</td></tr>
+<tr><td>SYX</td><td> – Sanya, China</td></tr>
+<tr><td>SYY</td><td> – Stornoway, Scotland, United Kingdom – Stornoway</td></tr>
+<tr><td>SYZ</td><td> – Shiraz, Iran – Shiraz</td></tr>
+<tr><td>SZG</td><td> – Salzburg, Austria – Salzburg</td></tr>
+<tr><td>SZX</td><td> – Shenzhen, China – Shenzhen</td></tr>
+<tr><td>SZZ</td><td> – Szczecin, Poland – Goleniow</td></tr>
+<tr><td>TAB</td><td> – Tobago, Tobago, Trinidad And Tobago – Crown Point</td></tr>
+<tr><td>TAC</td><td> – Tacloban, Philippines – Dz Romualdez</td></tr>
+<tr><td>TAE</td><td> – Taegu, South Korea</td></tr>
+<tr><td>TAG</td><td> – Tagbilaran, Philippines – Tagbilaran</td></tr>
+<tr><td>TAI</td><td> – Taiz, Yemen – Al-Janad</td></tr>
+<tr><td>TAM</td><td> – Tampico, Tamaulipas, Mexico</td></tr>
+<tr><td>TAP</td><td> – Tapachula, Chiapas, Mexico – Tapachula International</td></tr>
+<tr><td>TAS</td><td> – Tashkent, Uzbekistan – Tashkent</td></tr>
+<tr><td>TAT</td><td> – Tatry/Poprad, Slovakia – Tatry/Poprad</td></tr>
+<tr><td>TBN</td><td> – Ft Leonard Wood, MO, USA – Forney Field</td></tr>
+<tr><td>TBP</td><td> – Tumbes, Peru – Tumbes</td></tr>
+<tr><td>TBS</td><td> – Tbilisi, Georgia – Novo Alexeyevka</td></tr>
+<tr><td>TBT</td><td> – Tabatinga, Amazonas, Brazil</td></tr>
+<tr><td>TBU</td><td> – Nuku Alofa/Tongatapu, Tonga – International</td></tr>
+<tr><td>TCI</td><td> – Tenerife, Canary Islands, Spain – Tenerife Norte Los Rodeos</td></tr>
+<tr><td>TCL</td><td> – Tuscaloosa, AL, USA – Van De Graff</td></tr>
+<tr><td>TDD</td><td> – Trinidad, Bolivia</td></tr>
+<tr><td>TED</td><td> – Thisted, Denmark</td></tr>
+<tr><td>TER</td><td> – Terceira Island, Azores Islands, Portugal – Lajes</td></tr>
+<tr><td>TEX</td><td> – Telluride, CO, USA – Telluride Municipal Airport</td></tr>
+<tr><td>TEZ</td><td> – Tezpur, India – Salonbari</td></tr>
+<tr><td>TFN</td><td> – Tenerife, Canary Islands, Spain – Tenerife Norte Los Rodeos</td></tr>
+<tr><td>TFS</td><td> – Tenerife, Canary Islands, Spain – Reina Sofia</td></tr>
+<tr><td>TGD</td><td> – Podgorica, Yugoslavia – Golubovci</td></tr>
+<tr><td>TGG</td><td> – Kuala Terengganu, Malaysia – Sultan Mahmood</td></tr>
+<tr><td>TGM</td><td> – Tirgu Mures, Romania – Tirgu Mures</td></tr>
+<tr><td>TGU</td><td> – Tegucigalpa, Honduras – Toncontin</td></tr>
+<tr><td>TGZ</td><td> – Tuxtla Gutierrez, Chiapas, Mexico – Llano San Juan</td></tr>
+<tr><td>THE</td><td> – Teresina, Piaui, Brazil – Teresina</td></tr>
+<tr><td>THF</td><td> – Berlin, Germany – Tempelhof</td></tr>
+<tr><td>THR</td><td> – Tehran, Iran – Mehrabad</td></tr>
+<tr><td>THU</td><td> – Pituffik, Greenland – Thule Airport</td></tr>
+<tr><td>TIA</td><td> – Tirana, Albania – Rinas</td></tr>
+<tr><td>TIJ</td><td> – Tijuana, Baja California, Mexico – General Abelardo L Rodriguez</td></tr>
+<tr><td>TIQ</td><td> – Tinian, Northern Mariana Islands – Tinian</td></tr>
+<tr><td>TIS</td><td> – Thursday Island, Queensland, Australia – Horn Island</td></tr>
+<tr><td>TIV</td><td> – Tivat, Yugoslavia – Tivat</td></tr>
+<tr><td>TIZ</td><td> – Tari, Papua New Guinea</td></tr>
+<tr><td>TJA</td><td> – Tarija, Bolivia</td></tr>
+<tr><td>TJM</td><td> – Tyumen, Russia – Tyumen</td></tr>
+<tr><td>TKK</td><td> – Truk, Caroline Islands, Micronesia – Truk</td></tr>
+<tr><td>TKQ</td><td> – Kigoma, Tanzania</td></tr>
+<tr><td>TKS</td><td> – Tokushima, Japan – Tokushima</td></tr>
+<tr><td>TKU</td><td> – Turku, Finland – Turku</td></tr>
+<tr><td>TLH</td><td> – Tallahassee, FL, USA</td></tr>
+<tr><td>TLL</td><td> – Tallinn, Estonia – Ulemiste</td></tr>
+<tr><td>TLS</td><td> – Toulouse, France – Blagnac</td></tr>
+<tr><td>TLV</td><td> – Tel Aviv Yafo, Israel – Ben-Gurion International</td></tr>
+<tr><td>TMP</td><td> – Tampere, Finland – Tampere-Pirkkala</td></tr>
+<tr><td>TMW</td><td> – Tamworth, New South Wales, Australia – Tamworth</td></tr>
+<tr><td>TNG</td><td> – Tangier, Morocco – Boukhalef Souahel</td></tr>
+<tr><td>TNR</td><td> – Antananarivo, Madagascar – Ivato</td></tr>
+<tr><td>TOL</td><td> – Toledo, OH, USA – Toledo Express Airport</td></tr>
+<tr><td>TOS</td><td> – Tromso, Norway – Tromso/Langes</td></tr>
+<tr><td>TOY</td><td> – Toyama, Japan – Toyama</td></tr>
+<tr><td>TPA</td><td> – Tampa, FL, USA – Tampa International</td></tr>
+<tr><td>TPE</td><td> – Taipei, Taiwan – Chiang Kai Shek Airport</td></tr>
+<tr><td>TPL</td><td> – Temple, TX, USA</td></tr>
+<tr><td>TPP</td><td> – Tarapoto, Peru – Tarapoto</td></tr>
+<tr><td>TPQ</td><td> – Tepic, Nayarit, Mexico</td></tr>
+<tr><td>TPS</td><td> – Trapani, Sicily, Italy – Birgi</td></tr>
+<tr><td>TRC</td><td> – Torreon, Coahuila, Mexico</td></tr>
+<tr><td>TRD</td><td> – Trondheim, Norway – Trondheim-Vaernes</td></tr>
+<tr><td>TRE</td><td> – Tiree, Scotland, United Kingdom – Tiree Island</td></tr>
+<tr><td>TRF</td><td> – Sandefjord, Norway – Torf</td></tr>
+<tr><td>TRG</td><td> – Tauranga, New Zealand – Tauranga</td></tr>
+<tr><td>TRI</td><td> – Bristol/Johnson City/Kingsport, TN, USA – Municipal Tri-City Airport</td></tr>
+<tr><td>TRK</td><td> – Tarakan, Indonesia – Tarakan</td></tr>
+<tr><td>TRN</td><td> – Turin, Italy – Caselle</td></tr>
+<tr><td>TRS</td><td> – Trieste, Italy – Ronchi Dei Legionari</td></tr>
+<tr><td>TRU</td><td> – Trujillo, Peru – Trujillo</td></tr>
+<tr><td>TRV</td><td> – Trivandrum, India – Trivandrum</td></tr>
+<tr><td>TRZ</td><td> – Tiruchirapally, India – Civil</td></tr>
+<tr><td>TSA</td><td> – Taipei, Taiwan – Sung Shan</td></tr>
+<tr><td>TSR</td><td> – Timisoara, Romania – Timisoara</td></tr>
+<tr><td>TSS</td><td> – New York, NY, USA – East 34Th Street Heliport</td></tr>
+<tr><td>TSV</td><td> – Townsville, Queensland, Australia – Townsville</td></tr>
+<tr><td>TTE</td><td> – Ternate, Indonesia – Babullah</td></tr>
+<tr><td>TTJ</td><td> – Tottori, Japan – Tottori</td></tr>
+<tr><td>TTN</td><td> – Trenton, NJ, USA – Mercer County</td></tr>
+<tr><td>TUC</td><td> – Tucuman, Tucuman, Argentina – Benjamin Matienzo</td></tr>
+<tr><td>TUF</td><td> – Tours, France – St Symphorien</td></tr>
+<tr><td>TUL</td><td> – Tulsa, OK, USA – Tulsa International</td></tr>
+<tr><td>TUN</td><td> – Tunis, Tunisia – Carthage</td></tr>
+<tr><td>TUO</td><td> – Taupo, New Zealand – Taupo</td></tr>
+<tr><td>TUP</td><td> – Tupelo, MS, USA – Cd Lemons Municipal</td></tr>
+<tr><td>TUS</td><td> – Tucson, AZ, USA – Tucson International Airport</td></tr>
+<tr><td>TVC</td><td> – Traverse City, MI, USA – Cherry Capital Airport</td></tr>
+<tr><td>TVF</td><td> – Thief River Falls, MN, USA – Thief River Falls Municipal</td></tr>
+<tr><td>TVL</td><td> – South Lake Tahoe, CA, USA – Lake Tahoe</td></tr>
+<tr><td>TWB</td><td> – Toowoomba, Queensland, Australia – Toowoomba</td></tr>
+<tr><td>TWF</td><td> – Twin Falls, ID, USA</td></tr>
+<tr><td>TXK</td><td> – Texarkana, AR, USA – Municipal</td></tr>
+<tr><td>TXL</td><td> – Berlin, Germany – Tegel</td></tr>
+<tr><td>TXN</td><td> – Tunxi, China</td></tr>
+<tr><td>TYN</td><td> – Taiyuan, China</td></tr>
+<tr><td>TYR</td><td> – Tyler, TX, USA – Pounds Field</td></tr>
+<tr><td>TYS</td><td> – Knoxville, TN, USA – Mcghee Tyson</td></tr>
+<tr><td>TZA</td><td> – Belize City, Belize – Belize Municipal</td></tr>
+<tr><td>TZN</td><td> – South Andros, Bahamas – Congo Town</td></tr>
+<tr><td>TZX</td><td> – Trabzon, Turkey – Trabzon</td></tr>
+<tr><td>UAK</td><td> – Narsarsuaq, Greenland – Narssarssuaq</td></tr>
+<tr><td>UAQ</td><td> – San Juan, San Juan, Argentina</td></tr>
+<tr><td>UBJ</td><td> – Ube, Japan</td></tr>
+<tr><td>UCA</td><td> – Utica, NY, USA – Oneida County</td></tr>
+<tr><td>UDR</td><td> – Udaipur, India</td></tr>
+<tr><td>UEL</td><td> – Quelimane, Mozambique</td></tr>
+<tr><td>UET</td><td> – Quetta, Pakistan</td></tr>
+<tr><td>UGC</td><td> – Urgench, Uzbekistan</td></tr>
+<tr><td>UIB</td><td> – Quibdo, Colombia</td></tr>
+<tr><td>UIN</td><td> – Quincy, IL, USA – Baldwin Field</td></tr>
+<tr><td>UIO</td><td> – Quito, Ecuador – Mariscal</td></tr>
+<tr><td>UIP</td><td> – Quimper, France – Pluguffan</td></tr>
+<tr><td>ULN</td><td> – Ulan Bator, Mongolia – Ulan Bator</td></tr>
+<tr><td>ULY</td><td> – Ulyanovsk, Russia – Ulyanoysk</td></tr>
+<tr><td>UME</td><td> – Umea, Sweden – Umea</td></tr>
+<tr><td>UMR</td><td> – Woomera, South Australia, Australia – Woomera</td></tr>
+<tr><td>UNT</td><td> – Unst Shetland Islands, Scotland, United Kingdom</td></tr>
+<tr><td>UPG</td><td> – Ujung Pandang, Indonesia – Hasanudin</td></tr>
+<tr><td>UPN</td><td> – Uruapan, Michoacan, Mexico</td></tr>
+<tr><td>URC</td><td> – Urumqi, China</td></tr>
+<tr><td>URO</td><td> – Rouen, France – Rouen /Boos Airport</td></tr>
+<tr><td>URT</td><td> – Surat Thani, Thailand</td></tr>
+<tr><td>USH</td><td> – Ushuaia, Tierra Del Fuego, Argentina</td></tr>
+<tr><td>USM</td><td> – Koh Samui, Thailand</td></tr>
+<tr><td>USN</td><td> – Ulsan, South Korea</td></tr>
+<tr><td>UTH</td><td> – Udon Thani, Thailand – Udon</td></tr>
+<tr><td>UTN</td><td> – Upington, South Africa – Municipal</td></tr>
+<tr><td>UUD</td><td> – Ulan-Ude, Russia</td></tr>
+<tr><td>UVF</td><td> – St Lucia, Saint Lucia – Hewanorra</td></tr>
+<tr><td>VAA</td><td> – Vaasa, Finland – Vaasa</td></tr>
+<tr><td>VAR</td><td> – Varna, Bulgaria – Varna</td></tr>
+<tr><td>VAS</td><td> – Sivas, Turkey – Sivas</td></tr>
+<tr><td>VBY</td><td> – Visby, Sweden – Visby</td></tr>
+<tr><td>VCE</td><td> – Venice, Italy – Marco Polo</td></tr>
+<tr><td>VCT</td><td> – Victoria, TX, USA</td></tr>
+<tr><td>VDA</td><td> – Ovda, Israel</td></tr>
+<tr><td>VDS</td><td> – Vadso, Norway – Vadso</td></tr>
+<tr><td>VDZ</td><td> – Valdez, AK, USA</td></tr>
+<tr><td>VER</td><td> – Veracruz, Veracruz, Mexico – Las Bajadas / General Heriberto Jara</td></tr>
+<tr><td>VEY</td><td> – Vestmannaeyjar, Iceland – Vestmannaeyjar</td></tr>
+<tr><td>VFA</td><td> – Victoria Falls, Zimbabwe</td></tr>
+<tr><td>VGO</td><td> – Vigo, Spain</td></tr>
+<tr><td>VGT</td><td> – Las Vegas, NV, USA – North Air Terminal</td></tr>
+<tr><td>VIE</td><td> – Vienna, Austria – Schwechat</td></tr>
+<tr><td>VIJ</td><td> – Virgin Gorda, Virgin Islands (British)</td></tr>
+<tr><td>VIS</td><td> – Visalia, CA, USA – Visalia Municipal Airport</td></tr>
+<tr><td>VIT</td><td> – Vitoria, Spain – Vitoria</td></tr>
+<tr><td>VIX</td><td> – Vitoria, Espirito Santo, Brazil – Eureco Sales</td></tr>
+<tr><td>VKO</td><td> – Moscow, Russia – Vnukovo</td></tr>
+<tr><td>VLC</td><td> – Valencia, Spain – Valencia</td></tr>
+<tr><td>VLD</td><td> – Valdosta, GA, USA – Valdosta Regional</td></tr>
+<tr><td>VLG</td><td> – Villa Gesell, Buenos Aires, Argentina – Villa Gesell</td></tr>
+<tr><td>VLI</td><td> – Port Vila, Vanuatu – Bauerfield</td></tr>
+<tr><td>VLL</td><td> – Valladolid, Spain – Valladolid</td></tr>
+<tr><td>VLN</td><td> – Valencia, Venezuela – Valencia</td></tr>
+<tr><td>VNO</td><td> – Vilnius, Lithuania – Vilnius Airport</td></tr>
+<tr><td>VNS</td><td> – Varanasi, India – Babatpur</td></tr>
+<tr><td>VOG</td><td> – Volgograd, Russia – Volgograd</td></tr>
+<tr><td>VPS</td><td> – Valparaiso, FL, USA – Fort Walton Beach</td></tr>
+<tr><td>VRA</td><td> – Varadero, Cuba – Juan Gualberto Gomez</td></tr>
+<tr><td>VRB</td><td> – Vero Beach, FL, USA – Vero Beach Municipal</td></tr>
+<tr><td>VRK</td><td> – Varkaus, Finland – Varkaus</td></tr>
+<tr><td>VRN</td><td> – Verona, Italy – Verona</td></tr>
+<tr><td>VSA</td><td> – Villahermosa, Tabasco, Mexico – Carlos R Perez</td></tr>
+<tr><td>VSG</td><td> – Lugansk, Ukraine</td></tr>
+<tr><td>VST</td><td> – Vasteras, Sweden – Hasslo</td></tr>
+<tr><td>VTE</td><td> – Vientiane, Laos – Wattay</td></tr>
+<tr><td>VTZ</td><td> – Vishakhapatnam, India – Vishakhapatnam</td></tr>
+<tr><td>VUP</td><td> – Valledupar, Colombia</td></tr>
+<tr><td>VVI</td><td> – Santa Cruz, Bolivia – Viru Viru International</td></tr>
+<tr><td>VVO</td><td> – Vladivostok, Russia – Vladivostok Airport</td></tr>
+<tr><td>VXO</td><td> – Vaxjo, Sweden – Vaxjo</td></tr>
+<tr><td>WAT</td><td> – Waterford, Ireland</td></tr>
+<tr><td>WAW</td><td> – Warsaw, Poland – Okecie</td></tr>
+<tr><td>WBU</td><td> – Boulder, CO, USA</td></tr>
+<tr><td>WDG</td><td> – Enid, OK, USA – Woodring Municipal</td></tr>
+<tr><td>WDH</td><td> – Windhoek, Namibia – Jg Strijdom</td></tr>
+<tr><td>WGA</td><td> – Wagga-Wagga, New South Wales, Australia – Forest Hill</td></tr>
+<tr><td>WGE</td><td> – Walgett, New South Wales, Australia – Walgett</td></tr>
+<tr><td>WIC</td><td> – Wick, Scotland, United Kingdom – Wick</td></tr>
+<tr><td>WIL</td><td> – Nairobi, Kenya – Wilson Arpt</td></tr>
+<tr><td>WIN</td><td> – Winton, Queensland, Australia – Winton</td></tr>
+
+<tr><td>WLG</td><td> – Wellington, New Zealand – International</td></tr>
+<tr><td>WMH</td><td> – Mountain Home, AR, USA</td></tr>
+<tr><td>WNA</td><td> – Napakiak, AK, USA – Napakiak</td></tr>
+<tr><td>WRL</td><td> – Worland, WY, USA – Worland</td></tr>
+<tr><td>WRO</td><td> – Wroclaw, Poland – Strachowice</td></tr>
+<tr><td>XAW</td><td> – Capreol, Ontario, Canada – Capreol / Via Rail Service</td></tr>
+<tr><td>XAZ</td><td> – Cambellton, New Brunswick, Canada – Campbellton</td></tr>
+<tr><td>XBR</td><td> – Brockville, Ontario, Canada</td></tr>
+<tr><td>XCI</td><td> – Chambord, Quebec, Canada – Chambord / Via Rail Service</td></tr>
+<tr><td>XCM</td><td> – Chatham, Ontario, Canada</td></tr>
+<tr><td>XDL</td><td> – Chandler, Quebec, Canada – Chandler / Via Rail Service</td></tr>
+<tr><td>XDM</td><td> – Drummondville, Quebec, Canada</td></tr>
+<tr><td>XDU</td><td> – Hervey, Quebec, Canada – Hervey / Via Rail Service</td></tr>
+<tr><td>XEE</td><td> – Lac Edouard, Quebec, Canada – Lac Edouard / Via Rail Service</td></tr>
+<tr><td>XEH</td><td> – Ladysmith, British Columbia, Canada – Ladysmith / Via Rail Service</td></tr>
+<tr><td>XEJ</td><td> – Langford, British Columbia, Canada – Langford / Via Rail Service</td></tr>
+<tr><td>XEK</td><td> – Melville, Saskatchewan, Canada – Melville / Via Rail Service</td></tr>
+<tr><td>XEL</td><td> – New Carlisle, Quebec, Canada – New Carlisle / Via Rail Service</td></tr>
+<tr><td>XEM</td><td> – New Richmond, Quebec, Canada – New Richmond / Via Rail Service</td></tr>
+<tr><td>XEY</td><td> – Newcastle, New Brunswick, Canada – Newcastle / Via Rail Service</td></tr>
+<tr><td>XFD</td><td> – Stratford, Ontario, Canada</td></tr>
+<tr><td>XFE</td><td> – Parent, Quebec, Canada – Parent / Via Rail Service</td></tr>
+<tr><td>XFG</td><td> – Perce, Quebec, Canada – Perce / Via Rail Service</td></tr>
+<tr><td>XFL</td><td> – Shawinigan, Quebec, Canada – Shawinigan / Via Rail Service</td></tr>
+<tr><td>XFM</td><td> – Shawnigan, British Columbia, Canada – Shawnigan / Via Rail Service</td></tr>
+<tr><td>XFO</td><td> – Taschereau, Quebec, Canada – Taschereau / Via Rail Service</td></tr>
+<tr><td>XFQ</td><td> – Weymont, Quebec, Canada – Weymont / Via Rail Service</td></tr>
+<tr><td>XFS</td><td> – Alexandria, Ontario, Canada – Alexandria / Via Rail Service</td></tr>
+<tr><td>XFV</td><td> – Brantford, Ontario, Canada – Brantford / Via Rail Service</td></tr>
+<tr><td>XGJ</td><td> – Cobourg, Ontario, Canada – Cobourg / Via Rail Service</td></tr>
+<tr><td>XGK</td><td> – Coteau, Quebec, Canada – Coteau / Via Rail Service</td></tr>
+<tr><td>XGY</td><td> – Grimsby, Ontario, Canada – Grimsby / Via Rail Service</td></tr>
+<tr><td>XHM</td><td> – Georgetown, Ontario, Canada – Georgetown / Via Rail Service</td></tr>
+<tr><td>XHS</td><td> – Chemainus, British Columbia, Canada – Chemainus / Via Rail Service</td></tr>
+<tr><td>XIA</td><td> – Guelph, Ontario, Canada – Guelph / Via Rail Service</td></tr>
+<tr><td>XIB</td><td> – Ingersoll, Ontario, Canada – Ingersoll / Via Rail Service</td></tr>
+<tr><td>XID</td><td> – Maxville, Ontario, Canada – Maxville / Via Rail Service</td></tr>
+<tr><td>XIM</td><td> – Saint-Hyacinthe, Quebec, Canada – Saint Hyacinthe / Via Rail Service</td></tr>
+<tr><td>XIO</td><td> – St Marys, Ontario, Canada – St Marys / Via Rail Service</td></tr>
+<tr><td>XIP</td><td> – Woodstock, Ontario, Canada – Woodstock / Via Rail Service</td></tr>
+<tr><td>XIY</td><td> – Xi An, China – Xianyang</td></tr>
+<tr><td>XJL</td><td> – Joliette, Quebec, Canada – Joliette / Via Rail Service</td></tr>
+<tr><td>XJQ</td><td> – Jonquiere, Quebec, Canada – Jonquiere / Via Rail Service</td></tr>
+<tr><td>XLV</td><td> – Niagara Falls, Ontario, Canada</td></tr>
+<tr><td>XLZ</td><td> – Truro, Nova Scotia, Canada</td></tr>
+<tr><td>XMN</td><td> – Xiamen, China – Xiamen International</td></tr>
+<tr><td>XOK</td><td> – Oakville, Ontario, Canada – Oakville / Via Rail Service</td></tr>
+<tr><td>XPB</td><td> – Parksville, British Columbia, Canada – Parksville / Via Rail Service</td></tr>
+<tr><td>XPN</td><td> – Brampton, Ontario, Canada – Brampton / Via Rail Service</td></tr>
+<tr><td>XPX</td><td> – Pointe-Aux-Trembles, Quebec, Canada – Pointe Aux Trembles / Via Rail Service</td></tr>
+<tr><td>XQP</td><td> – Quepos, Costa Rica</td></tr>
+<tr><td>XQU</td><td> – Qualicum, British Columbia, Canada</td></tr>
+<tr><td>XRP</td><td> – Riviere-A-Pierre, Quebec, Canada – Riviere A Pierre / Via Rail Service</td></tr>
+<tr><td>XRY</td><td> – Jerez De La Frontera, Spain – La Parra</td></tr>
+<tr><td>XSC</td><td> – South Caicos, Turks And Caicos Islands</td></tr>
+<tr><td>XTY</td><td> – Strathroy, Ontario, Canada – Strathroy / Via Rail Service</td></tr>
+<tr><td>XVV</td><td> – Belleville, Ontario, Canada – Belleville / Via Rail Service</td></tr>
+<tr><td>XWY</td><td> – Wyoming, Ontario, Canada – Wyoming / Via Rail Service</td></tr>
+<tr><td>XZB</td><td> – Casselman, Ontario, Canada – Casselman / Via Rail Service</td></tr>
+<tr><td>XZC</td><td> – Glencoe, Ontario, Canada – Glencoe / Via Rail Service</td></tr>
+<tr><td>YAM</td><td> – Sault Ste Marie, Ontario, Canada – Sault Ste Marie Arpt</td></tr>
+<tr><td>YAP</td><td> – Yap, Caroline Islands, Micronesia</td></tr>
+<tr><td>YAZ</td><td> – Tofino, British Columbia, Canada – Tofino Airport</td></tr>
+<tr><td>YBA</td><td> – Banff, Alberta, Canada</td></tr>
+<tr><td>YBC</td><td> – Baie Comeau, Quebec, Canada</td></tr>
+<tr><td>YBL</td><td> – Campbell River /Campbell Rvr, British Columbia, Canada – Metropolitan Area</td></tr>
+<tr><td>YBR</td><td> – Brandon, Manitoba, Canada</td></tr>
+<tr><td>YBX</td><td> – Blanc Sablon, Quebec, Canada – Blanc Sablon Airport</td></tr>
+<tr><td>YCA</td><td> – Courtenay, British Columbia, Canada</td></tr>
+<tr><td>YCC</td><td> – Cornwall, Ontario, Canada – Regional</td></tr>
+<tr><td>YCD</td><td> – Nanaimo, British Columbia, Canada – Cassidy Airport</td></tr>
+<tr><td>YCG</td><td> – Castlegar, British Columbia, Canada</td></tr>
+<tr><td>YCM</td><td> – St Catharines, Ontario, Canada</td></tr>
+<tr><td>YCO</td><td> – Coppermine, Northwest Territories, Canada</td></tr>
+<tr><td>YDF</td><td> – Deer Lake, Newfoundland, Canada – Deer Lake</td></tr>
+<tr><td>YDN</td><td> – Dauphin, Manitoba, Canada</td></tr>
+<tr><td>YDQ</td><td> – Dawson Creek, British Columbia, Canada</td></tr>
+<tr><td>YEC</td><td> – Yechon, South Korea – Yechon</td></tr>
+<tr><td>YEG</td><td> – Edmonton, Alberta, Canada – Edmonton International</td></tr>
+<tr><td>YEL</td><td> – Elliot Lake, Ontario, Canada</td></tr>
+<tr><td>YEV</td><td> – Inuvik, Northwest Territories, Canada – Inuvik International Arpt</td></tr>
+<tr><td>YEY</td><td> – Amos, Quebec, Canada</td></tr>
+<tr><td>YFB</td><td> – Iqaluit, Northwest Territories, Canada</td></tr>
+<tr><td>YFC</td><td> – Fredericton, New Brunswick, Canada – Fredericton Municipal Apt</td></tr>
+<tr><td>YFS</td><td> – Fort Simpson, Northwest Territories, Canada – Fort Simpson Airport</td></tr>
+<tr><td>YGB</td><td> – Gillies Bay, British Columbia, Canada</td></tr>
+<tr><td>YGK</td><td> – Kingston, Ontario, Canada – Kingston Airport</td></tr>
+<tr><td>YGP</td><td> – Gaspe, Quebec, Canada</td></tr>
+<tr><td>YGR</td><td> – Iles De La Madeleine, Quebec, Canada – House Harbour Airport</td></tr>
+<tr><td>YGT</td><td> – Igloolik, Northwest Territories, Canada</td></tr>
+<tr><td>YGW</td><td> – Kuujjuarapik, Quebec, Canada – Kuujjuarapik</td></tr>
+<tr><td>YGX</td><td> – Gillam, Manitoba, Canada</td></tr>
+<tr><td>YHB</td><td> – Hudson Bay, Saskatchewan, Canada</td></tr>
+<tr><td>YHD</td><td> – Dryden, Ontario, Canada – Dryden Airport</td></tr>
+<tr><td>YHI</td><td> – Holman Island, Northwest Territories, Canada</td></tr>
+<tr><td>YHM</td><td> – Hamilton, Ontario, Canada – Hamilton Civic Airport</td></tr>
+<tr><td>YHN</td><td> – Hornepayne, Ontario, Canada</td></tr>
+<tr><td>YHY</td><td> – Hay River, Northwest Territories, Canada</td></tr>
+<tr><td>YHZ</td><td> – Halifax, Nova Scotia, Canada – Halifax International</td></tr>
+<tr><td>YIB</td><td> – Atikokan, Ontario, Canada</td></tr>
+<tr><td>YJA</td><td> – Jasper, Alberta, Canada</td></tr>
+<tr><td>YJT</td><td> – Stephenville, Newfoundland, Canada – Stephenville</td></tr>
+<tr><td>YKA</td><td> – Kamloops, British Columbia, Canada – Fulton Field</td></tr>
+<tr><td>YKF</td><td> – Kitchener, Ontario, Canada – Kitchener</td></tr>
+<tr><td>YKL</td><td> – Schefferville, Quebec, Canada – Schefferville</td></tr>
+<tr><td>YKM</td><td> – Yakima, WA, USA – Yakima Air Terminal</td></tr>
+<tr><td>YKQ</td><td> – Waskaganish, Quebec, Canada – Waskaganish</td></tr>
+<tr><td>YKS</td><td> – Yakutsk, Russia</td></tr>
+<tr><td>YLD</td><td> – Chapleau, Ontario, Canada</td></tr>
+<tr><td>YLQ</td><td> – La Tuque, Quebec, Canada – La Tuque</td></tr>
+<tr><td>YLW</td><td> – Kelowna, British Columbia, Canada – Ellison Field Airport</td></tr>
+<tr><td>YMM</td><td> – Fort Mcmurray, Alberta, Canada – Fort Mcmurray Municipal</td></tr>
+<tr><td>YMO</td><td> – Moosonee, Ontario, Canada – Moosonee</td></tr>
+<tr><td>YMT</td><td> – Chibougamau, Quebec, Canada – Chibougamau</td></tr>
+<tr><td>YMX</td><td> – Montreal, Quebec, Canada</td></tr>
+<tr><td>YND</td><td> – Gatineau, Quebec, Canada – Gatineau</td></tr>
+<tr><td>YNG</td><td> – Youngstown, OH, USA – Youngstown Municipal Airport</td></tr>
+<tr><td>YOJ</td><td> – High Level, Alberta, Canada – Footner Lake Muncpl</td></tr>
+<tr><td>YOO</td><td> – Oshawa, Ontario, Canada</td></tr>
+<tr><td>YOP</td><td> – Rainbow Lake, Alberta, Canada – Rainbow Lake</td></tr>
+<tr><td>YOW</td><td> – Ottawa, Ontario, Canada – Ottawa International</td></tr>
+<tr><td>YPE</td><td> – Peace River, Alberta, Canada – Peace River</td></tr>
+<tr><td>YPF</td><td> – Esquimalt, British Columbia, Canada</td></tr>
+<tr><td>YPR</td><td> – Prince Rupert /Princ Rupert, British Columbia, Canada – Digby Island</td></tr>
+<tr><td>YPW</td><td> – Powell River, British Columbia, Canada</td></tr>
+<tr><td>YPZ</td><td> – Burns Lake, British Columbia, Canada</td></tr>
+<tr><td>YQB</td><td> – Quebec, Quebec, Canada – Sainte Foy Airport</td></tr>
+<tr><td>YQC</td><td> – Quaqtaq, Quebec, Canada</td></tr>
+<tr><td>YQD</td><td> – The Pas, Manitoba, Canada – The Pas</td></tr>
+<tr><td>YQG</td><td> – Windsor, Ontario, Canada – Windsor International</td></tr>
+<tr><td>YQH</td><td> – Watson Lake, Yukon Territory, Canada – Watson Lake Airport</td></tr>
+<tr><td>YQI</td><td> – Yarmouth, Nova Scotia, Canada</td></tr>
+<tr><td>YQK</td><td> – Kenora, Ontario, Canada</td></tr>
+<tr><td>YQL</td><td> – Lethbridge, Alberta, Canada – Lethbridge Airport</td></tr>
+<tr><td>YQM</td><td> – Moncton, New Brunswick, Canada – Lakeburn Municipal Airpt</td></tr>
+<tr><td>YQQ</td><td> – Comox, British Columbia, Canada – Comox Civil Air Terminal</td></tr>
+<tr><td>YQR</td><td> – Regina, Saskatchewan, Canada – Regina International</td></tr>
+<tr><td>YQT</td><td> – Thunder Bay, Ontario, Canada</td></tr>
+<tr><td>YQU</td><td> – Grande Prairie, Alberta, Canada – Grande Prairie Airport</td></tr>
+<tr><td>YQX</td><td> – Gander, Newfoundland, Canada – Gander Intl Airport</td></tr>
+<tr><td>YQY</td><td> – Sydney, Nova Scotia, Canada – Sydney Municipal</td></tr>
+<tr><td>YQZ</td><td> – Quesnel, British Columbia, Canada</td></tr>
+<tr><td>YRB</td><td> – Resolute, Northwest Territories, Canada – Resolute Bay</td></tr>
+<tr><td>YRL</td><td> – Red Lake, Ontario, Canada</td></tr>
+<tr><td>YSB</td><td> – Sudbury, Ontario, Canada</td></tr>
+<tr><td>YSF</td><td> – Stony Rapids, Saskatchewan, Canada – Stony Rapids</td></tr>
+<tr><td>YSH</td><td> – Smith Falls, Ontario, Canada</td></tr>
+<tr><td>YSJ</td><td> – Saint John, New Brunswick, Canada – Turnbull Field</td></tr>
+<tr><td>YSL</td><td> – St Leonard, New Brunswick, Canada – St Leonard Apt</td></tr>
+<tr><td>YSM</td><td> – Fort Smith, Northwest Territories, Canada</td></tr>
+<tr><td>YSN</td><td> – Salmon Arm, British Columbia, Canada</td></tr>
+<tr><td>YSP</td><td> – Marathon, Ontario, Canada</td></tr>
+<tr><td>YTA</td><td> – Pembroke, Ontario, Canada – Pem And Area Apt</td></tr>
+<tr><td>YTD</td><td> – Thicket Portage, Manitoba, Canada</td></tr>
+<tr><td>YTH</td><td> – Thompson, Manitoba, Canada – Thompson</td></tr>
+<tr><td>YTS</td><td> – Timmins, Ontario, Canada – Timmins Municipal Airport</td></tr>
+<tr><td>YTZ</td><td> – Toronto, Ontario, Canada</td></tr>
+<tr><td>YUL</td><td> – Montreal, Quebec, Canada</td></tr>
+<tr><td>YUM</td><td> – Yuma, AZ, USA – Yuma International Airport</td></tr>
+<tr><td>YVA</td><td> – Moroni (Hahaya/Iconi)Comoros</td></tr>
+<tr><td>YVB</td><td> – Bonaventure, Quebec, Canada</td></tr>
+<tr><td>YVC</td><td> – La Ronge, Saskatchewan, Canada – La Ronge</td></tr>
+<tr><td>YVP</td><td> – Kuujjuaq, Quebec, Canada – Fort Chimo Airport</td></tr>
+<tr><td>YVR</td><td> – Vancouver, British Columbia, Canada – Vancouver International</td></tr>
+<tr><td>YVZ</td><td> – Deer Lake, Ontario, Canada</td></tr>
+<tr><td>YWG</td><td> – Winnipeg, Manitoba, Canada – Winnipeg International</td></tr>
+<tr><td>YWH</td><td> – Victoria, British Columbia, Canada – Victoria Inner Harbour</td></tr>
+<tr><td>YWK</td><td> – Wabush, Newfoundland, Canada – Wabush Municipal</td></tr>
+<tr><td>YWL</td><td> – Williams Lake, British Columbia, Canada</td></tr>
+<tr><td>YWR</td><td> – White River, Ontario, Canada – White River</td></tr>
+<tr><td>YXC</td><td> – Cranbrook, British Columbia, Canada – Cranbrook Airport</td></tr>
+<tr><td>YXD</td><td> – Edmonton, Alberta, Canada – Edmonton Municipal</td></tr>
+<tr><td>YXE</td><td> – Saskatoon, Saskatchewan, Canada – Saskatoon</td></tr>
+<tr><td>YXH</td><td> – Medicine Hat, Alberta, Canada – Medicine Hat Airport</td></tr>
+<tr><td>YXJ</td><td> – Fort St John, British Columbia, Canada – Fort St John</td></tr>
+<tr><td>YXL</td><td> – Sioux Lookout, Ontario, Canada</td></tr>
+<tr><td>YXS</td><td> – Prince George, British Columbia, Canada – Prince George B C</td></tr>
+<tr><td>YXT</td><td> – Terrace, British Columbia, Canada – Terrace</td></tr>
+<tr><td>YXU</td><td> – London, Ontario, Canada – London Municipal</td></tr>
+<tr><td>YXY</td><td> – Whitehorse, Yukon Territory, Canada – Whitehorse Airport</td></tr>
+<tr><td>YXZ</td><td> – Wawa, Ontario, Canada</td></tr>
+<tr><td>YYB</td><td> – North Bay, Ontario, Canada – Jack Garland Airport</td></tr>
+<tr><td>YYC</td><td> – Calgary, Alberta, Canada – Calgary Intl Airport</td></tr>
+<tr><td>YYD</td><td> – Smithers, British Columbia, Canada – Smithers International</td></tr>
+<tr><td>YYF</td><td> – Penticton, British Columbia, Canada</td></tr>
+<tr><td>YYG</td><td> – Charlottetown, Prince Edward Island/, Canada – Charlottetown</td></tr>
+<tr><td>YYJ</td><td> – Victoria, British Columbia, Canada – Victoria Airport</td></tr>
+<tr><td>YYQ</td><td> – Churchill, Manitoba, Canada – Churchill Airport</td></tr>
+<tr><td>YYR</td><td> – Goose Bay, Newfoundland, Canada – Goose Bay Municipal Airpt</td></tr>
+<tr><td>YYT</td><td> – St Johns, Newfoundland, Canada – St John’s International</td></tr>
+<tr><td>YYU</td><td> – Kapuskasing, Ontario, Canada</td></tr>
+<tr><td>YYY</td><td> – Mont Joli, Quebec, Canada</td></tr>
+<tr><td>YYZ</td><td> – Toronto, Ontario, Canada – Pearson International Airport</td></tr>
+<tr><td>YZF</td><td> – Yellowknife, Northwest Territories, Canada</td></tr>
+<tr><td>YZT</td><td> – Port Hardy, British Columbia, Canada – Port Hardy Airport</td></tr>
+<tr><td>YZV</td><td> – Sept-Iles, Quebec, Canada</td></tr>
+<tr><td>ZAG</td><td> – Zagreb, Croatia (Hrvatska) – Zagreb</td></tr>
+<tr><td>ZAH</td><td> – Zahedan, Iran – Zahedan</td></tr>
+<tr><td>ZAL</td><td> – Valdivia, Chile – Pichoy</td></tr>
+<tr><td>ZAM</td><td> – Zamboanga, Philippines – Zamboanga Airport</td></tr>
+<tr><td>ZAZ</td><td> – Zaragoza, Spain – Zaragoza</td></tr>
+<tr><td>ZBV</td><td> – Vail/Eagle, CO, USA</td></tr>
+<tr><td>ZCL</td><td> – Zacatecas, Zacatecas, Mexico</td></tr>
+<tr><td>ZCO</td><td> – Temuco, Chile – Manquehue</td></tr>
+<tr><td>ZDJ</td><td> – Berne, Switzerland – Berne-Rr Station</td></tr>
+<tr><td>ZGI</td><td> – Gods River, Manitoba, Canada</td></tr>
+<tr><td>ZHA</td><td> – Zhanjiang, China</td></tr>
+<tr><td>ZHO</td><td> – Houston, British Columbia, Canada</td></tr>
+<tr><td>ZIH</td><td> – Ixtapa/Zihuatanejo, Guerrero, Mexico – International</td></tr>
+<tr><td>ZLO</td><td> – Manzanillo, Colima, Mexico – Aeropuerto International</td></tr>
+<tr><td>ZNA</td><td> – Nanaimo, British Columbia, Canada</td></tr>
+<tr><td>ZNE</td><td> – Newman, Western Australia, Australia – Newman</td></tr>
+<tr><td>ZNZ</td><td> – Zanzibar, Tanzania – Kisauni</td></tr>
+<tr><td>ZQN</td><td> – Queenstown, New Zealand – Frankton</td></tr>
+<tr><td>ZRF</td><td> – Rockford, IL, USA</td></tr>
+<tr><td>ZRH</td><td> – Zurich, Switzerland – Zurich</td></tr>
+<tr><td>ZSA</td><td> – San Salvador, Bahamas</td></tr>
+<tr><td>ZTH</td><td> – Zakinthos, Greece – Zakinthos</td></tr>
+         
+                                
+ 
+ 
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container" style="margin-top: 10px;padding: 5px">
+    <table id="tablaz" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            
+            <th>Codigo</th>
+            <th>Nombre</th>
+           
+            
+        </thead>
+        <tbody>
+            <tr><td>SF</td><td>  Tassili Airlines</td></tr>
+            <tr><td>DT</td><td>  TAAG Angola Airlines</td></tr>
+            <tr><td>LI</td><td>  LIAT Airlines</td></tr>
+            <tr><td>AR</td><td>  Aerolineas Argentinas</td></tr>
+            <tr><td>AU</td><td>  Austral</td></tr>
+            <tr><td>4M</td><td>  LATAM Airlines Argentina</td></tr>
+            <tr><td>QF</td><td>  Qantas</td></tr>
+            <tr><td>VA</td><td>  Virgin Australia</td></tr>
+            <tr><td>OS</td><td>  Austrian</td></tr>
+            <tr><td>J2</td><td>  Azerbaijan Airlines</td></tr>
+            <tr><td>7L</td><td>  Silk Way West Airlines</td></tr>
+            <tr><td>UP</td><td>  Bahamasair</td></tr>
+            <tr><td>ES</td><td>  DHL Aviation</td></tr>
+            <tr><td>GF</td><td>  Gulf Air</td></tr>
+            <tr><td>BG</td><td>  Biman Bangladesh Airlines</td></tr>
+            <tr><td>B2</td><td>  Belavia Belarusian Airlines</td></tr>
+            <tr><td>SN</td><td>  Brussels Airlines</td></tr>
+            <tr><td>OB</td><td>  BoA Boliviana de Aviacion</td></tr>
+            <tr><td>BP</td><td>  Air Botswana</td></tr>
+            <tr><td>O6</td><td>  Avianca Brasil</td></tr>
+            <tr><td>AD</td><td>  Azul Brazilian Airlines</td></tr>
+            <tr><td>G3</td><td>  GOL Linhas Aereas</td></tr>
+            <tr><td>JJ</td><td>  LATAM Airlines Brasil</td></tr>
+            <tr><td>M3</td><td>  LATAM Cargo Brasil</td></tr>
+            <tr><td>BI</td><td>  Royal Brunei</td></tr>
+            <tr><td>8H</td><td>  BH Air</td></tr>
+            <tr><td>FB</td><td>  Bulgaria Air</td></tr>
+            <tr><td>2J</td><td>  Air Burkina</td></tr>
+            <tr><td>K6</td><td>  Cambodia Angkor Air</td></tr>
+            <tr><td>QC</td><td>  Camair-Co</td></tr>
+            <tr><td>AC</td><td>  Air Canada</td></tr> 
+            <tr><td>TS</td><td>  Air Transat</td></tr>
+            <tr><td>W8</td><td>  Cargojet Airways</td></tr>
+            <tr><td>WS</td><td>  WestJet</td></tr>
+            <tr><td>VR</td><td>  TACV Cabo Verde Airlines</td></tr>
+            <tr><td>KX</td><td>  Cayman Airways</td></tr>
+            <tr><td>LA</td><td>  LATAM Airlines Group</td></tr>
+            <tr><td>UC</td><td>  LATAM Cargo Chile</td></tr>
+            <tr><td>H2</td><td>  SKY Airline</td></tr>
+            <tr><td>CA</td><td>  Air China</td></tr>
+            <tr><td>JD</td><td>  Capital Airlines</td></tr>
+            <tr><td>CK</td><td>  China Cargo Airlines</td></tr>
+            <tr><td>MU</td><td>  China Eastern</td></tr>
+            <tr><td>G5</td><td>  China Express Airlines</td></tr>
+            <tr><td>CF</td><td>  China Postal Airlines</td></tr>
+            <tr><td>CZ</td><td>  China Southern Airlines</td></tr>
+            <tr><td>GX</td><td>  GX Airlines</td></tr>
+            <tr><td>HU</td><td>  Hainan Airlines</td></tr>
+            <tr><td>NS</td><td>  Hebei Airlines</td></tr>
+            <tr><td>HO</td><td>  Juneyao Airlines</td></tr>
+            <tr><td>KY</td><td>  Kunming Airlines</td></tr>
+            <tr><td>GJ</td><td>  Loong Air</td></tr>
+            <tr><td>8L</td><td>  Lucky Air</td></tr>
+            <tr><td>BK</td><td>  Okay Airways</td></tr>
+            <tr><td>O3</td><td>  SF Airlines</td></tr>
+            <tr><td>SC</td><td>  Shandong Airlines</td></tr>
+            <tr><td>FM</td><td>  Shanghai Airlines</td></tr>
+            <tr><td>ZH</td><td>  Shenzhen Airlines</td></tr>
+            <tr><td>3U</td><td>  Sichuan Airlines</td></tr>
+            <tr><td>Y8</td><td>  Suparna Airlines</td></tr>
+            <tr><td>GS</td><td>  Tianjin Airlines</td></tr>
+            <tr><td>UQ</td><td>  Urumqi Air</td></tr>
+            <tr><td>MF</td><td>  Xiamen Airlines</td></tr>
+            <tr><td>P5</td><td>  Aero Republica</td></tr>
+            <tr><td>AV</td><td>  Avianca</td></tr>
+            <tr><td>4C</td><td>  LATAM Airlines Colombia</td></tr>
+            <tr><td>8Z</td><td>  Congo Airways</td></tr>
+            <tr><td>LR</td><td>  Avianca Costa Rica</td></tr>
+            <tr><td>OU</td><td>  Croatia Airlines</td></tr>
+            <tr><td>CU</td><td>  Cubana</td></tr>
+            <tr><td>7i</td><td>  InselAir</td></tr>
+            <tr><td>CO</td><td>  COBALT</td></tr>
+            <tr><td>CY</td><td>  Cyprus Airways</td></tr>
+            <tr><td>OK</td><td>  Czech Airlines</td></tr>
+            <tr><td>2K</td><td>  Avianca Ecuador</td></tr>
+            <tr><td>XL</td><td>  LATAM Airlines Ecuador</td></tr> 
+            <tr><td>EQ</td><td>  TAME</td></tr>
+            <tr><td>SM</td><td>  Air Cairo</td></tr>
+            <tr><td>UJ</td><td>  AlMasria Universal Airlines</td></tr>
+            <tr><td>MS</td><td>  Egyptair</td></tr>
+            <tr><td>FT</td><td>  FlyEgypt</td></tr>
+            <tr><td>NE</td><td>  Nesma Airlines</td></tr>
+            <tr><td>NP</td><td>  Nile Air</td></tr>
+            <tr><td>TA</td><td>  TACA</td></tr>
+            <tr><td>ET</td><td>  Ethiopian Airlines</td></tr>
+            <tr><td>RC</td><td>  Atlantic Airways</td></tr>
+            <tr><td>FJ</td><td>  Fiji Airways</td></tr>
+            <tr><td>AY</td><td>  Finnair</td></tr>
+            <tr><td>ZI</td><td>  Aigle Azur</td></tr>
+            <tr><td>XK</td><td>  Air Corsica</td></tr>
+            <tr><td>AF</td><td>  Air France</td></tr>
+            <tr><td>SS</td><td>  Corsair International</td></tr>
+            <tr><td>VT</td><td>  Air Tahiti</td></tr>
+            <tr><td>TN</td><td>  Air Tahiti Nui</td></tr>
+            <tr><td>A9</td><td>  Georgian Airways</td></tr>
+            <tr><td>DE</td><td>  Condor</td></tr>
+            <tr><td>QY</td><td>  European Air Transport</td></tr>
+            <tr><td>EW</td><td>  Eurowings</td></tr>
+            <tr><td>ST</td><td>  Germania</td></tr>
+            <tr><td>HR</td><td>  Hahn Air</td></tr>
+            <tr><td>LH</td><td>  Lufthansa</td></tr>
+            <tr><td>LH</td><td>  Lufthansa Cargo</td></tr>
+            <tr><td>CL</td><td>  Lufthansa CityLine</td></tr>
+            <tr><td>X3</td><td>  TUIfly</td></tr>
+            <tr><td>WH</td><td>  WDL Aviation</td></tr>
+            <tr><td>AW</td><td>  Africa World Airlines</td></tr>
+            <tr><td>A3</td><td>  Aegean Airlines</td></tr>
+            <tr><td>OA</td><td>  Olympic Air</td></tr>
+            <tr><td>TX</td><td>  Air Caraibes</td></tr>
+            <tr><td>KA</td><td>  Cathay Dragon</td></tr>
+            <tr><td>CX</td><td>  Cathay Pacific</td></tr>
+            <tr><td>HX</td><td>  Hong Kong Airlines</td></tr>
+            <tr><td>UO</td><td>  Hong Kong Express Airways</td></tr>
+            <tr><td>FI</td><td>  Icelandair</td></tr>
+            <tr><td>AI</td><td>  Air India</td></tr>
+            <tr><td>9W</td><td>  Jet Airways</td></tr>
+            <tr><td>S2</td><td>  Jet Lite (India)</td></tr>
+            <tr><td>UK</td><td>  Vistara</td></tr>
+            <tr><td>ID</td><td>  Batik Air</td></tr>
+            <tr><td>GA</td><td>  Garuda Indonesia</td></tr>
+            <tr><td>IR</td><td>  Iran Air</td></tr>
+            <tr><td>B9</td><td>  Iran Airtour Airline</td></tr>
+            <tr><td>EP</td><td>  Iran Aseman Airlines</td></tr>
+            <tr><td>Y9</td><td>  Kish Air</td></tr>
+            <tr><td>W5</td><td>  Mahan Air</td></tr>
+            <tr><td>EI</td><td>  Aer Lingus</td></tr>
+            <tr><td>WX</td><td>  CityJet</td></tr>
+            <tr><td>IZ</td><td>  Arkia Israeli Airlines</td></tr>
+            <tr><td>5C</td><td>  CAL Cargo Airlines</td></tr>
+            <tr><td>LY</td><td>  EL AL</td></tr>
+            <tr><td>6H</td><td>  Israir</td></tr>
+            <tr><td>IG</td><td>  Air Italy</td></tr>
+            <tr><td>AZ</td><td>  Alitalia</td></tr>
+            <tr><td>BV</td><td>  Blue Panorama</td></tr>
+            <tr><td>M4</td><td>  Mistral Air</td></tr>
+            <tr><td>NO</td><td>  Neos</td></tr>
+            <tr><td>NH</td><td>  ANA</td></tr>
+            <tr><td>JL</td><td>  Japan Airlines</td></tr>
+            <tr><td>KZ</td><td>  NCA Nippon Cargo Airlines</td></tr>
+            <tr><td>R5</td><td>  Jordan Aviation</td></tr>
+            <tr><td>RJ</td><td>  Royal Jordanian</td></tr>
+            <tr><td>KC</td><td>  Air Astana</td></tr>
+            <tr><td>DV</td><td>  SCAT Airlines</td></tr>
+            <tr><td>KQ</td><td>  Kenya Airways</td></tr>
+            <tr><td>JS</td><td>  Air Koryo</td></tr>
+            <tr><td>OZ</td><td>  Asiana Airlines</td></tr>
+            <tr><td>ZE</td><td>  Eastar Jet</td></tr>
+            <tr><td>7C</td><td>  Jeju Air</td></tr>
+            <tr><td>LJ</td><td>  Jin Air</td></tr>
+            <tr><td>KE</td><td>  Korean Air</td></tr>
+            <tr><td>TW</td><td>  T’way Air</td></tr>
+            <tr><td>J9</td><td>  Jazeera Airways</td></tr>
+            <tr><td>KU</td><td>  Kuwait Airways</td></tr>
+            <tr><td>QV</td><td>  Lao Airlines</td></tr>
+            <tr><td>BT</td><td>  Air Baltic</td></tr>
+            <tr><td>ME</td><td>  MEA</td></tr>
+            <tr><td>CV</td><td>  Cargolux</td></tr>
+            <tr><td>LG</td><td>  Luxair</td></tr>
+            <tr><td>NX</td><td>  Air Macau</td></tr>
+            <tr><td>MD</td><td>  Air Madagascar</td></tr>
+            <tr><td>MH</td><td>  Malaysia Airlines</td></tr>
+            <tr><td>OD</td><td>  Malindo Air</td></tr>
+            <tr><td>KM</td><td>  Air Malta</td></tr>
+            <tr><td>L6</td><td>  Mauritania Airlines International</td></tr>
+            <tr><td>MK</td><td>  Air Mauritius</td></tr>
+            <tr><td>AM</td><td>  Aeromexico</td></tr>
+            <tr><td>4O</td><td>  Interjet</td></tr>
+            <tr><td>M7</td><td>  LATAM Cargo Mexico</td></tr>
+            <tr><td>Y4</td><td> Volaris</td></tr>
+            <tr><td>9U</td><td> Air Moldova</td></tr>
+            <tr><td>OM</td><td> MIAT Mongolian Airlines</td></tr>
+            <tr><td>YM</td><td> Montenegro Airlines</td></tr>
+            <tr><td>AT</td><td> Royal Air Maroc</td></tr>
+            <tr><td>TM</td><td> LAM</td></tr>
+            <tr><td>8M</td><td> Myanmar Airways International</td></tr>
+            <tr><td>SW</td><td> Air Namibia</td></tr>
+            <tr><td>KL</td><td> KLM</td></tr>
+            <tr><td>MP</td><td> Martinair Cargo</td></tr>
+            <tr><td>TY</td><td> Air Caledonie</td></tr>
+            <tr><td>SB</td><td> Aircalin</td></tr>
+            <tr><td>PX</td><td> Air Niugini</td></tr>
+            <tr><td>NZ</td><td> Air New Zealand</td></tr>
+            <tr><td>P4</td><td> Air Peace</td></tr>
+            <tr><td>4W</td><td> Allied Air</td></tr>
+            <tr><td>W3</td><td> Arik Air</td></tr>
+            <tr><td>OF</td><td> Overland Airways</td></tr>
+            <tr><td>WF</td><td> Wideroe</td></tr>
+            <tr><td>WY</td><td> Oman Air</td></tr>
+            <tr><td>PK</td><td> PIA Pakistan International Airlines</td></tr>
+            <tr><td>CM</td><td> COPA Airlines</td></tr>
+            <tr><td>PZ</td><td> LATAM Airlines Paraguay</td></tr>
+            <tr><td>LP</td><td> LATAM Airlines Peru</td></tr>
+            <tr><td>T0</td><td> TACA Peru</td></tr>
+            <tr><td>PR</td><td> Philippine Airlines</td></tr>
+            <tr><td>LO</td><td> LOT Polish Airlines</td></tr>
+            <tr><td>S4</td><td> Azores Airlines</td></tr>
+            <tr><td>YU</td><td> EuroAtlantic Airways</td></tr></td></tr>
+            <tr><td>5K</td><td> Hi Fly</td></tr>
+            <tr><td>NI</td><td> PGA-Portugalia Airlines</td></tr>
+            <tr><td>SP</td><td>SATA Air Acores</td></tr>
+            <tr><td>TP</td><td>TAP Portugal</td></tr>
+            <tr><td>WI</td><td> White coloured by you</td></tr>
+            <tr><td>QR</td><td> Qatar Airways</td></tr>
+            <tr><td>UU</td><td> Air Austral</td></tr>
+            <tr><td>0B</td><td> Blue Air</td></tr>
+            <tr><td>V3</td><td> Carpatair</td></tr>
+            <tr><td>RO</td><td> TAROM</td></tr>
+            <tr><td>SU</td><td> Aeroflot</td></tr>
+            <tr><td>RU</td><td> AirBridgeCargo Airlines</td></tr>
+            <tr><td>5N</td><td> Nordavia Regional Airlines</td></tr>
+            <tr><td>N4</td><td> Nordwind Airlines</td></tr>
+            <tr><td>EO</td><td> Pegas Fly</td></tr>
+            <tr><td>FV</td><td> Rossiya Airlines</td></tr>
+            <tr><td>S7</td><td> S7 Airlines</td></tr>
+            <tr><td>U6</td><td>  Ural Airlines</td></tr>
+            <tr><td>UT</td><td>  UTair</td></tr>
+            <tr><td>WB</td><td>  RwandAir</td></tr>
+            <tr><td>SV</td><td>  Saudi Arabian Airlines</td></tr>
+            <tr><td>6S</td><td>  SaudiGulf Airlines</td></tr>
+            <tr><td>JU</td><td>  Air Serbia</td></tr>
+            <tr><td>HM</td><td>  Air Seychelles</td></tr>
+            <tr><td>MI</td><td>  SilkAir</td></tr>
+            <tr><td>SQ</td><td>  Singapore Airlines</td></tr>
+            <tr><td>JP</td><td>  Adria Airways</td></tr>
+            <tr><td>4Z</td><td>  Airlink</td></tr>
+            <tr><td>5Z</td><td>  Cemair</td></tr>
+            <tr><td>MN</td><td>  Comair</td></tr>
+            <tr><td>FA</td><td>  Safair</td></tr>
+            <tr><td>SA</td><td>  South African Airways</td></tr>
+            <tr><td>XZ</td><td>  South African Express Airways</td></tr>
+            <tr><td>UX</td><td>  Air Europa</td></tr>
+            <tr><td>YW</td><td>  Air Nostrum</td></tr>
+            <tr><td>NT</td><td>  Binter Canarias</td></tr>
+            <tr><td>E9</td><td>  Evelop Airlines</td></tr>
+            <tr><td>IB</td><td>  IBERIA</td></tr>
+            <tr><td>V7</td><td>  Volotea</td></tr>
+            <tr><td>VY</td><td>  Vueling</td></tr>
+            <tr><td>EB</td><td>  Wamos Air</td></tr>
+            <tr><td>UL</td><td>  SriLankan Airlines</td></tr>
+            <tr><td>PY</td><td>  Surinam Airways</td></tr>
+            <tr><td>TF</td><td>  Braathens Regional Aviation</td></tr>
+            <tr><td>SK</td><td>  SAS</td></tr>
+            <tr><td>GM</td><td>  Germania Flug AG</td></tr>
+            <tr><td>PV</td><td>  PrivatAir
+            <tr><td>LX</td><td>  SWISS</td></tr>
+            <tr><td>RB</td><td>  Syrianair</td></tr>
+            <tr><td>CI</td><td>  China Airlines</td></tr>
+            <tr><td>BR</td><td>  EVA Air</td></tr>
+            <tr><td>AE</td><td>  Mandarin Airlines</td></tr>
+            <tr><td>B7</td><td>  UNI AIR</td></tr>
+            <tr><td>SZ</td><td>  Somon Air</td></tr>
+            <tr><td>PW</td><td>  Precision Air</td></tr>
+            <tr><td>PG</td><td>  Bangkok Airways</td></tr>
+            <tr><td>TG</td><td>  Thai Airways International</td></tr>
+            <tr><td>SL</td><td>  Thai Lion Air</td></tr>
+            <tr><td>BW</td><td>  Caribbean Airlines</td></tr>
+            <tr><td>BJ</td><td>  Nouvelair</td></tr>
+            <tr><td>TU</td><td>  Tunisair</td></tr>
+            <tr><td>KK</td><td>  AtlasGlobal</td></tr>
+            <tr><td>XC</td><td>  Corendon Airlines</td></tr>
+            <tr><td>FH</td><td>  Freebird Airlines</td></tr>
+            <tr><td>MB</td><td>  MNG Airlines</td></tr>
+            <tr><td>8Q</td><td>  Onur Air</td></tr>
+            <tr><td>PC</td><td>  Pegasus Airlines</td></tr>
+            <tr><td>XQ</td><td>  SunExpress</td></tr>
+            <tr><td>TK</td><td>  Turkish Airlines</td></tr>
+            <tr><td>PS</td><td>  Ukraine International Airlines</td></tr>
+            <tr><td>G9</td><td>  Air Arabia</td></tr>
+            <tr><td>EK</td><td>  Emirates</td></tr>
+            <tr><td>EY</td><td>  Etihad Airways</td></tr>
+            <tr><td>FZ</td><td>  flydubai</td></tr>
+            <tr><td>BM</td><td>  bmi Regional</td></tr>
+            <tr><td>BA</td><td>  British Airways</td></tr>
+            <tr><td>D0</td><td>  DHL Air</td></tr>
+            <tr><td>BE</td><td>  flybe</td></tr>
+            <tr><td>VS</td><td>  Virgin Atlantic</td></tr>
+            <tr><td>AS</td><td>  Alaska Airlines</td></tr>
+            <tr><td>AA</td><td>  American Airlines</td></tr>
+            <tr><td>5Y</td><td>  Atlas Air</td></tr>
+            <tr><td>DL</td><td>  Delta Air Lines</td></tr>
+            <tr><td>FX</td><td>  FedEx Express</td></tr>
+            <tr><td>HA</td><td>  Hawaiian Airlines</td></tr>
+            <tr><td>B6</td><td>  JetBlue</td></tr>
+            <tr><td>UA</td><td>  United Airlines</td></tr>
+            <tr><td>5X</td><td>  UPS Airlines</td></tr>
+            <tr><td>HY</td><td>  Uzbekistan Airways</td></tr>
+            <tr><td>NF</td><td>  Air Vanuatu</td></tr>
+            <tr><td>VJ</td><td>  Vietjet</td></tr>
+            <tr><td>VN</td><td>  Vietnam Airlines</td></tr>
+        </tbody>
+
+    </table>
+           
+</div>
+
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+        </script>
+    <!-- DATATABLES -->
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js">
+    </script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#tablax').DataTable({
+                language: {
+                    processing: "Tratamiento en curso...",
+                    search: "Buscar&nbsp;:",
+                    lengthMenu: "Agrupar de _MENU_ items",
+                    info: "Mostrando del item _START_ al _END_ de un total de _TOTAL_ items",
+                    infoEmpty: "No existen datos.",
+                    infoFiltered: "(filtrado de _MAX_ elementos en total)",
+                    infoPostFix: "",
+                    loadingRecords: "Cargando...",
+                    zeroRecords: "No se encontraron datos con tu busqueda",
+                    emptyTable: "No hay datos disponibles en la tabla.",
+                    paginate: {
+                        first: "Primero",
+                        previous: "Anterior",
+                        next: "Siguiente",
+                        last: "Ultimo"
+                    },
+                    aria: {
+                        sortAscending: ": active para ordenar la columna en orden ascendente",
+                        sortDescending: ": active para ordenar la columna en orden descendente"
+                    }
+                },
+                scrollY: 300,
+                lengthMenu: [ [10, 25, -1], [10, 25, "All"] ],
+            });
+        });
+
+
+
+         $(document).ready(function () {
+            $('#tablaz').DataTable({
+                language: {
+                    processing: "Tratamiento en curso...",
+                    search: "Buscar&nbsp;:",
+                    lengthMenu: "Agrupar de _MENU_ items",
+                    info: "Mostrando del item _START_ al _END_ de un total de _TOTAL_ items",
+                    infoEmpty: "No existen datos.",
+                    infoFiltered: "(filtrado de _MAX_ elementos en total)",
+                    infoPostFix: "",
+                    loadingRecords: "Cargando...",
+                    zeroRecords: "No se encontraron datos con tu busqueda",
+                    emptyTable: "No hay datos disponibles en la tabla.",
+                    paginate: {
+                        first: "Primero",
+                        previous: "Anterior",
+                        next: "Siguiente",
+                        last: "Ultimo"
+                    },
+                    aria: {
+                        sortAscending: ": active para ordenar la columna en orden ascendente",
+                        sortDescending: ": active para ordenar la columna en orden descendente"
+                    }
+                },
+                scrollY: 300,
+                lengthMenu: [ [10, 25, -1], [10, 25, "All"] ],
+            });
+        });
+    </script>
+</body>
+</html>
